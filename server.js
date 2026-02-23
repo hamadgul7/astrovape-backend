@@ -3,6 +3,7 @@ require('dotenv').config();
 const db = require('./config/db.js');
 
 const authRoutes = require('./routes/auth-route.js');
+const brandRoutes = require('./routes/brand-route.js');
 
 
 const cors = require('cors');
@@ -18,6 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use('/auth', authRoutes);
+app.use('/brands', brandRoutes);
 
 
 
