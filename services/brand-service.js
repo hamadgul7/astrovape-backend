@@ -8,7 +8,6 @@ async function createBrand(data) {
     return await brand.save();
 }
 
-
 async function getAllBrands(page, limit) {
     const skip = (page - 1) * limit;
 
