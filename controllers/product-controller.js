@@ -1,6 +1,5 @@
 const productService = require("../services/product-service");
 
-// Add product (also adds product batch)
 async function addProduct(req, res) {
     try {
         const data = req.body;
@@ -15,7 +14,6 @@ async function addProduct(req, res) {
     }
 }
 
-// Get all products
 async function getAllProducts(req, res) {
     try {
         const { pageNo = 1, limit = 10 } = req.query;
@@ -36,7 +34,6 @@ async function getAllProducts(req, res) {
     }
 }
 
-// Get product by id
 async function getProductById(req, res) {
     try {
         const product = await productService.getProductById(req.params.id);
@@ -51,7 +48,6 @@ async function getProductById(req, res) {
     }
 }
 
-// Update product
 async function updateProduct(req, res) {
     try {
         const { id } = req.params;
@@ -72,7 +68,6 @@ async function updateProduct(req, res) {
     }
 }
 
-// Delete product
 async function deleteProduct(req, res) {
     try {
         const deletedProduct = await productService.deleteProduct(req.params.id);

@@ -2,7 +2,6 @@ const Product = require("../models/product-model");
 const ProductBatch = require("../models/productBatch-model");
 const Brand = require("../models/brand-model");
 
-// Add Product + ProductBatch
 async function addProduct(data) {
     // Check if SKU already exists exactly as provided
     const existingSKU = await Product.findOne({ sku: data.sku });
@@ -42,7 +41,6 @@ async function addProduct(data) {
     return { product, productBatch };
 }
 
-// Other service functions remain the same
 async function getAllProducts(page = 1, limit = 10) {
     page = parseInt(page);
     limit = parseInt(limit);
@@ -79,7 +77,6 @@ async function getProductById(id) {
 
 
 async function updateProduct(id, data) {
-    // If SKU is being updated, check uniqueness
     if (data.sku) {
         const existingSKU = await Product.findOne({ sku: data.sku, _id: { $ne: id } });
         if (existingSKU) {
@@ -87,7 +84,6 @@ async function updateProduct(id, data) {
         }
     }
 
-    // If brandId is provided, fetch the brand name
     if (data.brandId) {
         const brand = await Brand.findById(data.brandId);
         if (!brand) {
@@ -99,7 +95,6 @@ async function updateProduct(id, data) {
         };
     }
 
-    // Build update object with only provided fields
     const updateData = {};
     if (data.name !== undefined) updateData.name = data.name;
     if (data.sku !== undefined) updateData.sku = data.sku;
@@ -113,7 +108,6 @@ async function updateProduct(id, data) {
         updateData.totalQuantity = product.totalQuantity + data.totalQuantity;
     }
 
-    // Update Product
     const product = await Product.findByIdAndUpdate(id, updateData, {
         returnDocument: 'after',
         runValidators: true
