@@ -5,6 +5,7 @@ const db = require('./config/db.js');
 const authRoutes = require('./routes/auth-route.js');
 const brandRoutes = require('./routes/brand-route.js');
 const productRoutes = require('./routes/product-route.js');
+const productBatchRoutes = require('./routes/productBatch-route.js');
 
 
 const cors = require('cors');
@@ -22,6 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/auth', authRoutes);
 app.use('/brands', brandRoutes);
 app.use('/product', productRoutes);
+app.use('/product-batch', productBatchRoutes);
 
 
 

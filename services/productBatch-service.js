@@ -1,173 +1,163 @@
-const Product = require("../models/product-model");
 const ProductBatch = require("../models/productBatch-model");
+const Product = require("../models/product-model");
 const Brand = require("../models/brand-model");
 
-async function addProduct(data) {
-    const existingSKU = await Product.findOne({ sku: data.sku });
-    if (existingSKU) {
-        throw new Error("SKU already exists. Please use a unique SKU.");
-    }
+
+async function addProductBatch(data) {
+    const product = await Product.findById(data.productId);
+    if (!product) throw new Error("Product not found");
 
     const brand = await Brand.findById(data.brandId);
-    if (!brand) {
-        throw new Error("Brand not found");
-    }
-
+    if (!brand) throw new Error("Brand not found");
     const brandObj = { id: brand._id, name: brand.name };
-
-    const product = await Product.create({
-        name: data.name,
-        sku: data.sku, 
-        brand: brandObj,
-        buyingCost: data.buyingCost,
-        sellingCost: data.sellingCost,
-        totalQuantity: data.totalQuantity
-    });
 
     const productBatch = await ProductBatch.create({
         productId: product._id,
-        name: data.name,
-        sku: data.sku, 
+        name: data.name || product.name,
         brand: brandObj,
         buyingCost: data.buyingCost,
         sellingCost: data.sellingCost,
-        totalQuantity: data.totalQuantity
+        totalQuantity: data.totalQuantity || 0
     });
 
-    return { product, productBatch };
+    product.totalQuantity += data.totalQuantity || 0;
+    await product.save();
+
+    return productBatch;
 }
 
-async function getAllProducts(page = 1, limit = 10) {
+
+async function getProductAllBatches(page = 1, limit = 10, productId = null) {
     page = parseInt(page);
     limit = parseInt(limit);
-
     const skip = (page - 1) * limit;
 
-    const totalItems = await Product.countDocuments();
+    const filter = {};
+    if (productId) filter.productId = productId;
 
-    const products = await Product.find()
+    const totalItems = await ProductBatch.countDocuments(filter);
+
+    const batches = await ProductBatch.find(filter)
         .skip(skip)
         .limit(limit)
         .sort({ createdAt: -1 });
 
-    const totalPages = Math.ceil(totalItems / limit);
+    const batchesWithMonthYear = batches.map(batch => {
+        const createdDate = new Date(batch.createdAt);
+
+        const monthYear = createdDate.toLocaleString('default', {
+            month: 'long',
+            year: 'numeric'
+        }); 
+
+        return {
+            ...batch.toObject(),
+            monthYear
+        };
+    });
 
     return {
-        products,
+        batches: batchesWithMonthYear,
         meta: {
             totalItems,
-            totalPages,
+            totalPages: Math.ceil(totalItems / limit),
             currentPage: page,
             pageLimit: limit,
-            nextPage: page < totalPages ? page + 1 : null,
+            nextPage: page < Math.ceil(totalItems / limit) ? page + 1 : null,
             previousPage: page > 1 ? page - 1 : null
         }
     };
 }
 
 
-async function getProductById(id) {
-    return Product.findById(id);
+async function getProductBatchById(id) {
+    return ProductBatch
+        .findById(id)
 }
 
 
-async function updateProduct(id, data) {
-    if (data.sku) {
-        const existingSKU = await Product.findOne({ sku: data.sku, _id: { $ne: id } });
-        if (existingSKU) {
-            throw new Error(`SKU already exists. Please use a unique SKU.`);
-        }
-    }
+async function updateProductBatch(id, data) {
+    const batch = await ProductBatch.findById(id);
+    if (!batch) throw new Error("Product batch not found");
 
     if (data.brandId) {
         const brand = await Brand.findById(data.brandId);
-        if (!brand) {
-            throw new Error("Brand not found");
-        }
-        data.brand = {
-            id: brand._id,
-            name: brand.name
-        };
+        if (!brand) throw new Error("Brand not found");
+        batch.brand = { id: brand._id, name: brand.name };
     }
 
-    const updateData = {};
-    if (data.name !== undefined) updateData.name = data.name;
-    if (data.sku !== undefined) updateData.sku = data.sku;
-    if (data.buyingCost !== undefined) updateData.buyingCost = data.buyingCost;
-    if (data.sellingCost !== undefined) updateData.sellingCost = data.sellingCost;
-    if (data.brand !== undefined) updateData.brand = data.brand;
+    if (data.name !== undefined) batch.name = data.name;
+    if (data.buyingCost !== undefined) batch.buyingCost = data.buyingCost;
+    if (data.sellingCost !== undefined) batch.sellingCost = data.sellingCost;
 
     if (data.totalQuantity !== undefined) {
-        const product = await Product.findById(id);
-        if (!product) throw new Error("Product not found");
-        updateData.totalQuantity = product.totalQuantity + data.totalQuantity;
-    }
-
-    const product = await Product.findByIdAndUpdate(id, updateData, {
-        returnDocument: 'after',
-        runValidators: true
-    });
-
-    if (!product) {
-        throw new Error("Product not found");
-    }
-
-    return product;
-}
-
-async function deleteProduct(id) {
-    const product = await Product.findByIdAndDelete(id);
-    // if (product) {
-    //     await ProductBatch.deleteMany({ productId: id });
-    // }
-    return product;
-}
-
-
-const escapeRegex = (text) => {
-    return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-};
-
-
-async function searchProducts({ pageNo, limit, search }) {
-    const pageNumber = parseInt(pageNo) || 1;
-    const pageLimit = parseInt(limit) || 10;
-    const skip = (pageNumber - 1) * pageLimit;
-
-    let filter = {};
-
-    if (search) {
-        const escapedSearch = escapeRegex(search);
-        filter.name = {
-            $regex: escapedSearch,
-            $options: "i" // case-insensitive
-        };
-    }
-
-    const totalItems = await Product.countDocuments(filter);
-
-    const products = await Product.find(filter)
-        .sort({ createdAt: -1 })
-        .skip(skip)
-        .limit(pageLimit);
-
-    return {
-        products,
-        meta: {
-            totalItems,
-            totalPages: Math.ceil(totalItems / pageLimit),
-            currentPage: pageNumber,
-            pageSize: pageLimit
+        batch.totalQuantity += data.totalQuantity;
+        // Also update total quantity in main Product
+        const product = await Product.findById(batch.productId);
+        if (product) {
+            product.totalQuantity += data.totalQuantity;
+            await product.save();
         }
-    };
+    }
+
+    await batch.save();
+    return batch;
 }
 
+
+async function deleteProductBatch(id) {
+    const batch = await ProductBatch.findByIdAndDelete(id);
+    if (!batch) throw new Error("Product batch not found");
+
+    // Reduce total quantity in Product
+    // const product = await Product.findById(batch.productId);
+    // if (product) {
+    //     product.totalQuantity -= batch.totalQuantity;
+    //     if (product.totalQuantity < 0) product.totalQuantity = 0;
+    //     await product.save();
+    // }
+
+    return batch;
+}
+
+
+// Search batches
+// const escapeRegex = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+// async function searchProductBatches({ pageNo, limit, search }) {
+//     const page = parseInt(pageNo) || 1;
+//     const pageLimit = parseInt(limit) || 10;
+//     const skip = (page - 1) * pageLimit;
+
+//     let filter = {};
+//     if (search) {
+//         const escapedSearch = escapeRegex(search);
+//         filter.name = { $regex: escapedSearch, $options: "i" };
+//     }
+
+//     const totalItems = await ProductBatch.countDocuments(filter);
+
+//     const batches = await ProductBatch.find(filter)
+//         .sort({ createdAt: -1 })
+//         .skip(skip)
+//         .limit(pageLimit);
+
+//     return {
+//         batches,
+//         meta: {
+//             totalItems,
+//             totalPages: Math.ceil(totalItems / pageLimit),
+//             currentPage: page,
+//             pageLimit
+//         }
+//     };
+// }
 
 module.exports = {
-    addProduct,
-    getAllProducts,
-    getProductById,
-    updateProduct,
-    deleteProduct,
-    searchProducts
+    addProductBatch,
+    getProductAllBatches,
+    getProductBatchById,
+    updateProductBatch,
+    deleteProductBatch,
+    // searchProductBatches
 };

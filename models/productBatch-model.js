@@ -14,13 +14,6 @@ const productBatchSchema = new mongoose.Schema(
             trim: true
         },
 
-        sku: {
-            type: String,
-            required: true,
-            trim: true,
-            uppercase: true
-        },
-
         brand: {
             id: { type: mongoose.Schema.Types.ObjectId, ref: "Brand", required: true },
             name: { type: String, required: true, trim: true }
