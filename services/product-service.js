@@ -3,13 +3,11 @@ const ProductBatch = require("../models/productBatch-model");
 const Brand = require("../models/brand-model");
 
 async function addProduct(data) {
-    // Check if SKU already exists exactly as provided
     const existingSKU = await Product.findOne({ sku: data.sku });
     if (existingSKU) {
         throw new Error("SKU already exists. Please use a unique SKU.");
     }
 
-    // Fetch brand name using brandId
     const brand = await Brand.findById(data.brandId);
     if (!brand) {
         throw new Error("Brand not found");
@@ -17,21 +15,19 @@ async function addProduct(data) {
 
     const brandObj = { id: brand._id, name: brand.name };
 
-    // Create Product
     const product = await Product.create({
         name: data.name,
-        sku: data.sku, // keep as provided
+        sku: data.sku, 
         brand: brandObj,
         buyingCost: data.buyingCost,
         sellingCost: data.sellingCost,
         totalQuantity: data.totalQuantity
     });
 
-    // Create ProductBatch
     const productBatch = await ProductBatch.create({
         productId: product._id,
         name: data.name,
-        sku: data.sku, // keep as provided
+        sku: data.sku, 
         brand: brandObj,
         buyingCost: data.buyingCost,
         sellingCost: data.sellingCost,
@@ -68,7 +64,6 @@ async function getAllProducts(page = 1, limit = 10) {
         }
     };
 }
-
 
 
 async function getProductById(id) {
