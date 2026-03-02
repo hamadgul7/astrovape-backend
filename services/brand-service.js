@@ -59,7 +59,7 @@ async function searchBrands({ pageNo, limit, search }) {
         const escapedSearch = escapeRegex(search);
         filter.name = {
             $regex: escapedSearch,
-            $options: "i" // case-insensitive
+            $options: "i" 
         };
     }
 
