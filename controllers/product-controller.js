@@ -3,7 +3,7 @@ const productService = require("../services/product-service");
 async function addProduct(req, res) {
     try {
         const data = req.body;
-        const result = await ProductService.addProduct(data);
+        const result = await productService.addProduct(data);
         res.status(201).json({
             message: "Product added successfully",
             product: result.product,
@@ -78,10 +78,37 @@ async function deleteProduct(req, res) {
     }
 }
 
+async function searchProducts(req, res) {
+    try {
+        const { pageNo, limit, search } = req.query;
+
+        const result = await productService.searchProducts({
+            pageNo,
+            limit,
+            search
+        });
+
+        return res.status(200).json({
+            success: true,
+            message: "Products retrieved successfully",
+            data: result.products,
+            meta: result.meta
+        });
+
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: "Error searching products",
+            error: error.message
+        });
+    }
+}
+
 module.exports = {
     addProduct,
     getAllProducts,
     getProductById,
     updateProduct,
-    deleteProduct
+    deleteProduct,
+    searchProducts
 };

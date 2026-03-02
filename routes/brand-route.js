@@ -5,6 +5,7 @@ const verifyToken = require('../middlewares/verifyToken');
 
 router.post("/add", verifyToken, brandController.addBrand);
 router.get("/all", verifyToken, brandController.getAllBrands);
+router.get("/search", verifyToken, brandController.searchBrands);
 router.get("/:id", verifyToken, brandController.getBrand);
 router.put("/update/:id", verifyToken, brandController.updateBrand);
 router.delete("/delete/:id", verifyToken, brandController.deleteBrand);

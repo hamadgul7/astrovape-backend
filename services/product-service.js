@@ -124,10 +124,50 @@ async function deleteProduct(id) {
 }
 
 
+const escapeRegex = (text) => {
+    return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+};
+
+
+async function searchProducts({ pageNo, limit, search }) {
+    const pageNumber = parseInt(pageNo) || 1;
+    const pageLimit = parseInt(limit) || 10;
+    const skip = (pageNumber - 1) * pageLimit;
+
+    let filter = {};
+
+    if (search) {
+        const escapedSearch = escapeRegex(search);
+        filter.name = {
+            $regex: escapedSearch,
+            $options: "i" // case-insensitive
+        };
+    }
+
+    const totalItems = await Product.countDocuments(filter);
+
+    const products = await Product.find(filter)
+        .sort({ createdAt: -1 })
+        .skip(skip)
+        .limit(pageLimit);
+
+    return {
+        products,
+        meta: {
+            totalItems,
+            totalPages: Math.ceil(totalItems / pageLimit),
+            currentPage: pageNumber,
+            pageSize: pageLimit
+        }
+    };
+}
+
+
 module.exports = {
     addProduct,
     getAllProducts,
     getProductById,
     updateProduct,
-    deleteProduct
+    deleteProduct,
+    searchProducts
 };

@@ -70,7 +70,6 @@ async function updateBrand(req, res) {
     }
 }
 
-
 async function deleteBrand(req, res) {
     try {
         const brand = await brandService.deleteBrand(req.params.id);
@@ -88,10 +87,37 @@ async function deleteBrand(req, res) {
     }
 }
 
+async function searchBrands(req, res) {
+    try {
+        const { pageNo, limit, search } = req.query;
+
+        const result = await brandService.searchBrands({
+            pageNo,
+            limit,
+            search
+        });
+
+        return res.status(200).json({
+            success: true,
+            message: "Brands retrieved successfully",
+            data: result.brands,
+            meta: result.meta
+        });
+
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: "Error searching brands",
+            error: error.message
+        });
+    }
+}
+
 module.exports = {
     addBrand,
     getAllBrands,
     getBrand,
     updateBrand,
-    deleteBrand
+    deleteBrand,
+    searchBrands
 };
