@@ -26,7 +26,7 @@ async function addProduct(data) {
 
     const productBatch = await ProductBatch.create({
         productId: product._id,
-        name: data.name,
+        name: "B-01",
         sku: data.sku, 
         brand: brandObj,
         buyingCost: data.buyingCost,

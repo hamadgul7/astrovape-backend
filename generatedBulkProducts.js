@@ -14,10 +14,10 @@ for (let i = 1; i <= 1000; i++) {
     const sku = `VAPE-PROD-${i.toString().padStart(4, "0")}`;
     const brandId = brands[Math.floor(Math.random() * brands.length)];
 
-    const sellingCost = Math.floor(Math.random() * (10000 - 2000 + 1)) + 2000; // 2000–10000
-    const buyingCost = sellingCost - (Math.floor(Math.random() * 800) + 200);   // 200–1000 less than sellingCost
+    const sellingCost = Math.floor(Math.random() * (10000 - 2000 + 1)) + 2000; 
+    const buyingCost = sellingCost - (Math.floor(Math.random() * 800) + 200);   
 
-    const totalQuantity = Math.floor(Math.random() * (50 - 30 + 1)) + 30; // 30–50
+    const totalQuantity = Math.floor(Math.random() * (50 - 30 + 1)) + 30; 
 
     products.push({
         name,
