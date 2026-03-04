@@ -1,0 +1,8002 @@
+[
+  {
+    "name": "Vape Product 1",
+    "sku": "VAPE-PROD-0001",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7329,
+    "sellingCost": 7895,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 2",
+    "sku": "VAPE-PROD-0002",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5341,
+    "sellingCost": 6153,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 3",
+    "sku": "VAPE-PROD-0003",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9472,
+    "sellingCost": 9841,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 4",
+    "sku": "VAPE-PROD-0004",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7504,
+    "sellingCost": 8150,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 5",
+    "sku": "VAPE-PROD-0005",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8042,
+    "sellingCost": 8823,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 6",
+    "sku": "VAPE-PROD-0006",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7716,
+    "sellingCost": 8430,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 7",
+    "sku": "VAPE-PROD-0007",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7440,
+    "sellingCost": 8143,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 8",
+    "sku": "VAPE-PROD-0008",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1822,
+    "sellingCost": 2548,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 9",
+    "sku": "VAPE-PROD-0009",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8235,
+    "sellingCost": 8442,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 10",
+    "sku": "VAPE-PROD-0010",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2227,
+    "sellingCost": 2444,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 11",
+    "sku": "VAPE-PROD-0011",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8879,
+    "sellingCost": 9278,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 12",
+    "sku": "VAPE-PROD-0012",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5271,
+    "sellingCost": 5887,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 13",
+    "sku": "VAPE-PROD-0013",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8893,
+    "sellingCost": 9605,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 14",
+    "sku": "VAPE-PROD-0014",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4156,
+    "sellingCost": 4408,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 15",
+    "sku": "VAPE-PROD-0015",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6668,
+    "sellingCost": 7118,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 16",
+    "sku": "VAPE-PROD-0016",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4608,
+    "sellingCost": 5581,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 17",
+    "sku": "VAPE-PROD-0017",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 9007,
+    "sellingCost": 9872,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 18",
+    "sku": "VAPE-PROD-0018",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8494,
+    "sellingCost": 8948,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 19",
+    "sku": "VAPE-PROD-0019",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8422,
+    "sellingCost": 8951,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 20",
+    "sku": "VAPE-PROD-0020",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8179,
+    "sellingCost": 9097,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 21",
+    "sku": "VAPE-PROD-0021",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4997,
+    "sellingCost": 5290,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 22",
+    "sku": "VAPE-PROD-0022",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6389,
+    "sellingCost": 6731,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 23",
+    "sku": "VAPE-PROD-0023",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6855,
+    "sellingCost": 7611,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 24",
+    "sku": "VAPE-PROD-0024",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2072,
+    "sellingCost": 2707,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 25",
+    "sku": "VAPE-PROD-0025",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6048,
+    "sellingCost": 6477,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 26",
+    "sku": "VAPE-PROD-0026",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8302,
+    "sellingCost": 9296,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 27",
+    "sku": "VAPE-PROD-0027",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8444,
+    "sellingCost": 9352,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 28",
+    "sku": "VAPE-PROD-0028",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4699,
+    "sellingCost": 5223,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 29",
+    "sku": "VAPE-PROD-0029",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4274,
+    "sellingCost": 4667,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 30",
+    "sku": "VAPE-PROD-0030",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5001,
+    "sellingCost": 5469,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 31",
+    "sku": "VAPE-PROD-0031",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5242,
+    "sellingCost": 5896,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 32",
+    "sku": "VAPE-PROD-0032",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3651,
+    "sellingCost": 4494,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 33",
+    "sku": "VAPE-PROD-0033",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8079,
+    "sellingCost": 8486,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 34",
+    "sku": "VAPE-PROD-0034",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2951,
+    "sellingCost": 3938,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 35",
+    "sku": "VAPE-PROD-0035",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8180,
+    "sellingCost": 9065,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 36",
+    "sku": "VAPE-PROD-0036",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5482,
+    "sellingCost": 5854,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 37",
+    "sku": "VAPE-PROD-0037",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5773,
+    "sellingCost": 6476,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 38",
+    "sku": "VAPE-PROD-0038",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7520,
+    "sellingCost": 8405,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 39",
+    "sku": "VAPE-PROD-0039",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2145,
+    "sellingCost": 2925,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 40",
+    "sku": "VAPE-PROD-0040",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4915,
+    "sellingCost": 5804,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 41",
+    "sku": "VAPE-PROD-0041",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7644,
+    "sellingCost": 8550,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 42",
+    "sku": "VAPE-PROD-0042",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4403,
+    "sellingCost": 4946,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 43",
+    "sku": "VAPE-PROD-0043",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5478,
+    "sellingCost": 6271,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 44",
+    "sku": "VAPE-PROD-0044",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8412,
+    "sellingCost": 8994,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 45",
+    "sku": "VAPE-PROD-0045",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4534,
+    "sellingCost": 5251,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 46",
+    "sku": "VAPE-PROD-0046",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4289,
+    "sellingCost": 4845,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 47",
+    "sku": "VAPE-PROD-0047",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2290,
+    "sellingCost": 2789,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 48",
+    "sku": "VAPE-PROD-0048",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2877,
+    "sellingCost": 3598,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 49",
+    "sku": "VAPE-PROD-0049",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5213,
+    "sellingCost": 5591,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 50",
+    "sku": "VAPE-PROD-0050",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5584,
+    "sellingCost": 6029,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 51",
+    "sku": "VAPE-PROD-0051",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2826,
+    "sellingCost": 3043,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 52",
+    "sku": "VAPE-PROD-0052",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2668,
+    "sellingCost": 3253,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 53",
+    "sku": "VAPE-PROD-0053",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6904,
+    "sellingCost": 7345,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 54",
+    "sku": "VAPE-PROD-0054",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3009,
+    "sellingCost": 3621,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 55",
+    "sku": "VAPE-PROD-0055",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6305,
+    "sellingCost": 6741,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 56",
+    "sku": "VAPE-PROD-0056",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7875,
+    "sellingCost": 8796,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 57",
+    "sku": "VAPE-PROD-0057",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8710,
+    "sellingCost": 9674,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 58",
+    "sku": "VAPE-PROD-0058",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6309,
+    "sellingCost": 6949,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 59",
+    "sku": "VAPE-PROD-0059",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3575,
+    "sellingCost": 4048,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 60",
+    "sku": "VAPE-PROD-0060",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3695,
+    "sellingCost": 4247,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 61",
+    "sku": "VAPE-PROD-0061",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2869,
+    "sellingCost": 3795,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 62",
+    "sku": "VAPE-PROD-0062",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5711,
+    "sellingCost": 6630,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 63",
+    "sku": "VAPE-PROD-0063",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1576,
+    "sellingCost": 2352,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 64",
+    "sku": "VAPE-PROD-0064",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9269,
+    "sellingCost": 9661,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 65",
+    "sku": "VAPE-PROD-0065",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5712,
+    "sellingCost": 5982,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 66",
+    "sku": "VAPE-PROD-0066",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4375,
+    "sellingCost": 5139,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 67",
+    "sku": "VAPE-PROD-0067",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5408,
+    "sellingCost": 5612,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 68",
+    "sku": "VAPE-PROD-0068",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5369,
+    "sellingCost": 5735,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 69",
+    "sku": "VAPE-PROD-0069",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7923,
+    "sellingCost": 8893,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 70",
+    "sku": "VAPE-PROD-0070",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4813,
+    "sellingCost": 5547,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 71",
+    "sku": "VAPE-PROD-0071",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3861,
+    "sellingCost": 4586,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 72",
+    "sku": "VAPE-PROD-0072",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7210,
+    "sellingCost": 7451,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 73",
+    "sku": "VAPE-PROD-0073",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9061,
+    "sellingCost": 9527,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 74",
+    "sku": "VAPE-PROD-0074",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2094,
+    "sellingCost": 2525,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 75",
+    "sku": "VAPE-PROD-0075",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9071,
+    "sellingCost": 9848,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 76",
+    "sku": "VAPE-PROD-0076",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7384,
+    "sellingCost": 8093,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 77",
+    "sku": "VAPE-PROD-0077",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3996,
+    "sellingCost": 4793,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 78",
+    "sku": "VAPE-PROD-0078",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2405,
+    "sellingCost": 2654,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 79",
+    "sku": "VAPE-PROD-0079",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3231,
+    "sellingCost": 3966,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 80",
+    "sku": "VAPE-PROD-0080",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6858,
+    "sellingCost": 7444,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 81",
+    "sku": "VAPE-PROD-0081",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3857,
+    "sellingCost": 4313,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 82",
+    "sku": "VAPE-PROD-0082",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4191,
+    "sellingCost": 4530,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 83",
+    "sku": "VAPE-PROD-0083",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7300,
+    "sellingCost": 7634,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 84",
+    "sku": "VAPE-PROD-0084",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7451,
+    "sellingCost": 8432,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 85",
+    "sku": "VAPE-PROD-0085",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6043,
+    "sellingCost": 6329,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 86",
+    "sku": "VAPE-PROD-0086",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7047,
+    "sellingCost": 7588,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 87",
+    "sku": "VAPE-PROD-0087",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6613,
+    "sellingCost": 6961,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 88",
+    "sku": "VAPE-PROD-0088",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8107,
+    "sellingCost": 8647,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 89",
+    "sku": "VAPE-PROD-0089",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6759,
+    "sellingCost": 7275,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 90",
+    "sku": "VAPE-PROD-0090",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8963,
+    "sellingCost": 9855,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 91",
+    "sku": "VAPE-PROD-0091",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6304,
+    "sellingCost": 6548,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 92",
+    "sku": "VAPE-PROD-0092",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7833,
+    "sellingCost": 8713,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 93",
+    "sku": "VAPE-PROD-0093",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 9600,
+    "sellingCost": 9892,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 94",
+    "sku": "VAPE-PROD-0094",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8508,
+    "sellingCost": 8806,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 95",
+    "sku": "VAPE-PROD-0095",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6303,
+    "sellingCost": 7261,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 96",
+    "sku": "VAPE-PROD-0096",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2016,
+    "sellingCost": 2652,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 97",
+    "sku": "VAPE-PROD-0097",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6622,
+    "sellingCost": 7295,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 98",
+    "sku": "VAPE-PROD-0098",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2509,
+    "sellingCost": 3105,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 99",
+    "sku": "VAPE-PROD-0099",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8025,
+    "sellingCost": 8872,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 100",
+    "sku": "VAPE-PROD-0100",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8286,
+    "sellingCost": 8515,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 101",
+    "sku": "VAPE-PROD-0101",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7493,
+    "sellingCost": 8194,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 102",
+    "sku": "VAPE-PROD-0102",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8301,
+    "sellingCost": 8906,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 103",
+    "sku": "VAPE-PROD-0103",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7534,
+    "sellingCost": 8478,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 104",
+    "sku": "VAPE-PROD-0104",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1674,
+    "sellingCost": 2073,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 105",
+    "sku": "VAPE-PROD-0105",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6434,
+    "sellingCost": 7414,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 106",
+    "sku": "VAPE-PROD-0106",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3151,
+    "sellingCost": 3865,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 107",
+    "sku": "VAPE-PROD-0107",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1873,
+    "sellingCost": 2716,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 108",
+    "sku": "VAPE-PROD-0108",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2630,
+    "sellingCost": 2877,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 109",
+    "sku": "VAPE-PROD-0109",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2887,
+    "sellingCost": 3123,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 110",
+    "sku": "VAPE-PROD-0110",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3991,
+    "sellingCost": 4701,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 111",
+    "sku": "VAPE-PROD-0111",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4823,
+    "sellingCost": 5603,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 112",
+    "sku": "VAPE-PROD-0112",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5969,
+    "sellingCost": 6461,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 113",
+    "sku": "VAPE-PROD-0113",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4923,
+    "sellingCost": 5355,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 114",
+    "sku": "VAPE-PROD-0114",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1973,
+    "sellingCost": 2822,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 115",
+    "sku": "VAPE-PROD-0115",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3790,
+    "sellingCost": 4076,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 116",
+    "sku": "VAPE-PROD-0116",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8783,
+    "sellingCost": 9537,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 117",
+    "sku": "VAPE-PROD-0117",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1741,
+    "sellingCost": 2479,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 118",
+    "sku": "VAPE-PROD-0118",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3421,
+    "sellingCost": 4175,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 119",
+    "sku": "VAPE-PROD-0119",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5520,
+    "sellingCost": 6135,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 120",
+    "sku": "VAPE-PROD-0120",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4571,
+    "sellingCost": 5077,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 121",
+    "sku": "VAPE-PROD-0121",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8226,
+    "sellingCost": 8738,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 122",
+    "sku": "VAPE-PROD-0122",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3875,
+    "sellingCost": 4487,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 123",
+    "sku": "VAPE-PROD-0123",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1564,
+    "sellingCost": 2140,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 124",
+    "sku": "VAPE-PROD-0124",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1499,
+    "sellingCost": 2090,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 125",
+    "sku": "VAPE-PROD-0125",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6947,
+    "sellingCost": 7706,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 126",
+    "sku": "VAPE-PROD-0126",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8923,
+    "sellingCost": 9836,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 127",
+    "sku": "VAPE-PROD-0127",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5579,
+    "sellingCost": 6101,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 128",
+    "sku": "VAPE-PROD-0128",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7923,
+    "sellingCost": 8435,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 129",
+    "sku": "VAPE-PROD-0129",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1740,
+    "sellingCost": 2394,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 130",
+    "sku": "VAPE-PROD-0130",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8345,
+    "sellingCost": 8655,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 131",
+    "sku": "VAPE-PROD-0131",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7236,
+    "sellingCost": 7798,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 132",
+    "sku": "VAPE-PROD-0132",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3097,
+    "sellingCost": 3623,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 133",
+    "sku": "VAPE-PROD-0133",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3202,
+    "sellingCost": 3592,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 134",
+    "sku": "VAPE-PROD-0134",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2129,
+    "sellingCost": 2996,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 135",
+    "sku": "VAPE-PROD-0135",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4774,
+    "sellingCost": 5409,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 136",
+    "sku": "VAPE-PROD-0136",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5765,
+    "sellingCost": 6756,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 137",
+    "sku": "VAPE-PROD-0137",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4819,
+    "sellingCost": 5634,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 138",
+    "sku": "VAPE-PROD-0138",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6351,
+    "sellingCost": 7079,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 139",
+    "sku": "VAPE-PROD-0139",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3022,
+    "sellingCost": 3832,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 140",
+    "sku": "VAPE-PROD-0140",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8140,
+    "sellingCost": 8530,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 141",
+    "sku": "VAPE-PROD-0141",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9226,
+    "sellingCost": 9594,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 142",
+    "sku": "VAPE-PROD-0142",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5417,
+    "sellingCost": 6136,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 143",
+    "sku": "VAPE-PROD-0143",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5244,
+    "sellingCost": 5652,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 144",
+    "sku": "VAPE-PROD-0144",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6639,
+    "sellingCost": 7376,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 145",
+    "sku": "VAPE-PROD-0145",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2411,
+    "sellingCost": 2730,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 146",
+    "sku": "VAPE-PROD-0146",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2296,
+    "sellingCost": 3173,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 147",
+    "sku": "VAPE-PROD-0147",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4077,
+    "sellingCost": 4783,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 148",
+    "sku": "VAPE-PROD-0148",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8036,
+    "sellingCost": 8289,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 149",
+    "sku": "VAPE-PROD-0149",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3715,
+    "sellingCost": 3917,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 150",
+    "sku": "VAPE-PROD-0150",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6572,
+    "sellingCost": 7061,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 151",
+    "sku": "VAPE-PROD-0151",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5066,
+    "sellingCost": 5829,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 152",
+    "sku": "VAPE-PROD-0152",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7407,
+    "sellingCost": 8272,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 153",
+    "sku": "VAPE-PROD-0153",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9212,
+    "sellingCost": 9511,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 154",
+    "sku": "VAPE-PROD-0154",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3408,
+    "sellingCost": 4189,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 155",
+    "sku": "VAPE-PROD-0155",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7213,
+    "sellingCost": 7501,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 156",
+    "sku": "VAPE-PROD-0156",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6790,
+    "sellingCost": 7282,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 157",
+    "sku": "VAPE-PROD-0157",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7867,
+    "sellingCost": 8464,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 158",
+    "sku": "VAPE-PROD-0158",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2226,
+    "sellingCost": 2977,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 159",
+    "sku": "VAPE-PROD-0159",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4559,
+    "sellingCost": 5549,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 160",
+    "sku": "VAPE-PROD-0160",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4970,
+    "sellingCost": 5488,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 161",
+    "sku": "VAPE-PROD-0161",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4598,
+    "sellingCost": 5266,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 162",
+    "sku": "VAPE-PROD-0162",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6614,
+    "sellingCost": 7182,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 163",
+    "sku": "VAPE-PROD-0163",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7321,
+    "sellingCost": 7673,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 164",
+    "sku": "VAPE-PROD-0164",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2477,
+    "sellingCost": 2763,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 165",
+    "sku": "VAPE-PROD-0165",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6976,
+    "sellingCost": 7754,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 166",
+    "sku": "VAPE-PROD-0166",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8851,
+    "sellingCost": 9467,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 167",
+    "sku": "VAPE-PROD-0167",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8601,
+    "sellingCost": 9463,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 168",
+    "sku": "VAPE-PROD-0168",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6165,
+    "sellingCost": 6862,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 169",
+    "sku": "VAPE-PROD-0169",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5287,
+    "sellingCost": 5989,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 170",
+    "sku": "VAPE-PROD-0170",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1935,
+    "sellingCost": 2240,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 171",
+    "sku": "VAPE-PROD-0171",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9409,
+    "sellingCost": 9860,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 172",
+    "sku": "VAPE-PROD-0172",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5282,
+    "sellingCost": 5744,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 173",
+    "sku": "VAPE-PROD-0173",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1958,
+    "sellingCost": 2817,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 174",
+    "sku": "VAPE-PROD-0174",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2689,
+    "sellingCost": 3181,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 175",
+    "sku": "VAPE-PROD-0175",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2558,
+    "sellingCost": 3179,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 176",
+    "sku": "VAPE-PROD-0176",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7111,
+    "sellingCost": 7624,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 177",
+    "sku": "VAPE-PROD-0177",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6337,
+    "sellingCost": 7288,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 178",
+    "sku": "VAPE-PROD-0178",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5120,
+    "sellingCost": 5429,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 179",
+    "sku": "VAPE-PROD-0179",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5788,
+    "sellingCost": 6639,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 180",
+    "sku": "VAPE-PROD-0180",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2171,
+    "sellingCost": 2966,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 181",
+    "sku": "VAPE-PROD-0181",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7827,
+    "sellingCost": 8039,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 182",
+    "sku": "VAPE-PROD-0182",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8645,
+    "sellingCost": 9248,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 183",
+    "sku": "VAPE-PROD-0183",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5193,
+    "sellingCost": 6129,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 184",
+    "sku": "VAPE-PROD-0184",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4388,
+    "sellingCost": 4831,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 185",
+    "sku": "VAPE-PROD-0185",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4483,
+    "sellingCost": 5260,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 186",
+    "sku": "VAPE-PROD-0186",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6232,
+    "sellingCost": 7087,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 187",
+    "sku": "VAPE-PROD-0187",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6440,
+    "sellingCost": 6763,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 188",
+    "sku": "VAPE-PROD-0188",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5184,
+    "sellingCost": 6115,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 189",
+    "sku": "VAPE-PROD-0189",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8459,
+    "sellingCost": 8722,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 190",
+    "sku": "VAPE-PROD-0190",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2020,
+    "sellingCost": 2465,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 191",
+    "sku": "VAPE-PROD-0191",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7744,
+    "sellingCost": 8550,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 192",
+    "sku": "VAPE-PROD-0192",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1771,
+    "sellingCost": 2157,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 193",
+    "sku": "VAPE-PROD-0193",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6871,
+    "sellingCost": 7453,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 194",
+    "sku": "VAPE-PROD-0194",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7258,
+    "sellingCost": 7669,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 195",
+    "sku": "VAPE-PROD-0195",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3661,
+    "sellingCost": 4120,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 196",
+    "sku": "VAPE-PROD-0196",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5659,
+    "sellingCost": 6158,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 197",
+    "sku": "VAPE-PROD-0197",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6529,
+    "sellingCost": 7369,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 198",
+    "sku": "VAPE-PROD-0198",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3759,
+    "sellingCost": 4229,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 199",
+    "sku": "VAPE-PROD-0199",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2707,
+    "sellingCost": 3649,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 200",
+    "sku": "VAPE-PROD-0200",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4584,
+    "sellingCost": 5577,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 201",
+    "sku": "VAPE-PROD-0201",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6267,
+    "sellingCost": 6863,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 202",
+    "sku": "VAPE-PROD-0202",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8699,
+    "sellingCost": 9308,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 203",
+    "sku": "VAPE-PROD-0203",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6129,
+    "sellingCost": 6740,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 204",
+    "sku": "VAPE-PROD-0204",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6996,
+    "sellingCost": 7554,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 205",
+    "sku": "VAPE-PROD-0205",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6438,
+    "sellingCost": 6696,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 206",
+    "sku": "VAPE-PROD-0206",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7456,
+    "sellingCost": 8386,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 207",
+    "sku": "VAPE-PROD-0207",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4419,
+    "sellingCost": 4771,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 208",
+    "sku": "VAPE-PROD-0208",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2998,
+    "sellingCost": 3911,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 209",
+    "sku": "VAPE-PROD-0209",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1691,
+    "sellingCost": 2349,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 210",
+    "sku": "VAPE-PROD-0210",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4016,
+    "sellingCost": 4640,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 211",
+    "sku": "VAPE-PROD-0211",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1352,
+    "sellingCost": 2168,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 212",
+    "sku": "VAPE-PROD-0212",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6017,
+    "sellingCost": 6690,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 213",
+    "sku": "VAPE-PROD-0213",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1298,
+    "sellingCost": 2279,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 214",
+    "sku": "VAPE-PROD-0214",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5937,
+    "sellingCost": 6785,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 215",
+    "sku": "VAPE-PROD-0215",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6415,
+    "sellingCost": 6656,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 216",
+    "sku": "VAPE-PROD-0216",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1283,
+    "sellingCost": 2056,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 217",
+    "sku": "VAPE-PROD-0217",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6622,
+    "sellingCost": 6956,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 218",
+    "sku": "VAPE-PROD-0218",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1161,
+    "sellingCost": 2012,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 219",
+    "sku": "VAPE-PROD-0219",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7029,
+    "sellingCost": 7539,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 220",
+    "sku": "VAPE-PROD-0220",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5072,
+    "sellingCost": 5556,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 221",
+    "sku": "VAPE-PROD-0221",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3827,
+    "sellingCost": 4676,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 222",
+    "sku": "VAPE-PROD-0222",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8588,
+    "sellingCost": 9064,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 223",
+    "sku": "VAPE-PROD-0223",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8273,
+    "sellingCost": 8786,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 224",
+    "sku": "VAPE-PROD-0224",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5104,
+    "sellingCost": 5911,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 225",
+    "sku": "VAPE-PROD-0225",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5325,
+    "sellingCost": 5792,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 226",
+    "sku": "VAPE-PROD-0226",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5654,
+    "sellingCost": 6116,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 227",
+    "sku": "VAPE-PROD-0227",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3748,
+    "sellingCost": 4246,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 228",
+    "sku": "VAPE-PROD-0228",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7246,
+    "sellingCost": 7672,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 229",
+    "sku": "VAPE-PROD-0229",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6492,
+    "sellingCost": 7112,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 230",
+    "sku": "VAPE-PROD-0230",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8840,
+    "sellingCost": 9263,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 231",
+    "sku": "VAPE-PROD-0231",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6160,
+    "sellingCost": 6923,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 232",
+    "sku": "VAPE-PROD-0232",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1673,
+    "sellingCost": 2333,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 233",
+    "sku": "VAPE-PROD-0233",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3664,
+    "sellingCost": 4314,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 234",
+    "sku": "VAPE-PROD-0234",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8606,
+    "sellingCost": 9263,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 235",
+    "sku": "VAPE-PROD-0235",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8796,
+    "sellingCost": 9378,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 236",
+    "sku": "VAPE-PROD-0236",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6647,
+    "sellingCost": 6853,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 237",
+    "sku": "VAPE-PROD-0237",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6385,
+    "sellingCost": 7285,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 238",
+    "sku": "VAPE-PROD-0238",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8599,
+    "sellingCost": 9220,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 239",
+    "sku": "VAPE-PROD-0239",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7041,
+    "sellingCost": 7800,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 240",
+    "sku": "VAPE-PROD-0240",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6428,
+    "sellingCost": 7190,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 241",
+    "sku": "VAPE-PROD-0241",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3713,
+    "sellingCost": 4177,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 242",
+    "sku": "VAPE-PROD-0242",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4947,
+    "sellingCost": 5710,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 243",
+    "sku": "VAPE-PROD-0243",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3572,
+    "sellingCost": 3932,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 244",
+    "sku": "VAPE-PROD-0244",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 9587,
+    "sellingCost": 9833,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 245",
+    "sku": "VAPE-PROD-0245",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5323,
+    "sellingCost": 5996,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 246",
+    "sku": "VAPE-PROD-0246",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7191,
+    "sellingCost": 7589,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 247",
+    "sku": "VAPE-PROD-0247",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2656,
+    "sellingCost": 3003,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 248",
+    "sku": "VAPE-PROD-0248",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9249,
+    "sellingCost": 9600,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 249",
+    "sku": "VAPE-PROD-0249",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4045,
+    "sellingCost": 4702,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 250",
+    "sku": "VAPE-PROD-0250",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8316,
+    "sellingCost": 9259,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 251",
+    "sku": "VAPE-PROD-0251",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3418,
+    "sellingCost": 3776,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 252",
+    "sku": "VAPE-PROD-0252",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3873,
+    "sellingCost": 4845,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 253",
+    "sku": "VAPE-PROD-0253",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7502,
+    "sellingCost": 7945,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 254",
+    "sku": "VAPE-PROD-0254",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6112,
+    "sellingCost": 6537,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 255",
+    "sku": "VAPE-PROD-0255",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7412,
+    "sellingCost": 8115,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 256",
+    "sku": "VAPE-PROD-0256",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5992,
+    "sellingCost": 6542,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 257",
+    "sku": "VAPE-PROD-0257",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8443,
+    "sellingCost": 9092,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 258",
+    "sku": "VAPE-PROD-0258",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1672,
+    "sellingCost": 2351,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 259",
+    "sku": "VAPE-PROD-0259",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2863,
+    "sellingCost": 3236,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 260",
+    "sku": "VAPE-PROD-0260",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5527,
+    "sellingCost": 6429,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 261",
+    "sku": "VAPE-PROD-0261",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3272,
+    "sellingCost": 3866,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 262",
+    "sku": "VAPE-PROD-0262",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5652,
+    "sellingCost": 6332,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 263",
+    "sku": "VAPE-PROD-0263",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7189,
+    "sellingCost": 7764,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 264",
+    "sku": "VAPE-PROD-0264",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2616,
+    "sellingCost": 3075,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 265",
+    "sku": "VAPE-PROD-0265",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5826,
+    "sellingCost": 6529,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 266",
+    "sku": "VAPE-PROD-0266",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5256,
+    "sellingCost": 6095,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 267",
+    "sku": "VAPE-PROD-0267",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6139,
+    "sellingCost": 6947,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 268",
+    "sku": "VAPE-PROD-0268",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5092,
+    "sellingCost": 5749,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 269",
+    "sku": "VAPE-PROD-0269",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4323,
+    "sellingCost": 5171,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 270",
+    "sku": "VAPE-PROD-0270",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4345,
+    "sellingCost": 4857,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 271",
+    "sku": "VAPE-PROD-0271",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6456,
+    "sellingCost": 7376,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 272",
+    "sku": "VAPE-PROD-0272",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5307,
+    "sellingCost": 6123,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 273",
+    "sku": "VAPE-PROD-0273",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1255,
+    "sellingCost": 2152,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 274",
+    "sku": "VAPE-PROD-0274",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2921,
+    "sellingCost": 3624,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 275",
+    "sku": "VAPE-PROD-0275",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5999,
+    "sellingCost": 6685,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 276",
+    "sku": "VAPE-PROD-0276",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2297,
+    "sellingCost": 2537,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 277",
+    "sku": "VAPE-PROD-0277",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7124,
+    "sellingCost": 7347,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 278",
+    "sku": "VAPE-PROD-0278",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8312,
+    "sellingCost": 8897,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 279",
+    "sku": "VAPE-PROD-0279",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5942,
+    "sellingCost": 6407,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 280",
+    "sku": "VAPE-PROD-0280",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4968,
+    "sellingCost": 5188,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 281",
+    "sku": "VAPE-PROD-0281",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2300,
+    "sellingCost": 2713,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 282",
+    "sku": "VAPE-PROD-0282",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7389,
+    "sellingCost": 7773,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 283",
+    "sku": "VAPE-PROD-0283",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4372,
+    "sellingCost": 5157,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 284",
+    "sku": "VAPE-PROD-0284",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2954,
+    "sellingCost": 3414,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 285",
+    "sku": "VAPE-PROD-0285",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6912,
+    "sellingCost": 7307,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 286",
+    "sku": "VAPE-PROD-0286",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3742,
+    "sellingCost": 4648,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 287",
+    "sku": "VAPE-PROD-0287",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2822,
+    "sellingCost": 3096,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 288",
+    "sku": "VAPE-PROD-0288",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4501,
+    "sellingCost": 4810,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 289",
+    "sku": "VAPE-PROD-0289",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6566,
+    "sellingCost": 7470,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 290",
+    "sku": "VAPE-PROD-0290",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2685,
+    "sellingCost": 3580,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 291",
+    "sku": "VAPE-PROD-0291",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8094,
+    "sellingCost": 8349,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 292",
+    "sku": "VAPE-PROD-0292",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4952,
+    "sellingCost": 5478,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 293",
+    "sku": "VAPE-PROD-0293",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6375,
+    "sellingCost": 7137,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 294",
+    "sku": "VAPE-PROD-0294",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4413,
+    "sellingCost": 5391,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 295",
+    "sku": "VAPE-PROD-0295",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1957,
+    "sellingCost": 2279,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 296",
+    "sku": "VAPE-PROD-0296",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6168,
+    "sellingCost": 7052,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 297",
+    "sku": "VAPE-PROD-0297",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9176,
+    "sellingCost": 9785,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 298",
+    "sku": "VAPE-PROD-0298",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4535,
+    "sellingCost": 5494,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 299",
+    "sku": "VAPE-PROD-0299",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7560,
+    "sellingCost": 8317,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 300",
+    "sku": "VAPE-PROD-0300",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9099,
+    "sellingCost": 9646,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 301",
+    "sku": "VAPE-PROD-0301",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3388,
+    "sellingCost": 3983,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 302",
+    "sku": "VAPE-PROD-0302",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6220,
+    "sellingCost": 6588,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 303",
+    "sku": "VAPE-PROD-0303",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5434,
+    "sellingCost": 5938,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 304",
+    "sku": "VAPE-PROD-0304",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 9065,
+    "sellingCost": 9340,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 305",
+    "sku": "VAPE-PROD-0305",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6414,
+    "sellingCost": 7403,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 306",
+    "sku": "VAPE-PROD-0306",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2777,
+    "sellingCost": 3245,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 307",
+    "sku": "VAPE-PROD-0307",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8327,
+    "sellingCost": 8544,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 308",
+    "sku": "VAPE-PROD-0308",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6555,
+    "sellingCost": 6972,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 309",
+    "sku": "VAPE-PROD-0309",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2939,
+    "sellingCost": 3278,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 310",
+    "sku": "VAPE-PROD-0310",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4866,
+    "sellingCost": 5703,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 311",
+    "sku": "VAPE-PROD-0311",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1746,
+    "sellingCost": 2553,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 312",
+    "sku": "VAPE-PROD-0312",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6858,
+    "sellingCost": 7193,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 313",
+    "sku": "VAPE-PROD-0313",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7391,
+    "sellingCost": 7612,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 314",
+    "sku": "VAPE-PROD-0314",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8560,
+    "sellingCost": 9083,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 315",
+    "sku": "VAPE-PROD-0315",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 9503,
+    "sellingCost": 9712,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 316",
+    "sku": "VAPE-PROD-0316",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4933,
+    "sellingCost": 5184,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 317",
+    "sku": "VAPE-PROD-0317",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3803,
+    "sellingCost": 4415,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 318",
+    "sku": "VAPE-PROD-0318",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6024,
+    "sellingCost": 6661,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 319",
+    "sku": "VAPE-PROD-0319",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6405,
+    "sellingCost": 7273,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 320",
+    "sku": "VAPE-PROD-0320",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7107,
+    "sellingCost": 7630,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 321",
+    "sku": "VAPE-PROD-0321",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5106,
+    "sellingCost": 5866,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 322",
+    "sku": "VAPE-PROD-0322",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9281,
+    "sellingCost": 9533,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 323",
+    "sku": "VAPE-PROD-0323",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5019,
+    "sellingCost": 5570,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 324",
+    "sku": "VAPE-PROD-0324",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4928,
+    "sellingCost": 5155,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 325",
+    "sku": "VAPE-PROD-0325",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6488,
+    "sellingCost": 7230,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 326",
+    "sku": "VAPE-PROD-0326",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1940,
+    "sellingCost": 2612,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 327",
+    "sku": "VAPE-PROD-0327",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9063,
+    "sellingCost": 9816,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 328",
+    "sku": "VAPE-PROD-0328",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5655,
+    "sellingCost": 6608,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 329",
+    "sku": "VAPE-PROD-0329",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2824,
+    "sellingCost": 3040,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 330",
+    "sku": "VAPE-PROD-0330",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6651,
+    "sellingCost": 7084,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 331",
+    "sku": "VAPE-PROD-0331",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9641,
+    "sellingCost": 9919,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 332",
+    "sku": "VAPE-PROD-0332",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3439,
+    "sellingCost": 3837,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 333",
+    "sku": "VAPE-PROD-0333",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4226,
+    "sellingCost": 4536,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 334",
+    "sku": "VAPE-PROD-0334",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6538,
+    "sellingCost": 7133,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 335",
+    "sku": "VAPE-PROD-0335",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6205,
+    "sellingCost": 6892,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 336",
+    "sku": "VAPE-PROD-0336",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1980,
+    "sellingCost": 2630,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 337",
+    "sku": "VAPE-PROD-0337",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3260,
+    "sellingCost": 4225,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 338",
+    "sku": "VAPE-PROD-0338",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8766,
+    "sellingCost": 8983,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 339",
+    "sku": "VAPE-PROD-0339",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8779,
+    "sellingCost": 9770,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 340",
+    "sku": "VAPE-PROD-0340",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3796,
+    "sellingCost": 4777,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 341",
+    "sku": "VAPE-PROD-0341",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1534,
+    "sellingCost": 2210,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 342",
+    "sku": "VAPE-PROD-0342",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3908,
+    "sellingCost": 4685,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 343",
+    "sku": "VAPE-PROD-0343",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7341,
+    "sellingCost": 8007,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 344",
+    "sku": "VAPE-PROD-0344",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5216,
+    "sellingCost": 5501,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 345",
+    "sku": "VAPE-PROD-0345",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8927,
+    "sellingCost": 9440,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 346",
+    "sku": "VAPE-PROD-0346",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2113,
+    "sellingCost": 2727,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 347",
+    "sku": "VAPE-PROD-0347",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7053,
+    "sellingCost": 7839,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 348",
+    "sku": "VAPE-PROD-0348",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1767,
+    "sellingCost": 2235,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 349",
+    "sku": "VAPE-PROD-0349",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7209,
+    "sellingCost": 7497,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 350",
+    "sku": "VAPE-PROD-0350",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8297,
+    "sellingCost": 8607,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 351",
+    "sku": "VAPE-PROD-0351",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4384,
+    "sellingCost": 4982,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 352",
+    "sku": "VAPE-PROD-0352",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2061,
+    "sellingCost": 2664,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 353",
+    "sku": "VAPE-PROD-0353",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2403,
+    "sellingCost": 3349,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 354",
+    "sku": "VAPE-PROD-0354",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6979,
+    "sellingCost": 7245,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 355",
+    "sku": "VAPE-PROD-0355",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6420,
+    "sellingCost": 6665,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 356",
+    "sku": "VAPE-PROD-0356",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5805,
+    "sellingCost": 6268,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 357",
+    "sku": "VAPE-PROD-0357",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8541,
+    "sellingCost": 9084,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 358",
+    "sku": "VAPE-PROD-0358",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7948,
+    "sellingCost": 8232,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 359",
+    "sku": "VAPE-PROD-0359",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5169,
+    "sellingCost": 5391,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 360",
+    "sku": "VAPE-PROD-0360",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4022,
+    "sellingCost": 4547,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 361",
+    "sku": "VAPE-PROD-0361",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4281,
+    "sellingCost": 4702,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 362",
+    "sku": "VAPE-PROD-0362",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3129,
+    "sellingCost": 3907,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 363",
+    "sku": "VAPE-PROD-0363",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7457,
+    "sellingCost": 7940,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 364",
+    "sku": "VAPE-PROD-0364",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2311,
+    "sellingCost": 2527,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 365",
+    "sku": "VAPE-PROD-0365",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4768,
+    "sellingCost": 5275,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 366",
+    "sku": "VAPE-PROD-0366",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1619,
+    "sellingCost": 2393,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 367",
+    "sku": "VAPE-PROD-0367",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2842,
+    "sellingCost": 3702,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 368",
+    "sku": "VAPE-PROD-0368",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8196,
+    "sellingCost": 8690,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 369",
+    "sku": "VAPE-PROD-0369",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7279,
+    "sellingCost": 8104,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 370",
+    "sku": "VAPE-PROD-0370",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9195,
+    "sellingCost": 9934,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 371",
+    "sku": "VAPE-PROD-0371",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9070,
+    "sellingCost": 9291,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 372",
+    "sku": "VAPE-PROD-0372",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5290,
+    "sellingCost": 6219,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 373",
+    "sku": "VAPE-PROD-0373",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9181,
+    "sellingCost": 9411,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 374",
+    "sku": "VAPE-PROD-0374",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8197,
+    "sellingCost": 8614,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 375",
+    "sku": "VAPE-PROD-0375",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8326,
+    "sellingCost": 9280,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 376",
+    "sku": "VAPE-PROD-0376",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3004,
+    "sellingCost": 3333,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 377",
+    "sku": "VAPE-PROD-0377",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4249,
+    "sellingCost": 5137,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 378",
+    "sku": "VAPE-PROD-0378",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8350,
+    "sellingCost": 9153,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 379",
+    "sku": "VAPE-PROD-0379",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7608,
+    "sellingCost": 8224,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 380",
+    "sku": "VAPE-PROD-0380",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3840,
+    "sellingCost": 4813,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 381",
+    "sku": "VAPE-PROD-0381",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2447,
+    "sellingCost": 2827,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 382",
+    "sku": "VAPE-PROD-0382",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1726,
+    "sellingCost": 2429,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 383",
+    "sku": "VAPE-PROD-0383",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7277,
+    "sellingCost": 8228,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 384",
+    "sku": "VAPE-PROD-0384",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3528,
+    "sellingCost": 4419,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 385",
+    "sku": "VAPE-PROD-0385",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4902,
+    "sellingCost": 5210,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 386",
+    "sku": "VAPE-PROD-0386",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8472,
+    "sellingCost": 9414,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 387",
+    "sku": "VAPE-PROD-0387",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5550,
+    "sellingCost": 6094,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 388",
+    "sku": "VAPE-PROD-0388",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2315,
+    "sellingCost": 2694,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 389",
+    "sku": "VAPE-PROD-0389",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5995,
+    "sellingCost": 6366,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 390",
+    "sku": "VAPE-PROD-0390",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7396,
+    "sellingCost": 8006,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 391",
+    "sku": "VAPE-PROD-0391",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3777,
+    "sellingCost": 4276,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 392",
+    "sku": "VAPE-PROD-0392",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 9301,
+    "sellingCost": 9685,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 393",
+    "sku": "VAPE-PROD-0393",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7887,
+    "sellingCost": 8654,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 394",
+    "sku": "VAPE-PROD-0394",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3691,
+    "sellingCost": 4074,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 395",
+    "sku": "VAPE-PROD-0395",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3390,
+    "sellingCost": 3603,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 396",
+    "sku": "VAPE-PROD-0396",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9278,
+    "sellingCost": 9578,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 397",
+    "sku": "VAPE-PROD-0397",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2136,
+    "sellingCost": 2791,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 398",
+    "sku": "VAPE-PROD-0398",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6721,
+    "sellingCost": 7209,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 399",
+    "sku": "VAPE-PROD-0399",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1741,
+    "sellingCost": 2705,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 400",
+    "sku": "VAPE-PROD-0400",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2791,
+    "sellingCost": 3195,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 401",
+    "sku": "VAPE-PROD-0401",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8383,
+    "sellingCost": 9240,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 402",
+    "sku": "VAPE-PROD-0402",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7181,
+    "sellingCost": 8058,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 403",
+    "sku": "VAPE-PROD-0403",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4573,
+    "sellingCost": 5137,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 404",
+    "sku": "VAPE-PROD-0404",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6254,
+    "sellingCost": 6856,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 405",
+    "sku": "VAPE-PROD-0405",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2831,
+    "sellingCost": 3276,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 406",
+    "sku": "VAPE-PROD-0406",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8718,
+    "sellingCost": 9246,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 407",
+    "sku": "VAPE-PROD-0407",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8108,
+    "sellingCost": 9008,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 408",
+    "sku": "VAPE-PROD-0408",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2910,
+    "sellingCost": 3123,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 409",
+    "sku": "VAPE-PROD-0409",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8336,
+    "sellingCost": 8827,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 410",
+    "sku": "VAPE-PROD-0410",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8103,
+    "sellingCost": 8455,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 411",
+    "sku": "VAPE-PROD-0411",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7890,
+    "sellingCost": 8572,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 412",
+    "sku": "VAPE-PROD-0412",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5246,
+    "sellingCost": 5811,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 413",
+    "sku": "VAPE-PROD-0413",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7552,
+    "sellingCost": 8033,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 414",
+    "sku": "VAPE-PROD-0414",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3592,
+    "sellingCost": 4058,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 415",
+    "sku": "VAPE-PROD-0415",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8017,
+    "sellingCost": 8432,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 416",
+    "sku": "VAPE-PROD-0416",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5238,
+    "sellingCost": 5764,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 417",
+    "sku": "VAPE-PROD-0417",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2939,
+    "sellingCost": 3849,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 418",
+    "sku": "VAPE-PROD-0418",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5056,
+    "sellingCost": 5411,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 419",
+    "sku": "VAPE-PROD-0419",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6372,
+    "sellingCost": 7099,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 420",
+    "sku": "VAPE-PROD-0420",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6285,
+    "sellingCost": 6728,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 421",
+    "sku": "VAPE-PROD-0421",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4503,
+    "sellingCost": 5399,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 422",
+    "sku": "VAPE-PROD-0422",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7233,
+    "sellingCost": 7754,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 423",
+    "sku": "VAPE-PROD-0423",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7012,
+    "sellingCost": 7899,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 424",
+    "sku": "VAPE-PROD-0424",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6663,
+    "sellingCost": 7572,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 425",
+    "sku": "VAPE-PROD-0425",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2629,
+    "sellingCost": 3179,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 426",
+    "sku": "VAPE-PROD-0426",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5607,
+    "sellingCost": 6037,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 427",
+    "sku": "VAPE-PROD-0427",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3265,
+    "sellingCost": 4162,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 428",
+    "sku": "VAPE-PROD-0428",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2949,
+    "sellingCost": 3879,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 429",
+    "sku": "VAPE-PROD-0429",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5677,
+    "sellingCost": 6022,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 430",
+    "sku": "VAPE-PROD-0430",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1193,
+    "sellingCost": 2064,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 431",
+    "sku": "VAPE-PROD-0431",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6747,
+    "sellingCost": 7665,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 432",
+    "sku": "VAPE-PROD-0432",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5872,
+    "sellingCost": 6745,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 433",
+    "sku": "VAPE-PROD-0433",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7065,
+    "sellingCost": 7380,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 434",
+    "sku": "VAPE-PROD-0434",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8877,
+    "sellingCost": 9314,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 435",
+    "sku": "VAPE-PROD-0435",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8100,
+    "sellingCost": 8557,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 436",
+    "sku": "VAPE-PROD-0436",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8059,
+    "sellingCost": 9012,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 437",
+    "sku": "VAPE-PROD-0437",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5415,
+    "sellingCost": 5883,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 438",
+    "sku": "VAPE-PROD-0438",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6332,
+    "sellingCost": 7050,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 439",
+    "sku": "VAPE-PROD-0439",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3703,
+    "sellingCost": 4662,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 440",
+    "sku": "VAPE-PROD-0440",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4405,
+    "sellingCost": 4907,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 441",
+    "sku": "VAPE-PROD-0441",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2466,
+    "sellingCost": 3289,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 442",
+    "sku": "VAPE-PROD-0442",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4594,
+    "sellingCost": 5064,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 443",
+    "sku": "VAPE-PROD-0443",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6920,
+    "sellingCost": 7140,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 444",
+    "sku": "VAPE-PROD-0444",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7097,
+    "sellingCost": 7863,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 445",
+    "sku": "VAPE-PROD-0445",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7677,
+    "sellingCost": 8062,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 446",
+    "sku": "VAPE-PROD-0446",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4714,
+    "sellingCost": 5336,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 447",
+    "sku": "VAPE-PROD-0447",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1978,
+    "sellingCost": 2719,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 448",
+    "sku": "VAPE-PROD-0448",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3169,
+    "sellingCost": 3777,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 449",
+    "sku": "VAPE-PROD-0449",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8842,
+    "sellingCost": 9569,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 450",
+    "sku": "VAPE-PROD-0450",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6626,
+    "sellingCost": 7285,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 451",
+    "sku": "VAPE-PROD-0451",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4073,
+    "sellingCost": 4831,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 452",
+    "sku": "VAPE-PROD-0452",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4489,
+    "sellingCost": 4778,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 453",
+    "sku": "VAPE-PROD-0453",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5760,
+    "sellingCost": 6663,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 454",
+    "sku": "VAPE-PROD-0454",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8192,
+    "sellingCost": 8747,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 455",
+    "sku": "VAPE-PROD-0455",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6324,
+    "sellingCost": 6927,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 456",
+    "sku": "VAPE-PROD-0456",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1515,
+    "sellingCost": 2360,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 457",
+    "sku": "VAPE-PROD-0457",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3760,
+    "sellingCost": 4383,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 458",
+    "sku": "VAPE-PROD-0458",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8054,
+    "sellingCost": 8536,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 459",
+    "sku": "VAPE-PROD-0459",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6487,
+    "sellingCost": 7338,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 460",
+    "sku": "VAPE-PROD-0460",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1674,
+    "sellingCost": 2329,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 461",
+    "sku": "VAPE-PROD-0461",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5047,
+    "sellingCost": 5649,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 462",
+    "sku": "VAPE-PROD-0462",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4519,
+    "sellingCost": 4971,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 463",
+    "sku": "VAPE-PROD-0463",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6264,
+    "sellingCost": 6715,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 464",
+    "sku": "VAPE-PROD-0464",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8846,
+    "sellingCost": 9139,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 465",
+    "sku": "VAPE-PROD-0465",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6600,
+    "sellingCost": 7583,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 466",
+    "sku": "VAPE-PROD-0466",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3982,
+    "sellingCost": 4794,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 467",
+    "sku": "VAPE-PROD-0467",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3107,
+    "sellingCost": 3403,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 468",
+    "sku": "VAPE-PROD-0468",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7625,
+    "sellingCost": 8282,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 469",
+    "sku": "VAPE-PROD-0469",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2713,
+    "sellingCost": 3062,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 470",
+    "sku": "VAPE-PROD-0470",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8898,
+    "sellingCost": 9548,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 471",
+    "sku": "VAPE-PROD-0471",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3469,
+    "sellingCost": 4082,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 472",
+    "sku": "VAPE-PROD-0472",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2383,
+    "sellingCost": 3208,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 473",
+    "sku": "VAPE-PROD-0473",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4492,
+    "sellingCost": 5108,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 474",
+    "sku": "VAPE-PROD-0474",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2658,
+    "sellingCost": 3589,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 475",
+    "sku": "VAPE-PROD-0475",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8785,
+    "sellingCost": 9205,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 476",
+    "sku": "VAPE-PROD-0476",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2018,
+    "sellingCost": 2533,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 477",
+    "sku": "VAPE-PROD-0477",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1743,
+    "sellingCost": 2024,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 478",
+    "sku": "VAPE-PROD-0478",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5682,
+    "sellingCost": 6080,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 479",
+    "sku": "VAPE-PROD-0479",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5887,
+    "sellingCost": 6636,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 480",
+    "sku": "VAPE-PROD-0480",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7599,
+    "sellingCost": 8421,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 481",
+    "sku": "VAPE-PROD-0481",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8302,
+    "sellingCost": 8642,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 482",
+    "sku": "VAPE-PROD-0482",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8520,
+    "sellingCost": 8959,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 483",
+    "sku": "VAPE-PROD-0483",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4836,
+    "sellingCost": 5797,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 484",
+    "sku": "VAPE-PROD-0484",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3719,
+    "sellingCost": 3943,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 485",
+    "sku": "VAPE-PROD-0485",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3938,
+    "sellingCost": 4669,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 486",
+    "sku": "VAPE-PROD-0486",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8609,
+    "sellingCost": 9311,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 487",
+    "sku": "VAPE-PROD-0487",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2212,
+    "sellingCost": 2518,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 488",
+    "sku": "VAPE-PROD-0488",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7889,
+    "sellingCost": 8836,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 489",
+    "sku": "VAPE-PROD-0489",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1578,
+    "sellingCost": 2056,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 490",
+    "sku": "VAPE-PROD-0490",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8902,
+    "sellingCost": 9459,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 491",
+    "sku": "VAPE-PROD-0491",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8757,
+    "sellingCost": 9299,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 492",
+    "sku": "VAPE-PROD-0492",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2824,
+    "sellingCost": 3611,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 493",
+    "sku": "VAPE-PROD-0493",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6215,
+    "sellingCost": 6452,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 494",
+    "sku": "VAPE-PROD-0494",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3964,
+    "sellingCost": 4237,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 495",
+    "sku": "VAPE-PROD-0495",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1418,
+    "sellingCost": 2105,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 496",
+    "sku": "VAPE-PROD-0496",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7748,
+    "sellingCost": 8677,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 497",
+    "sku": "VAPE-PROD-0497",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7728,
+    "sellingCost": 8317,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 498",
+    "sku": "VAPE-PROD-0498",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3507,
+    "sellingCost": 4011,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 499",
+    "sku": "VAPE-PROD-0499",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7690,
+    "sellingCost": 8295,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 500",
+    "sku": "VAPE-PROD-0500",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3772,
+    "sellingCost": 4337,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 501",
+    "sku": "VAPE-PROD-0501",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4319,
+    "sellingCost": 5169,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 502",
+    "sku": "VAPE-PROD-0502",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5900,
+    "sellingCost": 6383,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 503",
+    "sku": "VAPE-PROD-0503",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8753,
+    "sellingCost": 9405,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 504",
+    "sku": "VAPE-PROD-0504",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6814,
+    "sellingCost": 7545,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 505",
+    "sku": "VAPE-PROD-0505",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6426,
+    "sellingCost": 6659,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 506",
+    "sku": "VAPE-PROD-0506",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9346,
+    "sellingCost": 9625,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 507",
+    "sku": "VAPE-PROD-0507",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5976,
+    "sellingCost": 6607,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 508",
+    "sku": "VAPE-PROD-0508",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6232,
+    "sellingCost": 6515,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 509",
+    "sku": "VAPE-PROD-0509",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8607,
+    "sellingCost": 8909,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 510",
+    "sku": "VAPE-PROD-0510",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9609,
+    "sellingCost": 9934,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 511",
+    "sku": "VAPE-PROD-0511",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4903,
+    "sellingCost": 5850,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 512",
+    "sku": "VAPE-PROD-0512",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6463,
+    "sellingCost": 7439,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 513",
+    "sku": "VAPE-PROD-0513",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4447,
+    "sellingCost": 5198,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 514",
+    "sku": "VAPE-PROD-0514",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4754,
+    "sellingCost": 5325,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 515",
+    "sku": "VAPE-PROD-0515",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4035,
+    "sellingCost": 4241,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 516",
+    "sku": "VAPE-PROD-0516",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6008,
+    "sellingCost": 6805,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 517",
+    "sku": "VAPE-PROD-0517",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2166,
+    "sellingCost": 2761,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 518",
+    "sku": "VAPE-PROD-0518",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7085,
+    "sellingCost": 7743,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 519",
+    "sku": "VAPE-PROD-0519",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2342,
+    "sellingCost": 3302,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 520",
+    "sku": "VAPE-PROD-0520",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4719,
+    "sellingCost": 5638,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 521",
+    "sku": "VAPE-PROD-0521",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8287,
+    "sellingCost": 8882,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 522",
+    "sku": "VAPE-PROD-0522",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4970,
+    "sellingCost": 5783,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 523",
+    "sku": "VAPE-PROD-0523",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8346,
+    "sellingCost": 8764,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 524",
+    "sku": "VAPE-PROD-0524",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3044,
+    "sellingCost": 3636,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 525",
+    "sku": "VAPE-PROD-0525",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3967,
+    "sellingCost": 4860,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 526",
+    "sku": "VAPE-PROD-0526",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2582,
+    "sellingCost": 2974,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 527",
+    "sku": "VAPE-PROD-0527",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6195,
+    "sellingCost": 7149,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 528",
+    "sku": "VAPE-PROD-0528",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5982,
+    "sellingCost": 6759,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 529",
+    "sku": "VAPE-PROD-0529",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5748,
+    "sellingCost": 6614,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 530",
+    "sku": "VAPE-PROD-0530",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8425,
+    "sellingCost": 9368,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 531",
+    "sku": "VAPE-PROD-0531",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3497,
+    "sellingCost": 4360,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 532",
+    "sku": "VAPE-PROD-0532",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2008,
+    "sellingCost": 2271,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 533",
+    "sku": "VAPE-PROD-0533",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9059,
+    "sellingCost": 9378,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 534",
+    "sku": "VAPE-PROD-0534",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4053,
+    "sellingCost": 4681,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 535",
+    "sku": "VAPE-PROD-0535",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5972,
+    "sellingCost": 6205,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 536",
+    "sku": "VAPE-PROD-0536",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5005,
+    "sellingCost": 5608,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 537",
+    "sku": "VAPE-PROD-0537",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8561,
+    "sellingCost": 8805,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 538",
+    "sku": "VAPE-PROD-0538",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3180,
+    "sellingCost": 3500,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 539",
+    "sku": "VAPE-PROD-0539",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8502,
+    "sellingCost": 9058,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 540",
+    "sku": "VAPE-PROD-0540",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5300,
+    "sellingCost": 5933,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 541",
+    "sku": "VAPE-PROD-0541",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3650,
+    "sellingCost": 4166,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 542",
+    "sku": "VAPE-PROD-0542",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7835,
+    "sellingCost": 8617,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 543",
+    "sku": "VAPE-PROD-0543",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7606,
+    "sellingCost": 8294,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 544",
+    "sku": "VAPE-PROD-0544",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2994,
+    "sellingCost": 3660,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 545",
+    "sku": "VAPE-PROD-0545",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2567,
+    "sellingCost": 2778,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 546",
+    "sku": "VAPE-PROD-0546",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2684,
+    "sellingCost": 3111,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 547",
+    "sku": "VAPE-PROD-0547",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2110,
+    "sellingCost": 2321,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 548",
+    "sku": "VAPE-PROD-0548",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7281,
+    "sellingCost": 8233,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 549",
+    "sku": "VAPE-PROD-0549",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6656,
+    "sellingCost": 7268,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 550",
+    "sku": "VAPE-PROD-0550",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3959,
+    "sellingCost": 4836,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 551",
+    "sku": "VAPE-PROD-0551",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8168,
+    "sellingCost": 9010,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 552",
+    "sku": "VAPE-PROD-0552",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3852,
+    "sellingCost": 4381,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 553",
+    "sku": "VAPE-PROD-0553",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2152,
+    "sellingCost": 3060,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 554",
+    "sku": "VAPE-PROD-0554",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5573,
+    "sellingCost": 6368,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 555",
+    "sku": "VAPE-PROD-0555",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6435,
+    "sellingCost": 7424,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 556",
+    "sku": "VAPE-PROD-0556",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2350,
+    "sellingCost": 3203,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 557",
+    "sku": "VAPE-PROD-0557",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1269,
+    "sellingCost": 2014,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 558",
+    "sku": "VAPE-PROD-0558",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8608,
+    "sellingCost": 9430,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 559",
+    "sku": "VAPE-PROD-0559",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6589,
+    "sellingCost": 6839,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 560",
+    "sku": "VAPE-PROD-0560",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2508,
+    "sellingCost": 2837,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 561",
+    "sku": "VAPE-PROD-0561",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2245,
+    "sellingCost": 2466,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 562",
+    "sku": "VAPE-PROD-0562",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6019,
+    "sellingCost": 6510,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 563",
+    "sku": "VAPE-PROD-0563",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3019,
+    "sellingCost": 3727,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 564",
+    "sku": "VAPE-PROD-0564",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4646,
+    "sellingCost": 5529,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 565",
+    "sku": "VAPE-PROD-0565",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8141,
+    "sellingCost": 8999,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 566",
+    "sku": "VAPE-PROD-0566",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7868,
+    "sellingCost": 8718,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 567",
+    "sku": "VAPE-PROD-0567",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3188,
+    "sellingCost": 3977,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 568",
+    "sku": "VAPE-PROD-0568",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2542,
+    "sellingCost": 3149,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 569",
+    "sku": "VAPE-PROD-0569",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1897,
+    "sellingCost": 2516,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 570",
+    "sku": "VAPE-PROD-0570",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7598,
+    "sellingCost": 8431,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 571",
+    "sku": "VAPE-PROD-0571",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8715,
+    "sellingCost": 9673,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 572",
+    "sku": "VAPE-PROD-0572",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5130,
+    "sellingCost": 5421,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 573",
+    "sku": "VAPE-PROD-0573",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6776,
+    "sellingCost": 7228,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 574",
+    "sku": "VAPE-PROD-0574",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3997,
+    "sellingCost": 4629,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 575",
+    "sku": "VAPE-PROD-0575",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7991,
+    "sellingCost": 8466,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 576",
+    "sku": "VAPE-PROD-0576",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1766,
+    "sellingCost": 2606,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 577",
+    "sku": "VAPE-PROD-0577",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6365,
+    "sellingCost": 7159,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 578",
+    "sku": "VAPE-PROD-0578",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7879,
+    "sellingCost": 8477,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 579",
+    "sku": "VAPE-PROD-0579",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8357,
+    "sellingCost": 8751,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 580",
+    "sku": "VAPE-PROD-0580",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6334,
+    "sellingCost": 6758,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 581",
+    "sku": "VAPE-PROD-0581",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7379,
+    "sellingCost": 7735,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 582",
+    "sku": "VAPE-PROD-0582",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4585,
+    "sellingCost": 4936,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 583",
+    "sku": "VAPE-PROD-0583",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8326,
+    "sellingCost": 8699,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 584",
+    "sku": "VAPE-PROD-0584",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8051,
+    "sellingCost": 8915,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 585",
+    "sku": "VAPE-PROD-0585",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5532,
+    "sellingCost": 5828,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 586",
+    "sku": "VAPE-PROD-0586",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9353,
+    "sellingCost": 9914,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 587",
+    "sku": "VAPE-PROD-0587",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8267,
+    "sellingCost": 8509,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 588",
+    "sku": "VAPE-PROD-0588",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2770,
+    "sellingCost": 3537,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 589",
+    "sku": "VAPE-PROD-0589",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6796,
+    "sellingCost": 7293,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 590",
+    "sku": "VAPE-PROD-0590",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6928,
+    "sellingCost": 7391,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 591",
+    "sku": "VAPE-PROD-0591",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7437,
+    "sellingCost": 8296,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 592",
+    "sku": "VAPE-PROD-0592",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5633,
+    "sellingCost": 6133,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 593",
+    "sku": "VAPE-PROD-0593",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6588,
+    "sellingCost": 7166,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 594",
+    "sku": "VAPE-PROD-0594",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5044,
+    "sellingCost": 5576,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 595",
+    "sku": "VAPE-PROD-0595",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8578,
+    "sellingCost": 8939,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 596",
+    "sku": "VAPE-PROD-0596",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7375,
+    "sellingCost": 7599,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 597",
+    "sku": "VAPE-PROD-0597",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3809,
+    "sellingCost": 4040,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 598",
+    "sku": "VAPE-PROD-0598",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4168,
+    "sellingCost": 4507,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 599",
+    "sku": "VAPE-PROD-0599",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4906,
+    "sellingCost": 5231,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 600",
+    "sku": "VAPE-PROD-0600",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2334,
+    "sellingCost": 2570,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 601",
+    "sku": "VAPE-PROD-0601",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8280,
+    "sellingCost": 8603,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 602",
+    "sku": "VAPE-PROD-0602",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2715,
+    "sellingCost": 3147,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 603",
+    "sku": "VAPE-PROD-0603",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7046,
+    "sellingCost": 7958,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 604",
+    "sku": "VAPE-PROD-0604",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9514,
+    "sellingCost": 9748,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 605",
+    "sku": "VAPE-PROD-0605",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1386,
+    "sellingCost": 2244,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 606",
+    "sku": "VAPE-PROD-0606",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8398,
+    "sellingCost": 8814,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 607",
+    "sku": "VAPE-PROD-0607",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3964,
+    "sellingCost": 4497,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 608",
+    "sku": "VAPE-PROD-0608",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2387,
+    "sellingCost": 2945,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 609",
+    "sku": "VAPE-PROD-0609",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7085,
+    "sellingCost": 7892,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 610",
+    "sku": "VAPE-PROD-0610",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1501,
+    "sellingCost": 2285,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 611",
+    "sku": "VAPE-PROD-0611",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8542,
+    "sellingCost": 8853,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 612",
+    "sku": "VAPE-PROD-0612",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7639,
+    "sellingCost": 8415,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 613",
+    "sku": "VAPE-PROD-0613",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1518,
+    "sellingCost": 2018,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 614",
+    "sku": "VAPE-PROD-0614",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7243,
+    "sellingCost": 7943,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 615",
+    "sku": "VAPE-PROD-0615",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3907,
+    "sellingCost": 4721,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 616",
+    "sku": "VAPE-PROD-0616",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3382,
+    "sellingCost": 4261,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 617",
+    "sku": "VAPE-PROD-0617",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3226,
+    "sellingCost": 3763,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 618",
+    "sku": "VAPE-PROD-0618",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3814,
+    "sellingCost": 4762,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 619",
+    "sku": "VAPE-PROD-0619",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3891,
+    "sellingCost": 4766,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 620",
+    "sku": "VAPE-PROD-0620",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8725,
+    "sellingCost": 9210,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 621",
+    "sku": "VAPE-PROD-0621",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7158,
+    "sellingCost": 8094,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 622",
+    "sku": "VAPE-PROD-0622",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6424,
+    "sellingCost": 7246,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 623",
+    "sku": "VAPE-PROD-0623",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4692,
+    "sellingCost": 5558,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 624",
+    "sku": "VAPE-PROD-0624",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5748,
+    "sellingCost": 6696,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 625",
+    "sku": "VAPE-PROD-0625",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4961,
+    "sellingCost": 5567,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 626",
+    "sku": "VAPE-PROD-0626",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2583,
+    "sellingCost": 3546,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 627",
+    "sku": "VAPE-PROD-0627",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6303,
+    "sellingCost": 6711,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 628",
+    "sku": "VAPE-PROD-0628",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7460,
+    "sellingCost": 7700,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 629",
+    "sku": "VAPE-PROD-0629",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8062,
+    "sellingCost": 8753,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 630",
+    "sku": "VAPE-PROD-0630",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3280,
+    "sellingCost": 3597,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 631",
+    "sku": "VAPE-PROD-0631",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6076,
+    "sellingCost": 6690,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 632",
+    "sku": "VAPE-PROD-0632",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9330,
+    "sellingCost": 9709,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 633",
+    "sku": "VAPE-PROD-0633",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7129,
+    "sellingCost": 7984,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 634",
+    "sku": "VAPE-PROD-0634",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7856,
+    "sellingCost": 8641,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 635",
+    "sku": "VAPE-PROD-0635",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2967,
+    "sellingCost": 3482,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 636",
+    "sku": "VAPE-PROD-0636",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7431,
+    "sellingCost": 7896,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 637",
+    "sku": "VAPE-PROD-0637",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7174,
+    "sellingCost": 7679,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 638",
+    "sku": "VAPE-PROD-0638",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5494,
+    "sellingCost": 6354,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 639",
+    "sku": "VAPE-PROD-0639",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4196,
+    "sellingCost": 4619,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 640",
+    "sku": "VAPE-PROD-0640",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4131,
+    "sellingCost": 5071,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 641",
+    "sku": "VAPE-PROD-0641",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8246,
+    "sellingCost": 8976,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 642",
+    "sku": "VAPE-PROD-0642",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5261,
+    "sellingCost": 5981,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 643",
+    "sku": "VAPE-PROD-0643",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4630,
+    "sellingCost": 5515,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 644",
+    "sku": "VAPE-PROD-0644",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3063,
+    "sellingCost": 4008,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 645",
+    "sku": "VAPE-PROD-0645",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6822,
+    "sellingCost": 7819,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 646",
+    "sku": "VAPE-PROD-0646",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3178,
+    "sellingCost": 3588,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 647",
+    "sku": "VAPE-PROD-0647",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3586,
+    "sellingCost": 3823,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 648",
+    "sku": "VAPE-PROD-0648",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8756,
+    "sellingCost": 9061,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 649",
+    "sku": "VAPE-PROD-0649",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8193,
+    "sellingCost": 8656,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 650",
+    "sku": "VAPE-PROD-0650",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1520,
+    "sellingCost": 2225,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 651",
+    "sku": "VAPE-PROD-0651",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2446,
+    "sellingCost": 3120,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 652",
+    "sku": "VAPE-PROD-0652",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8177,
+    "sellingCost": 8719,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 653",
+    "sku": "VAPE-PROD-0653",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6577,
+    "sellingCost": 6976,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 654",
+    "sku": "VAPE-PROD-0654",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8351,
+    "sellingCost": 8652,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 655",
+    "sku": "VAPE-PROD-0655",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1341,
+    "sellingCost": 2314,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 656",
+    "sku": "VAPE-PROD-0656",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6860,
+    "sellingCost": 7593,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 657",
+    "sku": "VAPE-PROD-0657",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8919,
+    "sellingCost": 9877,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 658",
+    "sku": "VAPE-PROD-0658",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8573,
+    "sellingCost": 9217,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 659",
+    "sku": "VAPE-PROD-0659",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6373,
+    "sellingCost": 6694,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 660",
+    "sku": "VAPE-PROD-0660",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9190,
+    "sellingCost": 9979,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 661",
+    "sku": "VAPE-PROD-0661",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8723,
+    "sellingCost": 9606,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 662",
+    "sku": "VAPE-PROD-0662",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9098,
+    "sellingCost": 9689,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 663",
+    "sku": "VAPE-PROD-0663",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7158,
+    "sellingCost": 8013,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 664",
+    "sku": "VAPE-PROD-0664",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8118,
+    "sellingCost": 8988,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 665",
+    "sku": "VAPE-PROD-0665",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2923,
+    "sellingCost": 3157,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 666",
+    "sku": "VAPE-PROD-0666",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8002,
+    "sellingCost": 8867,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 667",
+    "sku": "VAPE-PROD-0667",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6694,
+    "sellingCost": 7650,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 668",
+    "sku": "VAPE-PROD-0668",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9673,
+    "sellingCost": 9900,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 669",
+    "sku": "VAPE-PROD-0669",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7682,
+    "sellingCost": 8370,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 670",
+    "sku": "VAPE-PROD-0670",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1908,
+    "sellingCost": 2348,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 671",
+    "sku": "VAPE-PROD-0671",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1405,
+    "sellingCost": 2298,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 672",
+    "sku": "VAPE-PROD-0672",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2017,
+    "sellingCost": 2593,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 673",
+    "sku": "VAPE-PROD-0673",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2520,
+    "sellingCost": 2753,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 674",
+    "sku": "VAPE-PROD-0674",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8259,
+    "sellingCost": 9137,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 675",
+    "sku": "VAPE-PROD-0675",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2643,
+    "sellingCost": 3242,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 676",
+    "sku": "VAPE-PROD-0676",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2326,
+    "sellingCost": 2789,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 677",
+    "sku": "VAPE-PROD-0677",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9029,
+    "sellingCost": 9617,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 678",
+    "sku": "VAPE-PROD-0678",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4985,
+    "sellingCost": 5789,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 679",
+    "sku": "VAPE-PROD-0679",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2045,
+    "sellingCost": 2285,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 680",
+    "sku": "VAPE-PROD-0680",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1798,
+    "sellingCost": 2356,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 681",
+    "sku": "VAPE-PROD-0681",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7026,
+    "sellingCost": 7700,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 682",
+    "sku": "VAPE-PROD-0682",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7937,
+    "sellingCost": 8571,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 683",
+    "sku": "VAPE-PROD-0683",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2147,
+    "sellingCost": 2960,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 684",
+    "sku": "VAPE-PROD-0684",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3010,
+    "sellingCost": 3619,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 685",
+    "sku": "VAPE-PROD-0685",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4497,
+    "sellingCost": 4908,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 686",
+    "sku": "VAPE-PROD-0686",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1821,
+    "sellingCost": 2344,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 687",
+    "sku": "VAPE-PROD-0687",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9371,
+    "sellingCost": 9945,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 688",
+    "sku": "VAPE-PROD-0688",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3907,
+    "sellingCost": 4871,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 689",
+    "sku": "VAPE-PROD-0689",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1693,
+    "sellingCost": 2295,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 690",
+    "sku": "VAPE-PROD-0690",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7076,
+    "sellingCost": 8067,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 691",
+    "sku": "VAPE-PROD-0691",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5860,
+    "sellingCost": 6540,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 692",
+    "sku": "VAPE-PROD-0692",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1589,
+    "sellingCost": 2162,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 693",
+    "sku": "VAPE-PROD-0693",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7482,
+    "sellingCost": 7841,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 694",
+    "sku": "VAPE-PROD-0694",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7563,
+    "sellingCost": 8131,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 695",
+    "sku": "VAPE-PROD-0695",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2815,
+    "sellingCost": 3216,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 696",
+    "sku": "VAPE-PROD-0696",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4345,
+    "sellingCost": 4831,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 697",
+    "sku": "VAPE-PROD-0697",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3979,
+    "sellingCost": 4469,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 698",
+    "sku": "VAPE-PROD-0698",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1189,
+    "sellingCost": 2042,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 699",
+    "sku": "VAPE-PROD-0699",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5947,
+    "sellingCost": 6301,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 700",
+    "sku": "VAPE-PROD-0700",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5900,
+    "sellingCost": 6706,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 701",
+    "sku": "VAPE-PROD-0701",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8154,
+    "sellingCost": 8865,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 702",
+    "sku": "VAPE-PROD-0702",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2895,
+    "sellingCost": 3391,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 703",
+    "sku": "VAPE-PROD-0703",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6281,
+    "sellingCost": 6663,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 704",
+    "sku": "VAPE-PROD-0704",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5154,
+    "sellingCost": 5861,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 705",
+    "sku": "VAPE-PROD-0705",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7404,
+    "sellingCost": 8016,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 706",
+    "sku": "VAPE-PROD-0706",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6642,
+    "sellingCost": 7293,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 707",
+    "sku": "VAPE-PROD-0707",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7438,
+    "sellingCost": 7943,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 708",
+    "sku": "VAPE-PROD-0708",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1596,
+    "sellingCost": 2255,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 709",
+    "sku": "VAPE-PROD-0709",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8170,
+    "sellingCost": 9049,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 710",
+    "sku": "VAPE-PROD-0710",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1509,
+    "sellingCost": 2241,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 711",
+    "sku": "VAPE-PROD-0711",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7791,
+    "sellingCost": 8246,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 712",
+    "sku": "VAPE-PROD-0712",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5849,
+    "sellingCost": 6675,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 713",
+    "sku": "VAPE-PROD-0713",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2346,
+    "sellingCost": 3271,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 714",
+    "sku": "VAPE-PROD-0714",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6701,
+    "sellingCost": 7274,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 715",
+    "sku": "VAPE-PROD-0715",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6086,
+    "sellingCost": 6760,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 716",
+    "sku": "VAPE-PROD-0716",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5817,
+    "sellingCost": 6178,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 717",
+    "sku": "VAPE-PROD-0717",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3127,
+    "sellingCost": 3975,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 718",
+    "sku": "VAPE-PROD-0718",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6561,
+    "sellingCost": 7301,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 719",
+    "sku": "VAPE-PROD-0719",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6739,
+    "sellingCost": 7151,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 720",
+    "sku": "VAPE-PROD-0720",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6642,
+    "sellingCost": 7434,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 721",
+    "sku": "VAPE-PROD-0721",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3880,
+    "sellingCost": 4514,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 722",
+    "sku": "VAPE-PROD-0722",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8053,
+    "sellingCost": 8796,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 723",
+    "sku": "VAPE-PROD-0723",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3520,
+    "sellingCost": 4379,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 724",
+    "sku": "VAPE-PROD-0724",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6623,
+    "sellingCost": 7518,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 725",
+    "sku": "VAPE-PROD-0725",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2128,
+    "sellingCost": 2557,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 726",
+    "sku": "VAPE-PROD-0726",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4891,
+    "sellingCost": 5624,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 727",
+    "sku": "VAPE-PROD-0727",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1999,
+    "sellingCost": 2830,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 728",
+    "sku": "VAPE-PROD-0728",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8357,
+    "sellingCost": 8607,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 729",
+    "sku": "VAPE-PROD-0729",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3201,
+    "sellingCost": 3840,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 730",
+    "sku": "VAPE-PROD-0730",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2956,
+    "sellingCost": 3310,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 731",
+    "sku": "VAPE-PROD-0731",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6041,
+    "sellingCost": 6726,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 732",
+    "sku": "VAPE-PROD-0732",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8889,
+    "sellingCost": 9180,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 733",
+    "sku": "VAPE-PROD-0733",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5042,
+    "sellingCost": 5570,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 734",
+    "sku": "VAPE-PROD-0734",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8893,
+    "sellingCost": 9814,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 735",
+    "sku": "VAPE-PROD-0735",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4039,
+    "sellingCost": 4419,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 736",
+    "sku": "VAPE-PROD-0736",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1567,
+    "sellingCost": 2507,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 737",
+    "sku": "VAPE-PROD-0737",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7317,
+    "sellingCost": 8094,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 738",
+    "sku": "VAPE-PROD-0738",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6418,
+    "sellingCost": 6824,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 739",
+    "sku": "VAPE-PROD-0739",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6923,
+    "sellingCost": 7458,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 740",
+    "sku": "VAPE-PROD-0740",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5453,
+    "sellingCost": 6227,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 741",
+    "sku": "VAPE-PROD-0741",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7420,
+    "sellingCost": 8195,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 742",
+    "sku": "VAPE-PROD-0742",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7669,
+    "sellingCost": 7990,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 743",
+    "sku": "VAPE-PROD-0743",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3223,
+    "sellingCost": 3991,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 744",
+    "sku": "VAPE-PROD-0744",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8147,
+    "sellingCost": 8897,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 745",
+    "sku": "VAPE-PROD-0745",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4250,
+    "sellingCost": 5193,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 746",
+    "sku": "VAPE-PROD-0746",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7730,
+    "sellingCost": 8433,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 747",
+    "sku": "VAPE-PROD-0747",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5775,
+    "sellingCost": 6386,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 748",
+    "sku": "VAPE-PROD-0748",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8818,
+    "sellingCost": 9046,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 749",
+    "sku": "VAPE-PROD-0749",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9198,
+    "sellingCost": 9595,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 750",
+    "sku": "VAPE-PROD-0750",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8672,
+    "sellingCost": 8978,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 751",
+    "sku": "VAPE-PROD-0751",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1775,
+    "sellingCost": 2224,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 752",
+    "sku": "VAPE-PROD-0752",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2520,
+    "sellingCost": 3276,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 753",
+    "sku": "VAPE-PROD-0753",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3564,
+    "sellingCost": 3771,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 754",
+    "sku": "VAPE-PROD-0754",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2997,
+    "sellingCost": 3641,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 755",
+    "sku": "VAPE-PROD-0755",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7017,
+    "sellingCost": 7398,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 756",
+    "sku": "VAPE-PROD-0756",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5368,
+    "sellingCost": 5846,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 757",
+    "sku": "VAPE-PROD-0757",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8237,
+    "sellingCost": 8980,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 758",
+    "sku": "VAPE-PROD-0758",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1488,
+    "sellingCost": 2423,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 759",
+    "sku": "VAPE-PROD-0759",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6758,
+    "sellingCost": 7258,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 760",
+    "sku": "VAPE-PROD-0760",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5810,
+    "sellingCost": 6114,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 761",
+    "sku": "VAPE-PROD-0761",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1691,
+    "sellingCost": 2594,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 762",
+    "sku": "VAPE-PROD-0762",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7401,
+    "sellingCost": 8247,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 763",
+    "sku": "VAPE-PROD-0763",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6745,
+    "sellingCost": 7682,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 764",
+    "sku": "VAPE-PROD-0764",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7383,
+    "sellingCost": 8234,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 765",
+    "sku": "VAPE-PROD-0765",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2916,
+    "sellingCost": 3245,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 766",
+    "sku": "VAPE-PROD-0766",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6263,
+    "sellingCost": 6711,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 767",
+    "sku": "VAPE-PROD-0767",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5609,
+    "sellingCost": 6342,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 768",
+    "sku": "VAPE-PROD-0768",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 9006,
+    "sellingCost": 9707,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 769",
+    "sku": "VAPE-PROD-0769",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8915,
+    "sellingCost": 9191,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 770",
+    "sku": "VAPE-PROD-0770",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2592,
+    "sellingCost": 3462,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 771",
+    "sku": "VAPE-PROD-0771",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7932,
+    "sellingCost": 8715,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 772",
+    "sku": "VAPE-PROD-0772",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3917,
+    "sellingCost": 4516,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 773",
+    "sku": "VAPE-PROD-0773",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7944,
+    "sellingCost": 8565,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 774",
+    "sku": "VAPE-PROD-0774",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6934,
+    "sellingCost": 7516,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 775",
+    "sku": "VAPE-PROD-0775",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5438,
+    "sellingCost": 6266,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 776",
+    "sku": "VAPE-PROD-0776",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4493,
+    "sellingCost": 5345,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 777",
+    "sku": "VAPE-PROD-0777",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9325,
+    "sellingCost": 9603,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 778",
+    "sku": "VAPE-PROD-0778",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8219,
+    "sellingCost": 9050,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 779",
+    "sku": "VAPE-PROD-0779",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6162,
+    "sellingCost": 6662,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 780",
+    "sku": "VAPE-PROD-0780",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7515,
+    "sellingCost": 8479,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 781",
+    "sku": "VAPE-PROD-0781",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8892,
+    "sellingCost": 9310,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 782",
+    "sku": "VAPE-PROD-0782",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3922,
+    "sellingCost": 4864,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 783",
+    "sku": "VAPE-PROD-0783",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2378,
+    "sellingCost": 2729,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 784",
+    "sku": "VAPE-PROD-0784",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7340,
+    "sellingCost": 7670,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 785",
+    "sku": "VAPE-PROD-0785",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7211,
+    "sellingCost": 7903,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 786",
+    "sku": "VAPE-PROD-0786",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1343,
+    "sellingCost": 2275,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 787",
+    "sku": "VAPE-PROD-0787",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1480,
+    "sellingCost": 2053,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 788",
+    "sku": "VAPE-PROD-0788",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5768,
+    "sellingCost": 6025,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 789",
+    "sku": "VAPE-PROD-0789",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8954,
+    "sellingCost": 9742,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 790",
+    "sku": "VAPE-PROD-0790",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7298,
+    "sellingCost": 7842,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 791",
+    "sku": "VAPE-PROD-0791",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7105,
+    "sellingCost": 8062,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 792",
+    "sku": "VAPE-PROD-0792",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5967,
+    "sellingCost": 6438,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 793",
+    "sku": "VAPE-PROD-0793",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5064,
+    "sellingCost": 5562,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 794",
+    "sku": "VAPE-PROD-0794",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9130,
+    "sellingCost": 9888,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 795",
+    "sku": "VAPE-PROD-0795",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7049,
+    "sellingCost": 8022,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 796",
+    "sku": "VAPE-PROD-0796",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5372,
+    "sellingCost": 6033,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 797",
+    "sku": "VAPE-PROD-0797",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1742,
+    "sellingCost": 2202,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 798",
+    "sku": "VAPE-PROD-0798",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5282,
+    "sellingCost": 6019,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 799",
+    "sku": "VAPE-PROD-0799",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5466,
+    "sellingCost": 5859,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 800",
+    "sku": "VAPE-PROD-0800",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6374,
+    "sellingCost": 7027,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 801",
+    "sku": "VAPE-PROD-0801",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5774,
+    "sellingCost": 6027,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 802",
+    "sku": "VAPE-PROD-0802",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3787,
+    "sellingCost": 4057,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 803",
+    "sku": "VAPE-PROD-0803",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8921,
+    "sellingCost": 9250,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 804",
+    "sku": "VAPE-PROD-0804",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9519,
+    "sellingCost": 9793,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 805",
+    "sku": "VAPE-PROD-0805",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7976,
+    "sellingCost": 8845,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 806",
+    "sku": "VAPE-PROD-0806",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6484,
+    "sellingCost": 6768,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 807",
+    "sku": "VAPE-PROD-0807",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2020,
+    "sellingCost": 2260,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 808",
+    "sku": "VAPE-PROD-0808",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3794,
+    "sellingCost": 4071,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 809",
+    "sku": "VAPE-PROD-0809",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5052,
+    "sellingCost": 5582,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 810",
+    "sku": "VAPE-PROD-0810",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3846,
+    "sellingCost": 4323,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 811",
+    "sku": "VAPE-PROD-0811",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7794,
+    "sellingCost": 8614,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 812",
+    "sku": "VAPE-PROD-0812",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4312,
+    "sellingCost": 4926,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 813",
+    "sku": "VAPE-PROD-0813",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4986,
+    "sellingCost": 5772,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 814",
+    "sku": "VAPE-PROD-0814",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4698,
+    "sellingCost": 4976,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 815",
+    "sku": "VAPE-PROD-0815",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8764,
+    "sellingCost": 9111,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 816",
+    "sku": "VAPE-PROD-0816",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3443,
+    "sellingCost": 3719,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 817",
+    "sku": "VAPE-PROD-0817",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8089,
+    "sellingCost": 8437,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 818",
+    "sku": "VAPE-PROD-0818",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8175,
+    "sellingCost": 8712,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 819",
+    "sku": "VAPE-PROD-0819",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2376,
+    "sellingCost": 2960,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 820",
+    "sku": "VAPE-PROD-0820",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3659,
+    "sellingCost": 4476,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 821",
+    "sku": "VAPE-PROD-0821",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5308,
+    "sellingCost": 6235,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 822",
+    "sku": "VAPE-PROD-0822",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7283,
+    "sellingCost": 8197,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 823",
+    "sku": "VAPE-PROD-0823",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7500,
+    "sellingCost": 7851,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 824",
+    "sku": "VAPE-PROD-0824",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1948,
+    "sellingCost": 2723,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 825",
+    "sku": "VAPE-PROD-0825",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4999,
+    "sellingCost": 5967,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 826",
+    "sku": "VAPE-PROD-0826",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8420,
+    "sellingCost": 9079,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 827",
+    "sku": "VAPE-PROD-0827",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3027,
+    "sellingCost": 3400,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 828",
+    "sku": "VAPE-PROD-0828",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2238,
+    "sellingCost": 2731,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 829",
+    "sku": "VAPE-PROD-0829",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7359,
+    "sellingCost": 7856,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 830",
+    "sku": "VAPE-PROD-0830",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2908,
+    "sellingCost": 3656,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 831",
+    "sku": "VAPE-PROD-0831",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4165,
+    "sellingCost": 4851,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 832",
+    "sku": "VAPE-PROD-0832",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3955,
+    "sellingCost": 4208,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 833",
+    "sku": "VAPE-PROD-0833",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2499,
+    "sellingCost": 3002,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 834",
+    "sku": "VAPE-PROD-0834",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5389,
+    "sellingCost": 6290,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 835",
+    "sku": "VAPE-PROD-0835",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2591,
+    "sellingCost": 3005,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 836",
+    "sku": "VAPE-PROD-0836",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4387,
+    "sellingCost": 4961,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 837",
+    "sku": "VAPE-PROD-0837",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5395,
+    "sellingCost": 6358,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 838",
+    "sku": "VAPE-PROD-0838",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2377,
+    "sellingCost": 2665,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 839",
+    "sku": "VAPE-PROD-0839",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5301,
+    "sellingCost": 5890,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 840",
+    "sku": "VAPE-PROD-0840",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6508,
+    "sellingCost": 7073,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 841",
+    "sku": "VAPE-PROD-0841",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8568,
+    "sellingCost": 9120,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 842",
+    "sku": "VAPE-PROD-0842",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7512,
+    "sellingCost": 7983,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 843",
+    "sku": "VAPE-PROD-0843",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2027,
+    "sellingCost": 2662,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 844",
+    "sku": "VAPE-PROD-0844",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2531,
+    "sellingCost": 3189,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 845",
+    "sku": "VAPE-PROD-0845",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7514,
+    "sellingCost": 7968,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 846",
+    "sku": "VAPE-PROD-0846",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9316,
+    "sellingCost": 9609,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 847",
+    "sku": "VAPE-PROD-0847",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5611,
+    "sellingCost": 6488,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 848",
+    "sku": "VAPE-PROD-0848",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2054,
+    "sellingCost": 2494,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 849",
+    "sku": "VAPE-PROD-0849",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1857,
+    "sellingCost": 2843,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 850",
+    "sku": "VAPE-PROD-0850",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9183,
+    "sellingCost": 9576,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 851",
+    "sku": "VAPE-PROD-0851",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2055,
+    "sellingCost": 2701,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 852",
+    "sku": "VAPE-PROD-0852",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5766,
+    "sellingCost": 6350,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 853",
+    "sku": "VAPE-PROD-0853",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6840,
+    "sellingCost": 7306,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 854",
+    "sku": "VAPE-PROD-0854",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5891,
+    "sellingCost": 6166,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 855",
+    "sku": "VAPE-PROD-0855",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5817,
+    "sellingCost": 6610,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 856",
+    "sku": "VAPE-PROD-0856",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7406,
+    "sellingCost": 7708,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 857",
+    "sku": "VAPE-PROD-0857",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5545,
+    "sellingCost": 5805,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 858",
+    "sku": "VAPE-PROD-0858",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4793,
+    "sellingCost": 5110,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 859",
+    "sku": "VAPE-PROD-0859",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5711,
+    "sellingCost": 6160,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 860",
+    "sku": "VAPE-PROD-0860",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8735,
+    "sellingCost": 9253,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 861",
+    "sku": "VAPE-PROD-0861",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7292,
+    "sellingCost": 7892,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 862",
+    "sku": "VAPE-PROD-0862",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8696,
+    "sellingCost": 9617,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 863",
+    "sku": "VAPE-PROD-0863",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7046,
+    "sellingCost": 7266,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 864",
+    "sku": "VAPE-PROD-0864",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3122,
+    "sellingCost": 3522,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 865",
+    "sku": "VAPE-PROD-0865",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4759,
+    "sellingCost": 5753,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 866",
+    "sku": "VAPE-PROD-0866",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5861,
+    "sellingCost": 6496,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 867",
+    "sku": "VAPE-PROD-0867",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7020,
+    "sellingCost": 7939,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 868",
+    "sku": "VAPE-PROD-0868",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5754,
+    "sellingCost": 6378,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 869",
+    "sku": "VAPE-PROD-0869",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 9325,
+    "sellingCost": 9780,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 870",
+    "sku": "VAPE-PROD-0870",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3314,
+    "sellingCost": 3814,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 871",
+    "sku": "VAPE-PROD-0871",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5566,
+    "sellingCost": 6544,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 872",
+    "sku": "VAPE-PROD-0872",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7563,
+    "sellingCost": 8122,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 873",
+    "sku": "VAPE-PROD-0873",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6986,
+    "sellingCost": 7770,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 874",
+    "sku": "VAPE-PROD-0874",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7871,
+    "sellingCost": 8616,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 875",
+    "sku": "VAPE-PROD-0875",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5887,
+    "sellingCost": 6747,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 876",
+    "sku": "VAPE-PROD-0876",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4205,
+    "sellingCost": 5092,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 877",
+    "sku": "VAPE-PROD-0877",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5317,
+    "sellingCost": 5882,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 878",
+    "sku": "VAPE-PROD-0878",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4529,
+    "sellingCost": 4961,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 879",
+    "sku": "VAPE-PROD-0879",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6196,
+    "sellingCost": 6820,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 880",
+    "sku": "VAPE-PROD-0880",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9550,
+    "sellingCost": 9857,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 881",
+    "sku": "VAPE-PROD-0881",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9186,
+    "sellingCost": 9794,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 882",
+    "sku": "VAPE-PROD-0882",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2075,
+    "sellingCost": 2635,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 883",
+    "sku": "VAPE-PROD-0883",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7586,
+    "sellingCost": 7990,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 884",
+    "sku": "VAPE-PROD-0884",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1530,
+    "sellingCost": 2286,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 885",
+    "sku": "VAPE-PROD-0885",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4307,
+    "sellingCost": 4578,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 886",
+    "sku": "VAPE-PROD-0886",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1786,
+    "sellingCost": 2557,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 887",
+    "sku": "VAPE-PROD-0887",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6514,
+    "sellingCost": 6919,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 888",
+    "sku": "VAPE-PROD-0888",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7087,
+    "sellingCost": 7318,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 889",
+    "sku": "VAPE-PROD-0889",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8515,
+    "sellingCost": 9417,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 890",
+    "sku": "VAPE-PROD-0890",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2121,
+    "sellingCost": 2326,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 891",
+    "sku": "VAPE-PROD-0891",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3390,
+    "sellingCost": 4062,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 892",
+    "sku": "VAPE-PROD-0892",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6427,
+    "sellingCost": 6648,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 893",
+    "sku": "VAPE-PROD-0893",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7674,
+    "sellingCost": 7953,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 894",
+    "sku": "VAPE-PROD-0894",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7014,
+    "sellingCost": 7918,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 895",
+    "sku": "VAPE-PROD-0895",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5596,
+    "sellingCost": 5828,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 896",
+    "sku": "VAPE-PROD-0896",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 9588,
+    "sellingCost": 9849,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 897",
+    "sku": "VAPE-PROD-0897",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4899,
+    "sellingCost": 5468,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 898",
+    "sku": "VAPE-PROD-0898",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5978,
+    "sellingCost": 6194,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 899",
+    "sku": "VAPE-PROD-0899",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1912,
+    "sellingCost": 2372,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 900",
+    "sku": "VAPE-PROD-0900",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5051,
+    "sellingCost": 5972,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 901",
+    "sku": "VAPE-PROD-0901",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8463,
+    "sellingCost": 8721,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 902",
+    "sku": "VAPE-PROD-0902",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2708,
+    "sellingCost": 3186,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 903",
+    "sku": "VAPE-PROD-0903",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4769,
+    "sellingCost": 5169,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 904",
+    "sku": "VAPE-PROD-0904",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7485,
+    "sellingCost": 8068,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 905",
+    "sku": "VAPE-PROD-0905",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6107,
+    "sellingCost": 6834,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 906",
+    "sku": "VAPE-PROD-0906",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7485,
+    "sellingCost": 7823,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 907",
+    "sku": "VAPE-PROD-0907",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5779,
+    "sellingCost": 6685,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 908",
+    "sku": "VAPE-PROD-0908",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4753,
+    "sellingCost": 5254,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 909",
+    "sku": "VAPE-PROD-0909",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7561,
+    "sellingCost": 8252,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 910",
+    "sku": "VAPE-PROD-0910",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1458,
+    "sellingCost": 2279,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 911",
+    "sku": "VAPE-PROD-0911",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5062,
+    "sellingCost": 5361,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 912",
+    "sku": "VAPE-PROD-0912",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5776,
+    "sellingCost": 6417,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 913",
+    "sku": "VAPE-PROD-0913",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6746,
+    "sellingCost": 7047,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 914",
+    "sku": "VAPE-PROD-0914",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5916,
+    "sellingCost": 6585,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 915",
+    "sku": "VAPE-PROD-0915",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2878,
+    "sellingCost": 3813,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 916",
+    "sku": "VAPE-PROD-0916",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3826,
+    "sellingCost": 4446,
+    "totalQuantity": 43
+  },
+  {
+    "name": "Vape Product 917",
+    "sku": "VAPE-PROD-0917",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1220,
+    "sellingCost": 2176,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 918",
+    "sku": "VAPE-PROD-0918",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4072,
+    "sellingCost": 4867,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 919",
+    "sku": "VAPE-PROD-0919",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6987,
+    "sellingCost": 7406,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 920",
+    "sku": "VAPE-PROD-0920",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8811,
+    "sellingCost": 9427,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 921",
+    "sku": "VAPE-PROD-0921",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6617,
+    "sellingCost": 7215,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 922",
+    "sku": "VAPE-PROD-0922",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5175,
+    "sellingCost": 5405,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 923",
+    "sku": "VAPE-PROD-0923",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4203,
+    "sellingCost": 5152,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 924",
+    "sku": "VAPE-PROD-0924",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7116,
+    "sellingCost": 7800,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 925",
+    "sku": "VAPE-PROD-0925",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 8095,
+    "sellingCost": 9045,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 926",
+    "sku": "VAPE-PROD-0926",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9247,
+    "sellingCost": 9849,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 927",
+    "sku": "VAPE-PROD-0927",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4928,
+    "sellingCost": 5354,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 928",
+    "sku": "VAPE-PROD-0928",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4031,
+    "sellingCost": 4235,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 929",
+    "sku": "VAPE-PROD-0929",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4289,
+    "sellingCost": 5094,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 930",
+    "sku": "VAPE-PROD-0930",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3739,
+    "sellingCost": 4362,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 931",
+    "sku": "VAPE-PROD-0931",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3865,
+    "sellingCost": 4444,
+    "totalQuantity": 37
+  },
+  {
+    "name": "Vape Product 932",
+    "sku": "VAPE-PROD-0932",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4612,
+    "sellingCost": 5086,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 933",
+    "sku": "VAPE-PROD-0933",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5263,
+    "sellingCost": 5773,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 934",
+    "sku": "VAPE-PROD-0934",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2880,
+    "sellingCost": 3335,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 935",
+    "sku": "VAPE-PROD-0935",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5835,
+    "sellingCost": 6179,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 936",
+    "sku": "VAPE-PROD-0936",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5294,
+    "sellingCost": 5613,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 937",
+    "sku": "VAPE-PROD-0937",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6030,
+    "sellingCost": 6952,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 938",
+    "sku": "VAPE-PROD-0938",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5877,
+    "sellingCost": 6455,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 939",
+    "sku": "VAPE-PROD-0939",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1906,
+    "sellingCost": 2669,
+    "totalQuantity": 35
+  },
+  {
+    "name": "Vape Product 940",
+    "sku": "VAPE-PROD-0940",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2660,
+    "sellingCost": 3237,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 941",
+    "sku": "VAPE-PROD-0941",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4131,
+    "sellingCost": 4944,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 942",
+    "sku": "VAPE-PROD-0942",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 1685,
+    "sellingCost": 2007,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 943",
+    "sku": "VAPE-PROD-0943",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3569,
+    "sellingCost": 3961,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 944",
+    "sku": "VAPE-PROD-0944",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4219,
+    "sellingCost": 5171,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 945",
+    "sku": "VAPE-PROD-0945",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2958,
+    "sellingCost": 3222,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 946",
+    "sku": "VAPE-PROD-0946",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4955,
+    "sellingCost": 5849,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 947",
+    "sku": "VAPE-PROD-0947",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8398,
+    "sellingCost": 9298,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 948",
+    "sku": "VAPE-PROD-0948",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9330,
+    "sellingCost": 9709,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 949",
+    "sku": "VAPE-PROD-0949",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8554,
+    "sellingCost": 9195,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 950",
+    "sku": "VAPE-PROD-0950",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8097,
+    "sellingCost": 8367,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 951",
+    "sku": "VAPE-PROD-0951",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 4649,
+    "sellingCost": 5444,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 952",
+    "sku": "VAPE-PROD-0952",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7705,
+    "sellingCost": 7947,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 953",
+    "sku": "VAPE-PROD-0953",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5517,
+    "sellingCost": 6037,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 954",
+    "sku": "VAPE-PROD-0954",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 9574,
+    "sellingCost": 9930,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 955",
+    "sku": "VAPE-PROD-0955",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3366,
+    "sellingCost": 3683,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 956",
+    "sku": "VAPE-PROD-0956",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5737,
+    "sellingCost": 6586,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 957",
+    "sku": "VAPE-PROD-0957",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5294,
+    "sellingCost": 5811,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 958",
+    "sku": "VAPE-PROD-0958",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6771,
+    "sellingCost": 7281,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 959",
+    "sku": "VAPE-PROD-0959",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 2591,
+    "sellingCost": 3130,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 960",
+    "sku": "VAPE-PROD-0960",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8399,
+    "sellingCost": 8699,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 961",
+    "sku": "VAPE-PROD-0961",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2236,
+    "sellingCost": 2450,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 962",
+    "sku": "VAPE-PROD-0962",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3342,
+    "sellingCost": 3602,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 963",
+    "sku": "VAPE-PROD-0963",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4355,
+    "sellingCost": 5041,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 964",
+    "sku": "VAPE-PROD-0964",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7850,
+    "sellingCost": 8107,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 965",
+    "sku": "VAPE-PROD-0965",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5478,
+    "sellingCost": 6162,
+    "totalQuantity": 42
+  },
+  {
+    "name": "Vape Product 966",
+    "sku": "VAPE-PROD-0966",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2861,
+    "sellingCost": 3344,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 967",
+    "sku": "VAPE-PROD-0967",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 4530,
+    "sellingCost": 5344,
+    "totalQuantity": 38
+  },
+  {
+    "name": "Vape Product 968",
+    "sku": "VAPE-PROD-0968",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3210,
+    "sellingCost": 4122,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 969",
+    "sku": "VAPE-PROD-0969",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 7749,
+    "sellingCost": 8718,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 970",
+    "sku": "VAPE-PROD-0970",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5628,
+    "sellingCost": 6486,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 971",
+    "sku": "VAPE-PROD-0971",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 7247,
+    "sellingCost": 7856,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 972",
+    "sku": "VAPE-PROD-0972",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 2856,
+    "sellingCost": 3718,
+    "totalQuantity": 46
+  },
+  {
+    "name": "Vape Product 973",
+    "sku": "VAPE-PROD-0973",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 7310,
+    "sellingCost": 7768,
+    "totalQuantity": 30
+  },
+  {
+    "name": "Vape Product 974",
+    "sku": "VAPE-PROD-0974",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4580,
+    "sellingCost": 5229,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 975",
+    "sku": "VAPE-PROD-0975",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3359,
+    "sellingCost": 3887,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 976",
+    "sku": "VAPE-PROD-0976",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8772,
+    "sellingCost": 9268,
+    "totalQuantity": 49
+  },
+  {
+    "name": "Vape Product 977",
+    "sku": "VAPE-PROD-0977",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5814,
+    "sellingCost": 6752,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 978",
+    "sku": "VAPE-PROD-0978",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 6699,
+    "sellingCost": 7208,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 979",
+    "sku": "VAPE-PROD-0979",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1519,
+    "sellingCost": 2413,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 980",
+    "sku": "VAPE-PROD-0980",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 1598,
+    "sellingCost": 2064,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 981",
+    "sku": "VAPE-PROD-0981",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 1753,
+    "sellingCost": 2236,
+    "totalQuantity": 36
+  },
+  {
+    "name": "Vape Product 982",
+    "sku": "VAPE-PROD-0982",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5774,
+    "sellingCost": 6416,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 983",
+    "sku": "VAPE-PROD-0983",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 8037,
+    "sellingCost": 8472,
+    "totalQuantity": 41
+  },
+  {
+    "name": "Vape Product 984",
+    "sku": "VAPE-PROD-0984",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5526,
+    "sellingCost": 6459,
+    "totalQuantity": 44
+  },
+  {
+    "name": "Vape Product 985",
+    "sku": "VAPE-PROD-0985",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3443,
+    "sellingCost": 4174,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 986",
+    "sku": "VAPE-PROD-0986",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3892,
+    "sellingCost": 4785,
+    "totalQuantity": 45
+  },
+  {
+    "name": "Vape Product 987",
+    "sku": "VAPE-PROD-0987",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 3327,
+    "sellingCost": 3735,
+    "totalQuantity": 34
+  },
+  {
+    "name": "Vape Product 988",
+    "sku": "VAPE-PROD-0988",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 4033,
+    "sellingCost": 4438,
+    "totalQuantity": 32
+  },
+  {
+    "name": "Vape Product 989",
+    "sku": "VAPE-PROD-0989",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 6588,
+    "sellingCost": 7461,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 990",
+    "sku": "VAPE-PROD-0990",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3807,
+    "sellingCost": 4424,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 991",
+    "sku": "VAPE-PROD-0991",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 3118,
+    "sellingCost": 3854,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 992",
+    "sku": "VAPE-PROD-0992",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 9089,
+    "sellingCost": 9290,
+    "totalQuantity": 40
+  },
+  {
+    "name": "Vape Product 993",
+    "sku": "VAPE-PROD-0993",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 3161,
+    "sellingCost": 3727,
+    "totalQuantity": 31
+  },
+  {
+    "name": "Vape Product 994",
+    "sku": "VAPE-PROD-0994",
+    "brandId": "69a1c71ce400bec771a6aaf2",
+    "buyingCost": 5516,
+    "sellingCost": 6101,
+    "totalQuantity": 33
+  },
+  {
+    "name": "Vape Product 995",
+    "sku": "VAPE-PROD-0995",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 5507,
+    "sellingCost": 6382,
+    "totalQuantity": 48
+  },
+  {
+    "name": "Vape Product 996",
+    "sku": "VAPE-PROD-0996",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6018,
+    "sellingCost": 6464,
+    "totalQuantity": 50
+  },
+  {
+    "name": "Vape Product 997",
+    "sku": "VAPE-PROD-0997",
+    "brandId": "69a1c7c8e400bec771a6aaf5",
+    "buyingCost": 6291,
+    "sellingCost": 7139,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 998",
+    "sku": "VAPE-PROD-0998",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 5077,
+    "sellingCost": 5654,
+    "totalQuantity": 39
+  },
+  {
+    "name": "Vape Product 999",
+    "sku": "VAPE-PROD-0999",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 8193,
+    "sellingCost": 9120,
+    "totalQuantity": 47
+  },
+  {
+    "name": "Vape Product 1000",
+    "sku": "VAPE-PROD-1000",
+    "brandId": "69a44958021196f76b031ab4",
+    "buyingCost": 2100,
+    "sellingCost": 2958,
+    "totalQuantity": 42
+  }
+]

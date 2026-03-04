@@ -163,11 +163,61 @@ async function searchProducts({ pageNo, limit, search }) {
 }
 
 
+async function addBulkProducts(productsData) {
+    const createdProducts = [];
+    const createdBatches = [];
+
+    for (const data of productsData) {
+        // Check SKU uniqueness
+        const existingSKU = await Product.findOne({ sku: data.sku });
+        if (existingSKU) {
+            throw new Error(`SKU "${data.sku}" already exists. Please use a unique SKU.`);
+        }
+
+        // Validate brand
+        const brand = await Brand.findById(data.brandId);
+        if (!brand) {
+            throw new Error(`Brand not found for SKU "${data.sku}"`);
+        }
+
+        const brandObj = { id: brand._id, name: brand.name };
+
+        // Create Product
+        const product = await Product.create({
+            name: data.name,
+            sku: data.sku,
+            brand: brandObj,
+            buyingCost: data.buyingCost,
+            sellingCost: data.sellingCost,
+            totalQuantity: data.totalQuantity
+        });
+
+        // Create ProductBatch
+        const productBatch = await ProductBatch.create({
+            productId: product._id,
+            name: data.name,
+            sku: data.sku,
+            brand: brandObj,
+            buyingCost: data.buyingCost,
+            sellingCost: data.sellingCost,
+            totalQuantity: data.totalQuantity
+        });
+
+        createdProducts.push(product);
+        createdBatches.push(productBatch);
+    }
+
+    return { products: createdProducts, productBatches: createdBatches };
+}
+
+
+
 module.exports = {
     addProduct,
     getAllProducts,
     getProductById,
     updateProduct,
     deleteProduct,
-    searchProducts
+    searchProducts,
+    addBulkProducts
 };

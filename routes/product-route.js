@@ -9,5 +9,6 @@ router.get("/getProductById/:id",  productController.getProductById);
 router.patch("/updateProductById/:id", verifyToken, productController.updateProduct);     
 router.delete("/deleteProductById/:id", verifyToken, productController.deleteProduct); 
 router.get("/search", verifyToken, productController.searchProducts);
+router.post("/addBulkProducts", verifyToken, productController.addBulkProducts);
 
 module.exports = router;

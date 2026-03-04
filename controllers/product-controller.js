@@ -104,11 +104,44 @@ async function searchProducts(req, res) {
     }
 }
 
+
+
+async function addBulkProducts(req, res) {
+    try {
+        const productsData = req.body; // Expecting an array of products
+
+        if (!Array.isArray(productsData) || productsData.length === 0) {
+            return res.status(400).json({
+                success: false,
+                message: "Provide an array of products to add"
+            });
+        }
+
+        const { products, productBatches } = await productService.addBulkProducts(productsData);
+
+        res.status(201).json({
+            success: true,
+            message: "Products added successfully",
+            data: {
+                products,
+                productBatches
+            }
+        });
+    } catch (error) {
+        res.status(400).json({
+            success: false,
+            message: error.message
+        });
+    }
+}
+
+
 module.exports = {
     addProduct,
     getAllProducts,
     getProductById,
     updateProduct,
     deleteProduct,
-    searchProducts
+    searchProducts,
+    addBulkProducts
 };
