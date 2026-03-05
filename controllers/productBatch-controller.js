@@ -32,7 +32,11 @@ async function getProductAllBatches(req, res) {
 async function getProductBatchById(req, res) {
     try {
         const batch = await productBatchService.getProductBatchById(req.params.id);
-        if (!batch) return res.status(404).json({ success: false, message: "Batch not found" });
+        if (!batch) return res.status(404).json({ 
+            success: false, 
+            message: "Batch not found" 
+        });
+        
         res.status(200).json({ 
             success: true, 
             message: "Product batch retrieved successfully", 

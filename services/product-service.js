@@ -168,13 +168,11 @@ async function addBulkProducts(productsData) {
     const createdBatches = [];
 
     for (const data of productsData) {
-        // Check SKU uniqueness
         const existingSKU = await Product.findOne({ sku: data.sku });
         if (existingSKU) {
             throw new Error(`SKU "${data.sku}" already exists. Please use a unique SKU.`);
         }
 
-        // Validate brand
         const brand = await Brand.findById(data.brandId);
         if (!brand) {
             throw new Error(`Brand not found for SKU "${data.sku}"`);
@@ -182,7 +180,6 @@ async function addBulkProducts(productsData) {
 
         const brandObj = { id: brand._id, name: brand.name };
 
-        // Create Product
         const product = await Product.create({
             name: data.name,
             sku: data.sku,
@@ -192,7 +189,6 @@ async function addBulkProducts(productsData) {
             totalQuantity: data.totalQuantity
         });
 
-        // Create ProductBatch
         const productBatch = await ProductBatch.create({
             productId: product._id,
             name: data.name,

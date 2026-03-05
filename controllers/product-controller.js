@@ -105,10 +105,9 @@ async function searchProducts(req, res) {
 }
 
 
-
 async function addBulkProducts(req, res) {
     try {
-        const productsData = req.body; // Expecting an array of products
+        const productsData = req.body; 
 
         if (!Array.isArray(productsData) || productsData.length === 0) {
             return res.status(400).json({

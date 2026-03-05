@@ -10,6 +10,7 @@ const monthNames = [
     "July", "August", "September", "October", "November", "December"
 ];
 
+
 async function getToplineStats() {
     try {
         const now = new Date();
@@ -52,7 +53,6 @@ async function getToplineStats() {
             ];
         }
 
-        // All-time stats
         const allTimeResult = await Invoice.aggregate(getPipeline());
         let allTimeStats = { totalRevenue: 0, totalProfit: 0, totalDiscount: 0, topSellingProduct: null };
         if (allTimeResult.length) {
@@ -65,7 +65,6 @@ async function getToplineStats() {
             };
         }
 
-        // Current month stats
         const monthResult = await Invoice.aggregate(getPipeline({
             createdAt: { $gte: firstDay, $lte: lastDay }
         }));
@@ -90,7 +89,8 @@ async function getToplineStats() {
     }
 }
 
-// Helper function to find top-selling product (name + quantity)
+
+
 async function getTopProduct(allItemsArrays) {
     const allItems = allItemsArrays.flat();
     const qtyMap = {};
@@ -122,7 +122,6 @@ async function getProfitByPeriod(year, month = null) {
 
         if (month) {
 
-            // WEEKLY PROFIT
             const startDate = new Date(year, month - 1, 1);
             const endDate = new Date(year, month, 0, 23, 59, 59, 999);
 
@@ -171,7 +170,6 @@ async function getProfitByPeriod(year, month = null) {
                 }
             ]);
 
-            // ensure all 4 weeks exist
             const weeks = [1,2,3,4].map(function(w){
                 const found = result.find(function(r){ return r._id === w });
                 return {
@@ -184,7 +182,6 @@ async function getProfitByPeriod(year, month = null) {
 
         } else {
 
-            // MONTHLY PROFIT
             const startDate = new Date(year,0,1);
             const endDate = new Date(year,11,31,23,59,59,999);
 
@@ -228,7 +225,6 @@ async function getProfitByPeriod(year, month = null) {
                 }
             ]);
 
-            // ensure all 12 months exist
             const months = monthNames.map(function(name, index){
 
                 const found = result.find(function(r){
@@ -254,15 +250,12 @@ async function getProfitByPeriod(year, month = null) {
 async function getMonthlyProfitTrend() {
     const now = new Date();
 
-    // Current month start/end
     const startOfCurrentMonth = new Date(now.getFullYear(), now.getMonth(), 1);
     const startOfNextMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
 
-    // Previous month start/end
     const startOfPreviousMonth = new Date(now.getFullYear(), now.getMonth() - 1, 1);
     const endOfPreviousMonth = startOfCurrentMonth;
 
-    // Function to calculate profit for a period
     async function calculateProfit(startDate, endDate) {
         const result = await Invoice.aggregate([
             {
@@ -324,14 +317,12 @@ async function getMonthlyProfitTrend() {
 
 
 async function getTopSellingProductsByBrand(brandId) {
-    // 1️⃣ Get all products of the brand
     const products = await Product.find({ "brand.id": brandId }).select("_id name totalQuantity");
 
     const productIds = products.map(p => p._id);
 
     if (!productIds.length) return [];
 
-    // 2️⃣ Aggregate invoices to calculate soldQuantity per product
     const soldData = await Invoice.aggregate([
         { $unwind: "$items" },
         { $match: { "items.productId": { $in: productIds } } },
@@ -343,7 +334,6 @@ async function getTopSellingProductsByBrand(brandId) {
         }
     ]);
 
-    // 3️⃣ Map sold quantities to products
     const topProducts = products.map(p => {
         const soldItem = soldData.find(s => s._id.toString() === p._id.toString());
         const soldQuantity = soldItem ? soldItem.soldQuantity : 0;
@@ -355,7 +345,6 @@ async function getTopSellingProductsByBrand(brandId) {
         };
     });
 
-    // 4️⃣ Sort descending by soldQuantity and take top 5
     topProducts.sort((a, b) => b.soldQuantity - a.soldQuantity);
 
     return topProducts.slice(0, 5);

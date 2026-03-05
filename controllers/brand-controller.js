@@ -70,6 +70,7 @@ async function updateBrand(req, res) {
     }
 }
 
+
 async function deleteBrand(req, res) {
     try {
         const brand = await brandService.deleteBrand(req.params.id);
@@ -86,6 +87,7 @@ async function deleteBrand(req, res) {
         res.status(500).json({ message: error.message });
     }
 }
+
 
 async function searchBrands(req, res) {
     try {

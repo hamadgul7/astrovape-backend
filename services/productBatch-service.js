@@ -4,16 +4,13 @@ const Brand = require("../models/brand-model");
 
 
 async function addProductBatch(data) {
-    // Find product
     const product = await Product.findById(data.productId);
     if (!product) throw new Error("Product not found");
 
-    // Find brand
     const brand = await Brand.findById(data.brandId);
     if (!brand) throw new Error("Brand not found");
     const brandObj = { id: brand._id, name: brand.name };
 
-    // Create the new batch
     const productBatch = await ProductBatch.create({
         productId: product._id,
         name: data.name || product.name,
@@ -23,10 +20,8 @@ async function addProductBatch(data) {
         totalQuantity: data.totalQuantity || 0
     });
 
-    // Update product quantities and costs
     product.totalQuantity += data.totalQuantity || 0;
 
-    // Update costs — set them to the latest batch costs
     if (data.buyingCost !== undefined) product.buyingCost = data.buyingCost;
     if (data.sellingCost !== undefined) product.sellingCost = data.sellingCost;
 
@@ -101,7 +96,6 @@ async function updateProductBatch(id, data) {
 
     if (data.totalQuantity !== undefined) {
         batch.totalQuantity += data.totalQuantity;
-        // Also update total quantity in main Product
         const product = await Product.findById(batch.productId);
         if (product) {
             product.totalQuantity += data.totalQuantity;

@@ -27,7 +27,6 @@ async function getAllBrands(page, limit) {
     };
 }
 
-
 async function getBrandById(id) {
     return await Brand.findById(id);
 }

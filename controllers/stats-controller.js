@@ -42,7 +42,6 @@ async function getProfit(req, res) {
 }
 
 
-
 async function getMonthlyProfitTrend(req, res) {
     try {
         const data = await statsService.getMonthlyProfitTrend();
@@ -64,7 +63,6 @@ async function getTopSellingProductsByBrand(req, res) {
     try {
         const brandId  = req.params.id;
 
-        // Optional: validate brand exists
         const brand = await Brand.findById(brandId).select("name");
         if (!brand) {
             return res.status(404).json({
@@ -90,7 +88,6 @@ async function getTopSellingProductsByBrand(req, res) {
         });
     }
 }
-
 
 
 module.exports = {
