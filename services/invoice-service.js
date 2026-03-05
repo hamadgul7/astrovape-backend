@@ -149,9 +149,43 @@ async function getSingleInvoiceById(id) {
     return invoice;
 }
 
+
+async function updateInvoice(id, data) {
+    const invoice = await Invoice.findByIdAndUpdate(
+        id,
+        {
+            items: data.items,
+            subTotal: data.subTotal,
+            totalDiscount: data.totalDiscount,
+            totalAmount: data.totalAmount,
+            paymentMethod: data.paymentMethod,
+        },
+        { new: true, runValidators: true }
+    ).populate("items.productId", "name sku brand");
+
+    if (!invoice) {
+        throw new Error("Invoice not found");
+    }
+
+    return invoice;
+}
+
+
+async function deleteInvoice(id) {
+    const invoice = await Invoice.findByIdAndDelete(id);
+
+    if (!invoice) {
+        throw new Error("Invoice not found");
+    }
+
+    return invoice;
+}
+
 module.exports = {
     createInvoice,
     createBulkInvoices,
     getAllInvoices,
     getSingleInvoiceById,
+    updateInvoice,
+    deleteInvoice,
 };

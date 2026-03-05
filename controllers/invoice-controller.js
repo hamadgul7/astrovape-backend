@@ -67,9 +67,49 @@ async function getSingleInvoiceById(req, res) {
     }
 }
 
+
+async function updateInvoice(req, res) {
+    try {
+        const invoice = await invoiceService.updateInvoice(
+            req.params.id,
+            req.body
+        );
+
+        return res.status(200).json({
+            returnDocument: 'after',
+            message: "Invoice updated successfully",
+            data: invoice,
+        });
+    } catch (error) {
+        return res.status(404).json({
+            success: false,
+            message: error.message,
+        });
+    }
+}
+
+
+async function deleteInvoice(req, res) {
+    try {
+        await invoiceService.deleteInvoice(req.params.id);
+
+        return res.status(200).json({
+            success: true,
+            message: "Invoice deleted successfully",
+        });
+    } catch (error) {
+        return res.status(404).json({
+            success: false,
+            message: error.message,
+        });
+    }
+}
+
 module.exports = {
     createInvoice,
     createBulkInvoices,
     getAllInvoices,
-    getSingleInvoiceById
+    getSingleInvoiceById,
+    updateInvoice,
+    deleteInvoice
 };

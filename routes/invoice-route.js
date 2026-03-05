@@ -7,5 +7,7 @@ router.post("/createInvoice", invoiceController.createInvoice);
 router.post("/createBulkInvoices", invoiceController.createBulkInvoices);
 router.get("/getAllInvoices", verifyToken, invoiceController.getAllInvoices);
 router.get("/getSingleInvoiceById/:id", verifyToken, invoiceController.getSingleInvoiceById);
+router.patch("/updateInvoice/:id", verifyToken, invoiceController.updateInvoice);
+router.delete("/deleteInvoice/:id", verifyToken, invoiceController.deleteInvoice);
 
 module.exports = router;
