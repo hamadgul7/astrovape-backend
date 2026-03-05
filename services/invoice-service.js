@@ -107,7 +107,38 @@ async function createBulkInvoices(invoicesData) {
 }
 
 
+async function getAllInvoices({ page = 1, limit = 10 }) {
+    page = parseInt(page);
+    limit = parseInt(limit);
+    const skip = (page - 1) * limit;
+
+    const totalItems = await Invoice.countDocuments();
+
+    const invoices = await Invoice.find()
+        .sort({ createdAt: -1 })
+        .skip(skip)
+        .limit(limit)
+        .populate("items.productId", "name sku brand")
+        .lean();
+
+    const totalPages = Math.ceil(totalItems / limit);
+
+    return {
+        invoices: invoices,
+        meta: {
+            totalItems,
+            totalPages,
+            currentPage: page,
+            pageLimit: limit,
+            nextPage: page < totalPages ? page + 1 : null,
+            previousPage: page > 1 ? page - 1 : null,
+        },
+    };
+}
+
+
 module.exports = {
     createInvoice,
     createBulkInvoices,
+    getAllInvoices
 };

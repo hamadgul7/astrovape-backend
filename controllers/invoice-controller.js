@@ -19,7 +19,7 @@ async function createInvoice(req, res) {
 
 async function createBulkInvoices(req, res) {
     try {
-        const invoicesData = req.body.invoices; // Expect { invoices: [ {items, subTotal, ...}, ... ] }
+        const invoicesData = req.body.invoices; 
 
         const result = await invoiceService.createBulkInvoices(invoicesData);
 
@@ -32,7 +32,27 @@ async function createBulkInvoices(req, res) {
     }
 }
 
+async function getAllInvoices(req, res) {
+    try {
+        const page = req.query.page || 1;
+        const limit = req.query.limit || 10;
+
+        const result = await invoiceService.getAllInvoices({ page, limit });
+
+        return res.status(200).json({
+            success: true,
+            ...result,
+        });
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: error.message,
+        });
+    }
+}
+
 module.exports = {
     createInvoice,
-    createBulkInvoices
+    createBulkInvoices,
+    getAllInvoices,
 };
