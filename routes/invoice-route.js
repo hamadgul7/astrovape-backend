@@ -6,5 +6,6 @@ const verifyToken = require('../middlewares/verifyToken');
 router.post("/createInvoice", invoiceController.createInvoice);
 router.post("/createBulkInvoices", invoiceController.createBulkInvoices);
 router.get("/getAllInvoices", verifyToken, invoiceController.getAllInvoices);
+router.get("/getSingleInvoiceById/:id", verifyToken, invoiceController.getSingleInvoiceById);
 
 module.exports = router;

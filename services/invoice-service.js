@@ -137,8 +137,21 @@ async function getAllInvoices({ page = 1, limit = 10 }) {
 }
 
 
+async function getSingleInvoiceById(id) {
+    const invoice = await Invoice.findById(id)
+        .populate("items.productId", "name sku brand")
+        .lean();
+
+    if (!invoice) {
+        throw new Error("Invoice not found");
+    }
+
+    return invoice;
+}
+
 module.exports = {
     createInvoice,
     createBulkInvoices,
-    getAllInvoices
+    getAllInvoices,
+    getSingleInvoiceById,
 };

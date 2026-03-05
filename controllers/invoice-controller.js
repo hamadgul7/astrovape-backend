@@ -51,8 +51,25 @@ async function getAllInvoices(req, res) {
     }
 }
 
+async function getSingleInvoiceById(req, res) {
+    try {
+        const invoice = await invoiceService.getSingleInvoiceById(req.params.id);
+
+        return res.status(200).json({
+            success: true,
+            data: invoice,
+        });
+    } catch (error) {
+        return res.status(404).json({
+            success: false,
+            message: error.message,
+        });
+    }
+}
+
 module.exports = {
     createInvoice,
     createBulkInvoices,
     getAllInvoices,
+    getSingleInvoiceById
 };
