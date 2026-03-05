@@ -19,6 +19,12 @@ const invoiceItemSchema = new mongoose.Schema(
             required: true,
             min: 0,
         },
+        
+        unitBuyingCost: { 
+            type: Number, 
+            required: true, 
+            min: 0 
+        },
     },
     { _id: false } 
 );

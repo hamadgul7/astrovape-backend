@@ -64,32 +64,45 @@ async function createBulkInvoices(invoicesData) {
         for (const data of invoicesData) {
         const { items, subTotal, totalDiscount, totalAmount, paymentMethod } = data;
 
+        // Prepare items with buyingCost
+        const updatedItems = [];
+
         for (const item of items) {
             const product = await Product.findById(item.productId).session(session);
 
             if (!product) {
-                throw new Error(`Product not found: ${item.productId}`);
+            throw new Error(`Product not found: ${item.productId}`);
             }
 
             if (product.totalQuantity < item.quantity) {
-                throw new Error(
-                    `Insufficient stock for product: ${product.name}`
-                );
+            throw new Error(
+                `Insufficient stock for product: ${product.name}`
+            );
             }
 
+            // Deduct quantity
             product.totalQuantity -= item.quantity;
             await product.save({ session });
+
+            // Add buyingCost from product to invoice item
+            updatedItems.push({
+            productId: item.productId,
+            quantity: item.quantity,
+            unitPrice: item.unitPrice,
+            unitBuyingCost: product.buyingCost, // <--- store buyingCost
+            });
         }
 
+        // Create invoice with updated items
         await Invoice.create(
             [
-                {
-                    items,
-                    subTotal,
-                    totalDiscount,
-                    totalAmount,
-                    paymentMethod,
-                },
+            {
+                items: updatedItems,
+                subTotal,
+                totalDiscount,
+                totalAmount,
+                paymentMethod,
+            },
             ],
             { session }
         );
@@ -105,6 +118,7 @@ async function createBulkInvoices(invoicesData) {
         throw error;
     }
 }
+
 
 
 async function getAllInvoices({ page = 1, limit = 10 }) {
