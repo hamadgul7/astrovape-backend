@@ -90,9 +90,21 @@ async function getTopSellingProductsByBrand(req, res) {
 }
 
 
+async function getBranchSales(req, res) {
+    try {
+        const salesData = await statsService.calculateBranchSales();
+        return res.status(200).json({ success: true, data: salesData });
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({ success: false, message: "Server Error" });
+    }
+}
+
+
 module.exports = {
     getToplineStats,
     getProfit,
     getMonthlyProfitTrend,
-    getTopSellingProductsByBrand
+    getTopSellingProductsByBrand,
+    getBranchSales
 };

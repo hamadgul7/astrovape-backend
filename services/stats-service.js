@@ -54,28 +54,33 @@ async function getToplineStats() {
         }
 
         const allTimeResult = await Invoice.aggregate(getPipeline());
-        let allTimeStats = { totalRevenue: 0, totalProfit: 0, totalDiscount: 0, topSellingProduct: null };
+        let allTimeStats = { totalRevenue: 0, totalProfit: 0, totalDiscount: 0, inventoryWorth: 0 };
         if (allTimeResult.length) {
             const r = allTimeResult[0];
+            const inventoryResult = await Product.aggregate([
+                { $project: { worth: { $multiply: ["$buyingCost", "$totalQuantity"] } } },
+                { $group: { _id: null, inventoryWorth: { $sum: "$worth" } } }
+            ]);
+            const inventoryWorth = inventoryResult.length ? inventoryResult[0].inventoryWorth : 0;
+
             allTimeStats = {
                 totalRevenue: r.totalRevenue,
                 totalProfit: r.totalProfit,
                 totalDiscount: r.totalDiscount,
-                topSellingProduct: await getTopProduct(r.allItems)
+                inventoryWorth: inventoryWorth
             };
         }
 
         const monthResult = await Invoice.aggregate(getPipeline({
             createdAt: { $gte: firstDay, $lte: lastDay }
         }));
-        let currentMonthStats = { totalRevenue: 0, totalProfit: 0, totalDiscount: 0, topSellingProduct: null };
+        let currentMonthStats = { totalRevenue: 0, totalProfit: 0, totalDiscount: 0 };
         if (monthResult.length) {
             const r = monthResult[0];
             currentMonthStats = {
                 totalRevenue: r.totalRevenue,
                 totalProfit: r.totalProfit,
-                totalDiscount: r.totalDiscount,
-                topSellingProduct: await getTopProduct(r.allItems)
+                totalDiscount: r.totalDiscount
             };
         }
 
@@ -88,7 +93,6 @@ async function getToplineStats() {
         throw error;
     }
 }
-
 
 
 async function getTopProduct(allItemsArrays) {
@@ -315,7 +319,6 @@ async function getMonthlyProfitTrend() {
 }
 
 
-
 async function getTopSellingProductsByBrand(brandId) {
     const products = await Product.find({ "brand.id": brandId }).select("_id name totalQuantity");
 
@@ -351,9 +354,44 @@ async function getTopSellingProductsByBrand(brandId) {
 }
 
 
+async function calculateBranchSales() {
+    try {
+        const sales = await Invoice.aggregate([
+            {
+                $group: {
+                    _id: "$branchId",
+                    totalSales: { $sum: "$totalAmount" }
+                }
+            },
+            {
+                $lookup: {
+                    from: "branches",       // make sure this is the actual collection name in MongoDB
+                    localField: "_id",
+                    foreignField: "_id",
+                    as: "branch"
+                }
+            },
+            { $unwind: "$branch" },
+            {
+                $project: {
+                    branchId: "$_id",
+                    branchName: "$branch.name",
+                    totalSales: 1
+                }
+            }
+        ]);
+
+        return sales;
+    } catch (error) {
+        throw error;
+    }
+}
+
+
 module.exports = {
     getToplineStats,
     getProfitByPeriod,
     getMonthlyProfitTrend,
-    getTopSellingProductsByBrand
+    getTopSellingProductsByBrand,
+    calculateBranchSales
 };
