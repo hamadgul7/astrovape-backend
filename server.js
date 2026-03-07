@@ -8,6 +8,7 @@ const productRoutes = require('./routes/product-route.js');
 const productBatchRoutes = require('./routes/productBatch-route.js');
 const invoiceRoutes = require('./routes/invoice-route.js');
 const statsRoutes = require('./routes/stats-route.js');
+const branchRoutes = require('./routes/branch-route.js');
 
 
 const cors = require('cors');
@@ -28,6 +29,7 @@ app.use('/product', productRoutes);
 app.use('/product-batch', productBatchRoutes);
 app.use('/invoice', invoiceRoutes);
 app.use('/stats', statsRoutes);
+app.use('/branch', branchRoutes);
 
 
 
