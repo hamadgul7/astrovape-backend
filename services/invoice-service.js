@@ -7,37 +7,46 @@ async function createInvoice(data) {
     session.startTransaction();
 
     try {
-        const { items, subTotal, totalDiscount, totalAmount, paymentMethod } = data;
+        const { branchId, items, subTotal, totalDiscount, totalAmount, paymentMethod } = data;
+
+        const updatedItems = [];
 
         for (const item of items) {
-        const product = await Product.findById(item.productId).session(session);
+            const product = await Product.findById(item.productId).session(session);
 
-        if (!product) {
-            throw new Error("Product not found");
-        }
+            if (!product) {
+                throw new Error("Product not found");
+            }
 
-        if (product.totalQuantity < item.quantity) {
-            throw new Error(
-            `Insufficient stock for product: ${product.name}`
-            );
-        }
+            if (product.totalQuantity < item.quantity) {
+                throw new Error(`Insufficient stock for product: ${product.name}`);
+            }
 
-        product.totalQuantity -= item.quantity;
+            // Reduce stock
+            product.totalQuantity -= item.quantity;
+            await product.save({ session });
 
-        await product.save({ session });
+            // Store item with unitBuyingCost
+            updatedItems.push({
+                productId: item.productId,
+                quantity: item.quantity,
+                unitPrice: item.unitPrice,
+                unitBuyingCost: product.buyingCost, // <-- added
+            });
         }
 
         const invoice = await Invoice.create(
-        [
-            {
-                items,
-                subTotal,
-                totalDiscount,
-                totalAmount,
-                paymentMethod,
-            },
-        ],
-        { session }
+            [
+                {
+                    branchId, // assign invoice to branch
+                    items: updatedItems,
+                    subTotal,
+                    totalDiscount,
+                    totalAmount,
+                    paymentMethod,
+                },
+            ],
+            { session }
         );
 
         await session.commitTransaction();
@@ -51,7 +60,6 @@ async function createInvoice(data) {
     }
 }
 
-
 async function createBulkInvoices(invoicesData) {
     if (!Array.isArray(invoicesData) || invoicesData.length === 0) {
         throw new Error("Invoices data must be a non-empty array");
@@ -62,48 +70,45 @@ async function createBulkInvoices(invoicesData) {
 
     try {
         for (const data of invoicesData) {
-        const { items, subTotal, totalDiscount, totalAmount, paymentMethod } = data;
+            const { branchId, items, subTotal, totalDiscount, totalAmount, paymentMethod } = data;
 
-        const updatedItems = [];
+            const updatedItems = [];
 
-        for (const item of items) {
-            const product = await Product.findById(item.productId).session(session);
+            for (const item of items) {
+                const product = await Product.findById(item.productId).session(session);
 
-            if (!product) {
-                throw new Error(`Product not found: ${item.productId}`);
+                if (!product) {
+                    throw new Error(`Product not found: ${item.productId}`);
+                }
+
+                if (product.totalQuantity < item.quantity) {
+                    throw new Error(`Insufficient stock for product: ${product.name}`);
+                }
+
+                product.totalQuantity -= item.quantity;
+                await product.save({ session });
+
+                updatedItems.push({
+                    productId: item.productId,
+                    quantity: item.quantity,
+                    unitPrice: item.unitPrice,
+                    unitBuyingCost: product.buyingCost,
+                });
             }
 
-            if (product.totalQuantity < item.quantity) {
-                throw new Error(
-                    `Insufficient stock for product: ${product.name}`
-                );
-            }
-
-
-            product.totalQuantity -= item.quantity;
-            await product.save({ session });
-
-
-            updatedItems.push({
-            productId: item.productId,
-            quantity: item.quantity,
-            unitPrice: item.unitPrice,
-            unitBuyingCost: product.buyingCost, 
-            });
-        }
-
-        await Invoice.create(
-            [
-                {
-                    items: updatedItems,
-                    subTotal,
-                    totalDiscount,
-                    totalAmount,
-                    paymentMethod,
-                },
-            ],
-            { session }
-        );
+            await Invoice.create(
+                [
+                    {
+                        branchId, 
+                        items: updatedItems,
+                        subTotal,
+                        totalDiscount,
+                        totalAmount,
+                        paymentMethod,
+                    },
+                ],
+                { session }
+            );
         }
 
         await session.commitTransaction();
@@ -116,7 +121,6 @@ async function createBulkInvoices(invoicesData) {
         throw error;
     }
 }
-
 
 
 async function getAllInvoices({ page = 1, limit = 10 }) {
@@ -136,7 +140,7 @@ async function getAllInvoices({ page = 1, limit = 10 }) {
     const totalPages = Math.ceil(totalItems / limit);
 
     return {
-        invoices: invoices,
+        invoices,
         meta: {
             totalItems,
             totalPages,
@@ -147,6 +151,8 @@ async function getAllInvoices({ page = 1, limit = 10 }) {
         },
     };
 }
+
+
 
 
 async function getSingleInvoiceById(id) {
@@ -161,11 +167,11 @@ async function getSingleInvoiceById(id) {
     return invoice;
 }
 
-
 async function updateInvoice(id, data) {
     const invoice = await Invoice.findByIdAndUpdate(
         id,
         {
+            branchId: data.branchId, // <-- update branch if provided
             items: data.items,
             subTotal: data.subTotal,
             totalDiscount: data.totalDiscount,
@@ -182,7 +188,6 @@ async function updateInvoice(id, data) {
     return invoice;
 }
 
-
 async function deleteInvoice(id) {
     const invoice = await Invoice.findByIdAndDelete(id);
 
@@ -192,7 +197,6 @@ async function deleteInvoice(id) {
 
     return invoice;
 }
-
 
 module.exports = {
     createInvoice,
