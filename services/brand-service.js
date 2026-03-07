@@ -1,4 +1,5 @@
 const Brand = require("../models/brand-model");
+const Product = require("../models/product-model");
 
 
 async function createBrand(data) {
@@ -8,7 +9,7 @@ async function createBrand(data) {
     return await brand.save();
 }
 
-async function getAllBrands(page, limit) {
+async function getAllBrands(page = 1, limit = 10) {
     const skip = (page - 1) * limit;
 
     const brands = await Brand.find()
@@ -16,14 +17,27 @@ async function getAllBrands(page, limit) {
         .skip(skip)
         .limit(limit);
 
-    const totalBrands = await Brand.countDocuments();
+    const brandsWithProductCount = await Promise.all(
+        brands.map(async (brand) => {
+            const totalProducts = await Product.countDocuments({ "brand.id": brand._id });
+            return {
+                _id: brand._id,
+                name: brand.name,
+                createdAt: brand.createdAt,
+                updatedAt: brand.updatedAt,
+                totalProducts
+            };
+        })
+    );
+
+    const total = await Brand.countDocuments();
 
     return {
-        data: brands,
-        totalBrands,
+        data: brandsWithProductCount,
+        total,
         page,
         limit,
-        totalPages: Math.ceil(totalBrands / limit),
+        totalPages: Math.ceil(total / limit),
     };
 }
 

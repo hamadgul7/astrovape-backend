@@ -31,6 +31,12 @@ const invoiceItemSchema = new mongoose.Schema(
 
 const invoiceSchema = new mongoose.Schema(
     {
+        branchId: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Branch", 
+            required: true,
+        },
+
         items: {
             type: [invoiceItemSchema],
             required: true,
