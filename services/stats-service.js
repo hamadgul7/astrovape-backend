@@ -95,28 +95,28 @@ async function getToplineStats() {
 }
 
 
-async function getTopProduct(allItemsArrays) {
-    const allItems = allItemsArrays.flat();
-    const qtyMap = {};
+// async function getTopProduct(allItemsArrays) {
+//     const allItems = allItemsArrays.flat();
+//     const qtyMap = {};
 
-    for (const item of allItems) {
-        const pid = item.productId.toString();
-        qtyMap[pid] = (qtyMap[pid] || 0) + item.quantity;
-    }
+//     for (const item of allItems) {
+//         const pid = item.productId.toString();
+//         qtyMap[pid] = (qtyMap[pid] || 0) + item.quantity;
+//     }
 
-    let topProductId = null, maxQty = 0;
-    for (const [pid, qty] of Object.entries(qtyMap)) {
-        if (qty > maxQty) {
-            maxQty = qty;
-            topProductId = pid;
-        }
-    }
+//     let topProductId = null, maxQty = 0;
+//     for (const [pid, qty] of Object.entries(qtyMap)) {
+//         if (qty > maxQty) {
+//             maxQty = qty;
+//             topProductId = pid;
+//         }
+//     }
 
-    if (!topProductId) return null;
+//     if (!topProductId) return null;
 
-    const product = await Product.findById(topProductId).select("name");
-    return { name: product ? product.name : null, quantitySold: maxQty };
-}
+//     const product = await Product.findById(topProductId).select("name");
+//     return { name: product ? product.name : null, quantitySold: maxQty };
+// }
 
 
 async function getProfitByPeriod(year, month = null) {
@@ -319,7 +319,7 @@ async function getMonthlyProfitTrend() {
 }
 
 
-async function getTopSellingProductsByBrand(brandId) {
+async function getTopSellingProductsByBrand(brandId) { 
     const products = await Product.find({ "brand.id": brandId }).select("_id name totalQuantity");
 
     const productIds = products.map(p => p._id);
@@ -340,7 +340,9 @@ async function getTopSellingProductsByBrand(brandId) {
     const topProducts = products.map(p => {
         const soldItem = soldData.find(s => s._id.toString() === p._id.toString());
         const soldQuantity = soldItem ? soldItem.soldQuantity : 0;
-        const remainingQuantity = p.totalQuantity - soldQuantity;
+
+        const remainingQuantity = p.totalQuantity;
+
         return {
             name: p.name,
             soldQuantity,
@@ -365,7 +367,7 @@ async function calculateBranchSales() {
             },
             {
                 $lookup: {
-                    from: "branches",       // make sure this is the actual collection name in MongoDB
+                    from: "branches",       
                     localField: "_id",
                     foreignField: "_id",
                     as: "branch"

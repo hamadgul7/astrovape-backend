@@ -56,7 +56,7 @@ async function getSingleInvoiceById(req, res) {
         const invoice = await invoiceService.getSingleInvoiceById(req.params.id);
 
         return res.status(200).json({
-            success: true,
+            returnDocument: 'after',
             data: invoice,
         });
     } catch (error) {
