@@ -2,6 +2,7 @@ const Product = require("../models/product-model");
 const Invoice = require("../models/invoice-model");
 const Brand = require("../models/brand-model");
 const mongoose = require("mongoose");
+const Branch = require("../models/branch-model");
 
 
 
@@ -53,15 +54,18 @@ async function getToplineStats() {
             ];
         }
 
+        // ✅ Inventory worth should not depend on invoices
+        const inventoryResult = await Product.aggregate([
+            { $project: { worth: { $multiply: ["$buyingCost", "$totalQuantity"] } } },
+            { $group: { _id: null, inventoryWorth: { $sum: "$worth" } } }
+        ]);
+        const inventoryWorth = inventoryResult.length ? inventoryResult[0].inventoryWorth : 0;
+
         const allTimeResult = await Invoice.aggregate(getPipeline());
-        let allTimeStats = { totalRevenue: 0, totalProfit: 0, totalDiscount: 0, inventoryWorth: 0 };
+        let allTimeStats = { totalRevenue: 0, totalProfit: 0, totalDiscount: 0, inventoryWorth: inventoryWorth };
+
         if (allTimeResult.length) {
             const r = allTimeResult[0];
-            const inventoryResult = await Product.aggregate([
-                { $project: { worth: { $multiply: ["$buyingCost", "$totalQuantity"] } } },
-                { $group: { _id: null, inventoryWorth: { $sum: "$worth" } } }
-            ]);
-            const inventoryWorth = inventoryResult.length ? inventoryResult[0].inventoryWorth : 0;
 
             allTimeStats = {
                 totalRevenue: r.totalRevenue,
@@ -74,9 +78,12 @@ async function getToplineStats() {
         const monthResult = await Invoice.aggregate(getPipeline({
             createdAt: { $gte: firstDay, $lte: lastDay }
         }));
+
         let currentMonthStats = { totalRevenue: 0, totalProfit: 0, totalDiscount: 0 };
+
         if (monthResult.length) {
             const r = monthResult[0];
+
             currentMonthStats = {
                 totalRevenue: r.totalRevenue,
                 totalProfit: r.totalProfit,
@@ -356,39 +363,40 @@ async function getTopSellingProductsByBrand(brandId) {
 }
 
 
-async function calculateBranchSales() {
+async function calculateBranchSales(startDate, endDate) { 
     try {
-        const sales = await Invoice.aggregate([
-            {
-                $group: {
-                    _id: "$branchId",
-                    totalSales: { $sum: "$totalAmount" }
-                }
-            },
+        const matchFilter = {};
+        if (startDate && endDate) {
+            matchFilter.createdAt = { $gte: new Date(startDate), $lte: new Date(endDate) };
+        }
+
+        const sales = await Branch.aggregate([
             {
                 $lookup: {
-                    from: "branches",       
-                    localField: "_id",
-                    foreignField: "_id",
-                    as: "branch"
+                    from: "invoices",
+                    let: { branchId: "$_id" },
+                    pipeline: [
+                        { $match: { $expr: { $eq: ["$branchId", "$$branchId"] }, ...matchFilter } },
+                        { $group: { _id: null, totalSales: { $sum: "$totalAmount" } } }
+                    ],
+                    as: "salesData"
                 }
             },
-            { $unwind: "$branch" },
             {
                 $project: {
                     branchId: "$_id",
-                    branchName: "$branch.name",
-                    totalSales: 1
+                    branchName: "$name",
+                    totalSales: { $ifNull: [{ $arrayElemAt: ["$salesData.totalSales", 0] }, 0] }
                 }
             }
         ]);
 
         return sales;
+
     } catch (error) {
         throw error;
     }
 }
-
 
 module.exports = {
     getToplineStats,

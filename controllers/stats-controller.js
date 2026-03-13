@@ -92,7 +92,8 @@ async function getTopSellingProductsByBrand(req, res) {
 
 async function getBranchSales(req, res) {
     try {
-        const salesData = await statsService.calculateBranchSales();
+        const { startDate, endDate } = req.query;  // example: ?startDate=2026-03-01&endDate=2026-03-10
+        const salesData = await statsService.calculateBranchSales(startDate, endDate);
         return res.status(200).json({ success: true, data: salesData });
     } catch (error) {
         console.error(error);
