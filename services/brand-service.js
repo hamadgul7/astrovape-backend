@@ -1,13 +1,37 @@
 const Brand = require("../models/brand-model");
 const Product = require("../models/product-model");
+const cloudinary = require("cloudinary").v2;
+
+cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET
+});
 
 
-async function createBrand(data) {
-    const count = await Brand.countDocuments();
+// Create Brand with image
+async function createBrand(data, file) {
+    const uploadedImage = await cloudinary.uploader.upload(file.path);
+    data.imagePath = uploadedImage.secure_url;
 
     const brand = new Brand(data);
     return await brand.save();
 }
+
+
+// Update Brand with optional image
+async function updateBrand(id, data, file) {
+    if (file) {
+        const uploadedImage = await cloudinary.uploader.upload(file.path);
+        data.imagePath = uploadedImage.secure_url;
+    }
+
+    return await Brand.findByIdAndUpdate(id, data, {
+        returnDocument: "after",
+        runValidators: true
+    });
+}
+
 
 async function getAllBrands(page = 1, limit = 10) {
     const skip = (page - 1) * limit;
@@ -23,6 +47,7 @@ async function getAllBrands(page = 1, limit = 10) {
             return {
                 _id: brand._id,
                 name: brand.name,
+                imagePath: brand.imagePath || null, // include image
                 createdAt: brand.createdAt,
                 updatedAt: brand.updatedAt,
                 totalProducts
@@ -45,21 +70,12 @@ async function getBrandById(id) {
     return await Brand.findById(id);
 }
 
-async function updateBrand(id, data) {
-    return await Brand.findByIdAndUpdate(id, data, {
-        returnDocument: 'after',
-        runValidators: true
-    });
-}
-
 async function deleteBrand(id) {
     return await Brand.findByIdAndDelete(id);
 }
 
-
-const escapeRegex = (text) => {
-    return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-};
+// Search brands
+const escapeRegex = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 async function searchBrands({ pageNo, limit, search }) {
     const pageNumber = parseInt(pageNo) || 1;
@@ -67,13 +83,9 @@ async function searchBrands({ pageNo, limit, search }) {
     const skip = (pageNumber - 1) * pageLimit;
 
     let filter = {};
-
     if (search) {
         const escapedSearch = escapeRegex(search);
-        filter.name = {
-            $regex: escapedSearch,
-            $options: "i" 
-        };
+        filter.name = { $regex: escapedSearch, $options: "i" };
     }
 
     const totalItems = await Brand.countDocuments(filter);

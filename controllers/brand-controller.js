@@ -3,12 +3,16 @@ const brandService = require("../services/brand-service");
 async function addBrand(req, res) {
     try {
         const { name } = req.body;
+        const file = req.file; // single image file
 
         if (!name) {
             return res.status(400).json({ message: "Brand name is required" });
         }
+        if (!file) {
+            return res.status(400).json({ message: "Brand image is required" });
+        }
 
-        const brand = await brandService.createBrand({ name });
+        const brand = await brandService.createBrand({ name }, file);
 
         res.status(201).json({
             message: "Brand created successfully",
@@ -20,41 +24,10 @@ async function addBrand(req, res) {
     }
 }
 
-
-async function getAllBrands(req, res) {
-    try {
-        const page = parseInt(req.query.pageNo) || 1;
-        const limit = parseInt(req.query.limit) || 10;
-
-        const result = await brandService.getAllBrands(page, limit);
-
-        res.status(200).json(result);
-
-    } catch (error) {
-        res.status(500).json({ message: error.message });
-    }
-}
-
-
-async function getBrand(req, res) {
-    try {
-        const brand = await brandService.getBrandById(req.params.id);
-
-        if (!brand) {
-            return res.status(404).json({ message: "Brand not found" });
-        }
-
-        res.status(200).json({ data: brand });
-
-    } catch (error) {
-        res.status(500).json({ message: error.message });
-    }
-}
-
-
 async function updateBrand(req, res) {
     try {
-        const brand = await brandService.updateBrand(req.params.id, req.body);
+        const file = req.file; // optional image
+        const brand = await brandService.updateBrand(req.params.id, req.body, file);
 
         if (!brand) {
             return res.status(404).json({ message: "Brand not found" });
@@ -70,48 +43,50 @@ async function updateBrand(req, res) {
     }
 }
 
-
-async function deleteBrand(req, res) {
+// other controllers remain unchanged
+async function getAllBrands(req, res) {
     try {
-        const brand = await brandService.deleteBrand(req.params.id);
-
-        if (!brand) {
-            return res.status(404).json({ message: "Brand not found" });
-        }
-
-        res.status(200).json({
-            message: "Brand deleted successfully"
-        });
-
+        const page = parseInt(req.query.pageNo) || 1;
+        const limit = parseInt(req.query.limit) || 10;
+        const result = await brandService.getAllBrands(page, limit);
+        res.status(200).json(result);
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
 }
 
+async function getBrand(req, res) {
+    try {
+        const brand = await brandService.getBrandById(req.params.id);
+        if (!brand) return res.status(404).json({ message: "Brand not found" });
+        res.status(200).json({ data: brand });
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+}
+
+async function deleteBrand(req, res) {
+    try {
+        const brand = await brandService.deleteBrand(req.params.id);
+        if (!brand) return res.status(404).json({ message: "Brand not found" });
+        res.status(200).json({ message: "Brand deleted successfully" });
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+}
 
 async function searchBrands(req, res) {
     try {
         const { pageNo, limit, search } = req.query;
-
-        const result = await brandService.searchBrands({
-            pageNo,
-            limit,
-            search
-        });
-
-        return res.status(200).json({
+        const result = await brandService.searchBrands({ pageNo, limit, search });
+        res.status(200).json({
             success: true,
             message: "Brands retrieved successfully",
             data: result.brands,
             meta: result.meta
         });
-
     } catch (error) {
-        return res.status(500).json({
-            success: false,
-            message: "Error searching brands",
-            error: error.message
-        });
+        res.status(500).json({ success: false, message: "Error searching brands", error: error.message });
     }
 }
 
