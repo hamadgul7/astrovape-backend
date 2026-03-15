@@ -4,7 +4,7 @@ const multer = require("multer");
 const brandController = require("../controllers/brand-controller");
 const verifyToken = require('../middlewares/verifyToken');
 
-// Multer setup for single image
+
 const storage = multer.diskStorage({
     filename: (req, file, cb) => {
         cb(null, `${Date.now()}-${file.originalname}`);

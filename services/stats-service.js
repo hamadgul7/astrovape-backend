@@ -54,7 +54,6 @@ async function getToplineStats() {
             ];
         }
 
-        // ✅ Inventory worth should not depend on invoices
         const inventoryResult = await Product.aggregate([
             { $project: { worth: { $multiply: ["$buyingCost", "$totalQuantity"] } } },
             { $group: { _id: null, inventoryWorth: { $sum: "$worth" } } }

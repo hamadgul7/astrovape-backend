@@ -9,7 +9,6 @@ cloudinary.config({
 });
 
 
-// Create Brand with image
 async function createBrand(data, file) {
     const uploadedImage = await cloudinary.uploader.upload(file.path);
     data.imagePath = uploadedImage.secure_url;
@@ -19,7 +18,6 @@ async function createBrand(data, file) {
 }
 
 
-// Update Brand with optional image
 async function updateBrand(id, data, file) {
     if (file) {
         const uploadedImage = await cloudinary.uploader.upload(file.path);
@@ -74,7 +72,7 @@ async function deleteBrand(id) {
     return await Brand.findByIdAndDelete(id);
 }
 
-// Search brands
+
 const escapeRegex = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 async function searchBrands({ pageNo, limit, search }) {

@@ -168,24 +168,74 @@ async function getSingleInvoiceById(id) {
 }
 
 async function updateInvoice(id, data) {
-    const invoice = await Invoice.findByIdAndUpdate(
-        id,
-        {
-            branchId: data.branchId, // <-- update branch if provided
-            items: data.items,
-            subTotal: data.subTotal,
-            totalDiscount: data.totalDiscount,
-            totalAmount: data.totalAmount,
-            paymentMethod: data.paymentMethod,
-        },
-        { new: true, runValidators: true }
-    ).populate("items.productId", "name sku brand");
+    const session = await mongoose.startSession();
+    session.startTransaction();
 
-    if (!invoice) {
-        throw new Error("Invoice not found");
+    try {
+        const existingInvoice = await Invoice.findById(id).session(session);
+
+        if (!existingInvoice) {
+            throw new Error("Invoice not found");
+        }
+
+        const updatedItems = [];
+
+        for (let i = 0; i < data.items.length; i++) {
+            const newItem = data.items[i];
+            const oldItem = existingInvoice.items[i];
+
+            const product = await Product.findById(newItem.productId).session(session);
+
+            if (!product) {
+                throw new Error("Product not found");
+            }
+
+            const difference = newItem.quantity - oldItem.quantity;
+
+            if (difference > 0) {
+                if (product.totalQuantity < difference) {
+                    throw new Error(`Insufficient stock for product: ${product.name}`);
+                }
+                product.totalQuantity -= difference;
+            }
+
+            if (difference < 0) {
+                product.totalQuantity += Math.abs(difference);
+            }
+
+            await product.save({ session });
+
+            updatedItems.push({
+                productId: newItem.productId,
+                quantity: newItem.quantity,
+                unitPrice: newItem.unitPrice,
+                unitBuyingCost: product.buyingCost
+            });
+        }
+
+        const invoice = await Invoice.findByIdAndUpdate(
+            id,
+            {
+                branchId: data.branchId,
+                items: updatedItems,
+                subTotal: data.subTotal,
+                totalDiscount: data.totalDiscount,
+                totalAmount: data.totalAmount,
+                paymentMethod: data.paymentMethod,
+            },
+            { returnDocument: 'after', runValidators: true, session }
+        ).populate("items.productId", "name sku brand");
+
+        await session.commitTransaction();
+        session.endSession();
+
+        return invoice;
+
+    } catch (error) {
+        await session.abortTransaction();
+        session.endSession();
+        throw error;
     }
-
-    return invoice;
 }
 
 async function deleteInvoice(id) {

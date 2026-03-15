@@ -3,7 +3,7 @@ const brandService = require("../services/brand-service");
 async function addBrand(req, res) {
     try {
         const { name } = req.body;
-        const file = req.file; // single image file
+        const file = req.file; 
 
         if (!name) {
             return res.status(400).json({ message: "Brand name is required" });
@@ -26,7 +26,7 @@ async function addBrand(req, res) {
 
 async function updateBrand(req, res) {
     try {
-        const file = req.file; // optional image
+        const file = req.file; 
         const brand = await brandService.updateBrand(req.params.id, req.body, file);
 
         if (!brand) {
@@ -43,7 +43,7 @@ async function updateBrand(req, res) {
     }
 }
 
-// other controllers remain unchanged
+
 async function getAllBrands(req, res) {
     try {
         const page = parseInt(req.query.pageNo) || 1;
