@@ -134,6 +134,61 @@ async function addBulkProducts(req, res) {
     }
 }
 
+async function searchProductsBySku(req, res) {
+    try {
+        const { pageNo, limit, search } = req.query;
+
+        const result = await productService.searchProductsBySku({
+            pageNo,
+            limit,
+            search
+        });
+
+        return res.status(200).json({
+            success: true,
+            message: "Products retrieved successfully",
+            data: result.products,
+            meta: result.meta
+        });
+
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: "Error searching products",
+            error: error.message
+        });
+    }
+}
+
+
+async function searchProductsBySkuOrName(req, res) {
+    try {
+        const { pageNo, limit, search } = req.query;
+
+        const result = await productService.searchProductsBySkuOrName({
+            pageNo,
+            limit,
+            search
+        });
+
+        return res.status(200).json({
+            success: true,
+            message: "Products retrieved successfully",
+            data: result.products,
+            meta: result.meta
+        });
+
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: "Error searching products",
+            error: error.message
+        });
+    }
+}
+
+
+
 
 module.exports = {
     addProduct,
@@ -142,5 +197,7 @@ module.exports = {
     updateProduct,
     deleteProduct,
     searchProducts,
-    addBulkProducts
+    addBulkProducts,
+    searchProductsBySku,
+    searchProductsBySkuOrName
 };

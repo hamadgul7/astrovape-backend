@@ -206,6 +206,81 @@ async function addBulkProducts(productsData) {
     return { products: createdProducts, productBatches: createdBatches };
 }
 
+async function searchProductsBySku({ pageNo, limit, search }) {
+    const pageNumber = parseInt(pageNo) || 1;
+    const pageLimit = parseInt(limit) || 10;
+    const skip = (pageNumber - 1) * pageLimit;
+
+    let filter = {};
+
+    if (search) {
+        const escapedSearch = escapeRegex(search);
+        filter.sku = {               
+            $regex: escapedSearch,
+            $options: "i"
+        };
+    }
+
+    const totalItems = await Product.countDocuments(filter);
+
+    const products = await Product.find(filter)
+        .sort({ createdAt: -1 })
+        .skip(skip)
+        .limit(pageLimit);
+
+    return {
+        products,
+        meta: {
+            totalItems,
+            totalPages: Math.ceil(totalItems / pageLimit),
+            currentPage: pageNumber,
+            pageSize: pageLimit
+        }
+    };
+}
+
+async function searchProductsBySkuOrName({ pageNo, limit, search }) {
+    const pageNumber = parseInt(pageNo) || 1;
+    const pageLimit = parseInt(limit) || 10;
+    const skip = (pageNumber - 1) * pageLimit;
+
+    let filter = {};
+
+    if (search) {
+        const skuMatchFilter = { sku: search };
+
+        const skuMatchCount = await Product.countDocuments(skuMatchFilter);
+
+        if (skuMatchCount > 0) {
+            filter = skuMatchFilter;
+        } else {
+            const escapedSearch = escapeRegex(search);
+
+            filter.name = {
+                $regex: escapedSearch,
+                $options: "i"
+            };
+        }
+    }
+
+    const totalItems = await Product.countDocuments(filter);
+
+    const products = await Product.find(filter)
+        .sort({ createdAt: -1 })
+        .skip(skip)
+        .limit(pageLimit);
+
+    return {
+        products,
+        meta: {
+            totalItems,
+            totalPages: Math.ceil(totalItems / pageLimit),
+            currentPage: pageNumber,
+            pageSize: pageLimit
+        }
+    };
+}
+
 
 
 module.exports = {
@@ -215,5 +290,7 @@ module.exports = {
     updateProduct,
     deleteProduct,
     searchProducts,
-    addBulkProducts
+    addBulkProducts,
+    searchProductsBySku,
+    searchProductsBySkuOrName
 };

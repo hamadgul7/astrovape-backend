@@ -10,5 +10,7 @@ router.patch("/updateProductById/:id", verifyToken, productController.updateProd
 router.delete("/deleteProductById/:id", verifyToken, productController.deleteProduct); 
 router.get("/search", verifyToken, productController.searchProducts);
 router.post("/addBulkProducts", verifyToken, productController.addBulkProducts);
+router.get("/searchBySku", verifyToken, productController.searchProductsBySku);
+router.get("/searchBySkuOrName", verifyToken, productController.searchProductsBySkuOrName);
 
 module.exports = router;
