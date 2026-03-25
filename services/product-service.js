@@ -98,9 +98,7 @@ async function updateProduct(id, data) {
     if (data.brand !== undefined) updateData.brand = data.brand;
 
     if (data.totalQuantity !== undefined) {
-        const product = await Product.findById(id);
-        if (!product) throw new Error("Product not found");
-        updateData.totalQuantity = product.totalQuantity + data.totalQuantity;
+        updateData.totalQuantity = data.totalQuantity;
     }
 
     const product = await Product.findByIdAndUpdate(id, updateData, {
