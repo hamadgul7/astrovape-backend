@@ -36,8 +36,15 @@ async function getAllInvoices(req, res) {
     try {
         const page = req.query.page || 1;
         const limit = req.query.limit || 10;
+        const startDate = req.query.startDate;
+        const endDate = req.query.endDate;
 
-        const result = await invoiceService.getAllInvoices({ page, limit });
+        const result = await invoiceService.getAllInvoices({
+            page,
+            limit,
+            startDate,
+            endDate,
+        });
 
         return res.status(200).json({
             success: true,

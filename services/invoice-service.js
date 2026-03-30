@@ -123,19 +123,51 @@ async function createBulkInvoices(invoicesData) {
 }
 
 
-async function getAllInvoices({ page = 1, limit = 10 }) {
+async function getAllInvoices({ page = 1, limit = 10, startDate, endDate }) {
     page = parseInt(page);
     limit = parseInt(limit);
     const skip = (page - 1) * limit;
 
-    const totalItems = await Invoice.countDocuments();
+    const filter = {};
 
-    const invoices = await Invoice.find()
+    if (startDate && endDate) {
+        const start = new Date(startDate);
+        const end = new Date(endDate);
+
+        end.setHours(23, 59, 59, 999);
+
+        filter.createdAt = {
+            $gte: start,
+            $lte: end,
+        };
+    }
+
+    const totalItems = await Invoice.countDocuments(filter);
+
+    let invoices = await Invoice.find(filter)
         .sort({ createdAt: -1 })
         .skip(skip)
         .limit(limit)
         .populate("items.productId", "name sku brand")
         .lean();
+
+    invoices = invoices.map((invoice) => {
+        let totalProfit = 0;
+
+        invoice.items.forEach((item) => {
+            const profitPerItem =
+                (item.unitPrice - item.unitBuyingCost) * item.quantity;
+
+            totalProfit += profitPerItem;
+        });
+
+        totalProfit -= invoice.totalDiscount || 0;
+
+        return {
+            ...invoice,
+            profit: totalProfit,
+        };
+    });
 
     const totalPages = Math.ceil(totalItems / limit);
 
@@ -151,8 +183,6 @@ async function getAllInvoices({ page = 1, limit = 10 }) {
         },
     };
 }
-
-
 
 
 async function getSingleInvoiceById(id) {
