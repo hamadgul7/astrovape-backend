@@ -189,6 +189,7 @@ async function getAllInvoices({ page = 1, limit = 10, startDate, endDate }) {
 async function getSingleInvoiceById(id) {
     const invoice = await Invoice.findById(id)
         .populate("items.productId", "name sku brand")
+        .populate("branchId", "name")
         .lean();
 
     if (!invoice) {
