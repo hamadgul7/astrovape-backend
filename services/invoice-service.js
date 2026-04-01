@@ -149,6 +149,7 @@ async function getAllInvoices({ page = 1, limit = 10, startDate, endDate }) {
         .skip(skip)
         .limit(limit)
         .populate("items.productId", "name sku brand")
+        .populate("branchId", "name")
         .lean();
 
     invoices = invoices.map((invoice) => {
