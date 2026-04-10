@@ -9,5 +9,6 @@ router.get("/getAllInvoices", verifyToken, invoiceController.getAllInvoices);
 router.get("/getSingleInvoiceById/:id", verifyToken, invoiceController.getSingleInvoiceById);
 router.patch("/updateInvoice/:id", verifyToken, invoiceController.updateInvoice);
 router.delete("/deleteInvoice/:id", verifyToken, invoiceController.deleteInvoice);
+router.get("/getInvoicesByDate", verifyToken, invoiceController.getInvoicesByDate);
 
 module.exports = router;

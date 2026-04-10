@@ -280,6 +280,62 @@ async function deleteInvoice(id) {
     return invoice;
 }
 
+async function getInvoicesByDate(date) {
+    if (!date) {
+        throw new Error("Date is required");
+    }
+
+    const start = new Date(date);
+    const end = new Date(date);
+
+    end.setHours(23, 59, 59, 999);
+
+    const invoices = await Invoice.find({
+        createdAt: {
+            $gte: start,
+            $lte: end,
+        },
+    })
+        .sort({ createdAt: -1 })
+        .populate("items.productId", "name sku brand")
+        .populate("branchId", "name")
+        .lean();
+
+    let totalSales = 0;
+    let totalDiscount = 0;
+    let totalProfit = 0;
+
+    const updatedInvoices = invoices.map((invoice) => {
+        let invoiceProfit = 0;
+
+        invoice.items.forEach((item) => {
+            invoiceProfit +=
+                (item.unitPrice - item.unitBuyingCost) * item.quantity;
+        });
+
+        invoiceProfit -= invoice.totalDiscount || 0;
+
+        totalSales += invoice.totalAmount;
+        totalDiscount += invoice.totalDiscount || 0;
+        totalProfit += invoiceProfit;
+
+        return {
+            ...invoice,
+            branchName: invoice.branchId?.name || null,
+            profit: invoiceProfit,
+        };
+    });
+
+    return {
+        invoices: updatedInvoices,
+        summary: {
+            totalSales,
+            totalProfit,
+            totalDiscount,
+        },
+    };
+}
+
 module.exports = {
     createInvoice,
     createBulkInvoices,
@@ -287,4 +343,5 @@ module.exports = {
     getSingleInvoiceById,
     updateInvoice,
     deleteInvoice,
+    getInvoicesByDate,
 };

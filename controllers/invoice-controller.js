@@ -113,11 +113,30 @@ async function deleteInvoice(req, res) {
 }
 
 
+async function getInvoicesByDate(req, res) {
+    try {
+        const date = req.query.date;
+
+        const result = await invoiceService.getInvoicesByDate(date);
+
+        return res.status(200).json({
+            success: true,
+            ...result,
+        });
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: error.message,
+        });
+    }
+}
+
 module.exports = {
     createInvoice,
     createBulkInvoices,
     getAllInvoices,
     getSingleInvoiceById,
     updateInvoice,
-    deleteInvoice
+    deleteInvoice,
+    getInvoicesByDate,
 };
