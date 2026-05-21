@@ -88,6 +88,38 @@ async function deleteProductBatch(req, res) {
 //     }
 // }
 
+
+async function searchProductBatchBySku(req, res) {
+
+    try {
+
+        const { pageNo, limit, search } = req.query;
+
+        const result = await productBatchService.searchProductBatchBySku({
+            pageNo,
+            limit,
+            search
+        });
+
+        return res.status(200).json({
+            success: true,
+            message: "Product batches retrieved successfully",
+            data: result.batches,
+            meta: result.meta
+        });
+
+    } catch (error) {
+
+        return res.status(500).json({
+            success: false,
+            message: error.message
+        });
+
+    }
+}
+
+
+
 module.exports = {
     addProductBatch,
     getProductAllBatches,
@@ -95,4 +127,5 @@ module.exports = {
     updateProductBatch,
     deleteProductBatch,
     // searchProductBatches
+    searchProductBatchBySku
 };

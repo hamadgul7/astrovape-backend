@@ -3,6 +3,12 @@ const Product = require("../models/product-model");
 const Brand = require("../models/brand-model");
 
 
+
+const escapeRegex = (text) => {
+    return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+};
+
+
 async function addProductBatch(data) {
     const product = await Product.findById(data.productId);
     if (!product) throw new Error("Product not found");
@@ -156,11 +162,62 @@ async function deleteProductBatch(id) {
 //     };
 // }
 
+async function searchProductBatchBySku({ pageNo, limit, search }) {
+
+    const pageNumber = parseInt(pageNo) || 1;
+    const pageLimit = parseInt(limit) || 10;
+    const skip = (pageNumber - 1) * pageLimit;
+
+    let productFilter = {};
+
+    if (search) {
+        const escapedSearch = escapeRegex(search);
+
+        productFilter.sku = {
+            $regex: escapedSearch,
+            $options: "i"
+        };
+    }
+
+    const products = await Product.find(productFilter).select("_id");
+
+    const productIds = products.map(product => product._id);
+
+    let batchFilter = {};
+
+    if (productIds.length > 0) {
+        batchFilter.productId = { $in: productIds };
+    } else {
+        batchFilter.productId = null;
+    }
+
+    const totalItems = await ProductBatch.countDocuments(batchFilter);
+
+    const batches = await ProductBatch.find(batchFilter)
+        .sort({ createdAt: -1 })
+        .skip(skip)
+        .limit(pageLimit);
+
+    return {
+        batches,
+        meta: {
+            totalItems,
+            totalPages: Math.ceil(totalItems / pageLimit),
+            currentPage: pageNumber,
+            pageSize: pageLimit
+        }
+    };
+}
+
+
+
+
 module.exports = {
     addProductBatch,
     getProductAllBatches,
     getProductBatchById,
     updateProductBatch,
     deleteProductBatch,
+    searchProductBatchBySku
     // searchProductBatches
 };

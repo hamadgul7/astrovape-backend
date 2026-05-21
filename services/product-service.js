@@ -279,6 +279,59 @@ async function searchProductsBySkuOrName({ pageNo, limit, search }) {
     };
 }
 
+async function searchProductBatchBySku({ pageNo, limit, search }) {
+
+    const pageNumber = parseInt(pageNo) || 1;
+    const pageLimit = parseInt(limit) || 10;
+    const skip = (pageNumber - 1) * pageLimit;
+
+    let productFilter = {};
+
+    // Search product by SKU
+    if (search) {
+        const escapedSearch = escapeRegex(search);
+
+        productFilter.sku = {
+            $regex: escapedSearch,
+            $options: "i"
+        };
+    }
+
+    // Find matching products
+    const products = await Product.find(productFilter).select("_id");
+
+    // Extract product IDs
+    const productIds = products.map(product => product._id);
+
+    // Batch filter
+    let batchFilter = {};
+
+    if (productIds.length > 0) {
+        batchFilter.productId = { $in: productIds };
+    } else {
+        batchFilter.productId = null;
+    }
+
+    // Total batches count
+    const totalItems = await ProductBatch.countDocuments(batchFilter);
+
+    // Fetch batches
+    const batches = await ProductBatch.find(batchFilter)
+        .sort({ createdAt: -1 })
+        .skip(skip)
+        .limit(pageLimit);
+
+    return {
+        batches,
+        meta: {
+            totalItems,
+            totalPages: Math.ceil(totalItems / pageLimit),
+            currentPage: pageNumber,
+            pageSize: pageLimit
+        }
+    };
+}
+
 
 
 module.exports = {

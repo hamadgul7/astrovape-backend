@@ -9,6 +9,7 @@ router.get("/getProductAllBatchesById/:id", productBatchController.getProductAll
 router.get("/getProductBatchById/:id", productBatchController.getProductBatchById);
 router.patch("/updateProductBatchById/:id", verifyToken, productBatchController.updateProductBatch);
 router.delete("/deleteProductBatchById/:id", verifyToken, productBatchController.deleteProductBatch);
+router.get("/searchProductBatchBySku", productBatchController.searchProductBatchBySku);
 // router.get("/search", productBatchController.searchProductBatches);
 
 module.exports = router;
