@@ -123,68 +123,151 @@ async function createBulkInvoices(invoicesData) {
 }
 
 
-async function getAllInvoices({ page = 1, limit = 10, startDate, endDate }) {
-    page = parseInt(page);
-    limit = parseInt(limit);
-    const skip = (page - 1) * limit;
+async function getAllInvoices({
+    page = 1,
+    limit = 10,
+    startDate,
+    endDate,
+    branchId
+}) {
+    try {
+        page = parseInt(page);
+        limit = parseInt(limit);
+        const skip = (page - 1) * limit;
 
-    const filter = {};
+        const filter = {};
 
-    if (startDate && endDate) {
-        const start = new Date(startDate);
-        const end = new Date(endDate);
+        if (startDate || endDate) {
+            filter.createdAt = {};
 
-        end.setHours(23, 59, 59, 999);
+            if (startDate) {
+                filter.createdAt.$gte = new Date(startDate);
+            }
 
-        filter.createdAt = {
-            $gte: start,
-            $lte: end,
-        };
-    }
+            if (endDate) {
+                const end = new Date(endDate);
+                end.setHours(23, 59, 59, 999);
+                filter.createdAt.$lte = end;
+            }
+        }
 
-    const totalItems = await Invoice.countDocuments(filter);
+        if (branchId && branchId !== "both") {
+            filter.branchId = new mongoose.Types.ObjectId(branchId);
+        }
 
-    let invoices = await Invoice.find(filter)
-        .sort({ createdAt: -1 })
-        .skip(skip)
-        .limit(limit)
-        .populate("items.productId", "name sku brand")
-        .populate("branchId", "name")
-        .lean();
+        const totalItems = await Invoice.countDocuments(filter);
 
-    invoices = invoices.map((invoice) => {
-        let totalProfit = 0;
+        let invoices = await Invoice.find(filter)
+            .sort({ createdAt: -1 })
+            .skip(skip)
+            .limit(limit)
+            .populate("items.productId", "name sku brand")
+            .populate("branchId", "name")
+            .lean();
 
-        invoice.items.forEach((item) => {
-            const profitPerItem =
-                (item.unitPrice - item.unitBuyingCost) * item.quantity;
 
-            totalProfit += profitPerItem;
+        let pageProfit = 0;
+        let pageSales = 0;
+
+        invoices = invoices.map((invoice) => {
+            pageSales += invoice.totalAmount || 0;
+
+
+            let invoiceProfit = 0;
+
+            invoice.items.forEach((item) => {
+                invoiceProfit +=
+                    (item.unitPrice - item.unitBuyingCost) * item.quantity;
+            });
+
+            invoiceProfit -= invoice.totalDiscount || 0;
+
+            pageProfit += invoiceProfit;
+
+            return {
+                ...invoice,
+                profit: invoiceProfit
+            };
         });
 
-        totalProfit -= invoice.totalDiscount || 0;
+        const totalPages = Math.ceil(totalItems / limit);
+
+
+        const globalResult = await Invoice.aggregate([
+            { $match: filter },
+            {
+                $project: {
+                    totalAmount: 1,
+                    profit: {
+                        $subtract: [
+                            {
+                                $reduce: {
+                                    input: "$items",
+                                    initialValue: 0,
+                                    in: {
+                                        $add: [
+                                            "$$value",
+                                            {
+                                                $multiply: [
+                                                    {
+                                                        $subtract: [
+                                                            "$$this.unitPrice",
+                                                            "$$this.unitBuyingCost"
+                                                        ]
+                                                    },
+                                                    "$$this.quantity"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            { $ifNull: ["$totalDiscount", 0] }
+                        ]
+                    }
+                }
+            },
+            {
+                $group: {
+                    _id: null,
+                    totalSales: { $sum: "$totalAmount" },
+                    totalProfit: { $sum: "$profit" }
+                }
+            }
+        ]);
+
+        const totalSales = globalResult[0]?.totalSales || 0;
+        const totalProfit = globalResult[0]?.totalProfit || 0;
+
 
         return {
-            ...invoice,
-            profit: totalProfit,
+            invoices,
+
+            pageSummary: {
+                pageSales,
+                pageProfit
+            },
+
+            globalSummary: {
+                branchId: branchId || "both",
+                totalSales,
+                totalProfit
+            },
+
+            meta: {
+                totalItems,
+                totalPages,
+                currentPage: page,
+                pageLimit: limit,
+                nextPage: page < totalPages ? page + 1 : null,
+                previousPage: page > 1 ? page - 1 : null
+            }
         };
-    });
 
-    const totalPages = Math.ceil(totalItems / limit);
-
-    return {
-        invoices,
-        meta: {
-            totalItems,
-            totalPages,
-            currentPage: page,
-            pageLimit: limit,
-            nextPage: page < totalPages ? page + 1 : null,
-            previousPage: page > 1 ? page - 1 : null,
-        },
-    };
+    } catch (error) {
+        throw error;
+    }
 }
-
 
 async function getSingleInvoiceById(id) {
     const invoice = await Invoice.findById(id)

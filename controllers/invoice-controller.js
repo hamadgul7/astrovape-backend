@@ -34,16 +34,18 @@ async function createBulkInvoices(req, res) {
 
 async function getAllInvoices(req, res) {
     try {
-        const page = req.query.page || 1;
+        const page = req.query.pageNo || 1;
         const limit = req.query.limit || 10;
         const startDate = req.query.startDate;
         const endDate = req.query.endDate;
+        const branchId = req.query.branchId;
 
         const result = await invoiceService.getAllInvoices({
             page,
             limit,
             startDate,
             endDate,
+            branchId,
         });
 
         return res.status(200).json({
