@@ -5,7 +5,7 @@ const verifyToken = require('../middlewares/verifyToken');
 
 
 router.post("/addProductBatch", verifyToken, productBatchController.addProductBatch);
-router.get("/getProductAllBatchesById/:id", productBatchController.getProductAllBatches);
+router.get("/getProductAllBatchesById", productBatchController.getProductAllBatches);
 router.get("/getProductBatchById/:id", productBatchController.getProductBatchById);
 router.patch("/updateProductBatchById/:id", verifyToken, productBatchController.updateProductBatch);
 router.delete("/deleteProductBatchById/:id", verifyToken, productBatchController.deleteProductBatch);

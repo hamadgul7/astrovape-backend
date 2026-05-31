@@ -37,32 +37,76 @@ async function addProductBatch(data) {
 }
 
 
-async function getProductAllBatches(page = 1, limit = 10, productId = null) {
+async function getProductAllBatches({
+    page = 1,
+    limit = 10,
+    productId = null,
+    sku = null
+}) {
     page = parseInt(page);
     limit = parseInt(limit);
     const skip = (page - 1) * limit;
 
-    const filter = {};
-    if (productId) filter.productId = productId;
+    let batchFilter = null;
 
-    const totalItems = await ProductBatch.countDocuments(filter);
+    if (productId) {
+        batchFilter = { productId };
+    }
 
-    const batches = await ProductBatch.find(filter)
+    else if (sku) {
+        const escapedSku = escapeRegex(sku);
+
+        const products = await Product.find({
+            sku: { $regex: escapedSku, $options: "i" }
+        }).select("_id");
+
+        const productIds = products.map(p => p._id);
+
+        if (productIds.length === 0) {
+            return {
+                batches: [],
+                meta: {
+                    totalItems: 0,
+                    totalPages: 0,
+                    currentPage: page,
+                    pageLimit: limit
+                }
+            };
+        }
+
+        batchFilter = {
+            productId: { $in: productIds }
+        };
+    }
+
+    else {
+        return {
+            batches: [],
+            meta: {
+                totalItems: 0,
+                totalPages: 0,
+                currentPage: page,
+                pageLimit: limit
+            }
+        };
+    }
+
+    const totalItems = await ProductBatch.countDocuments(batchFilter);
+
+    const batches = await ProductBatch.find(batchFilter)
+        .sort({ createdAt: -1 })
         .skip(skip)
-        .limit(limit)
-        .sort({ createdAt: -1 });
+        .limit(limit);
 
     const batchesWithMonthYear = batches.map(batch => {
         const createdDate = new Date(batch.createdAt);
 
-        const monthYear = createdDate.toLocaleString('default', {
-            month: 'long',
-            year: 'numeric'
-        }); 
-
         return {
             ...batch.toObject(),
-            monthYear
+            monthYear: createdDate.toLocaleString("default", {
+                month: "long",
+                year: "numeric"
+            })
         };
     });
 

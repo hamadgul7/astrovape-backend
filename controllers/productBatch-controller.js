@@ -15,17 +15,28 @@ async function addProductBatch(req, res) {
 
 async function getProductAllBatches(req, res) {
     try {
-        const { pageNo = 1, limit = 10 } = req.query;
-        const productId = req.params.id;
-        const data = await productBatchService.getProductAllBatches(pageNo, limit, productId);
+        const { pageNo = 1, limit = 10, sku = null } = req.query;
+        const productId = req.query.productId || null;
+
+        const data = await productBatchService.getProductAllBatches({
+            page: pageNo,
+            limit,
+            productId,
+            sku
+        });
+
         res.status(200).json({
             success: true,
             message: "Product batches retrieved successfully",
             data: data.batches,
             meta: data.meta
         });
+
     } catch (err) {
-        res.status(500).json({ success: false, message: err.message });
+        res.status(500).json({
+            success: false,
+            message: err.message
+        });
     }
 }
 
