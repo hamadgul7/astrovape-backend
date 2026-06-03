@@ -354,13 +354,39 @@ async function updateInvoice(id, data) {
 }
 
 async function deleteInvoice(id) {
-    const invoice = await Invoice.findByIdAndDelete(id);
+    const session = await mongoose.startSession();
+    session.startTransaction();
 
-    if (!invoice) {
-        throw new Error("Invoice not found");
+    try {
+        const invoice = await Invoice.findById(id).session(session);
+
+        if (!invoice) {
+            throw new Error("Invoice not found");
+        }
+
+        for (const item of invoice.items) {
+            const product = await Product.findById(item.productId).session(session);
+
+            if (!product) {
+                throw new Error(`Product not found: ${item.productId}`);
+            }
+
+            product.totalQuantity += item.quantity;
+
+            await product.save({ session });
+        }
+
+        await Invoice.findByIdAndDelete(id).session(session);
+
+        await session.commitTransaction();
+        session.endSession();
+
+        return invoice;
+    } catch (error) {
+        await session.abortTransaction();
+        session.endSession();
+        throw error;
     }
-
-    return invoice;
 }
 
 async function getInvoicesByDate(date) {
