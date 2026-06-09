@@ -128,7 +128,8 @@ async function getAllInvoices({
     limit = 10,
     startDate,
     endDate,
-    branchId
+    branchId,
+    sku
 }) {
     try {
         page = parseInt(page);
@@ -137,6 +138,9 @@ async function getAllInvoices({
 
         const filter = {};
 
+        // =========================
+        // DATE FILTER
+        // =========================
         if (startDate || endDate) {
             filter.createdAt = {};
 
@@ -151,10 +155,48 @@ async function getAllInvoices({
             }
         }
 
+        // =========================
+        // BRANCH FILTER
+        // =========================
         if (branchId && branchId !== "both") {
             filter.branchId = new mongoose.Types.ObjectId(branchId);
         }
 
+        // =========================
+        // SKU FILTER
+        // =========================
+        if (sku) {
+            const product = await Product.findOne({ sku }).select("_id");
+
+            if (!product) {
+                return {
+                    invoices: [],
+                    pageSummary: {
+                        pageSales: 0,
+                        pageProfit: 0
+                    },
+                    globalSummary: {
+                        branchId: branchId || "both",
+                        totalSales: 0,
+                        totalProfit: 0
+                    },
+                    meta: {
+                        totalItems: 0,
+                        totalPages: 0,
+                        currentPage: page,
+                        pageLimit: limit,
+                        nextPage: null,
+                        previousPage: null
+                    }
+                };
+            }
+
+            filter["items.productId"] = product._id;
+        }
+
+        // =========================
+        // PAGINATED INVOICES
+        // =========================
         const totalItems = await Invoice.countDocuments(filter);
 
         let invoices = await Invoice.find(filter)
@@ -165,13 +207,14 @@ async function getAllInvoices({
             .populate("branchId", "name")
             .lean();
 
-
+        // =========================
+        // PAGE METRICS
+        // =========================
         let pageProfit = 0;
         let pageSales = 0;
 
         invoices = invoices.map((invoice) => {
             pageSales += invoice.totalAmount || 0;
-
 
             let invoiceProfit = 0;
 
@@ -192,9 +235,13 @@ async function getAllInvoices({
 
         const totalPages = Math.ceil(totalItems / limit);
 
-
+        // =========================
+        // GLOBAL METRICS
+        // =========================
         const globalResult = await Invoice.aggregate([
-            { $match: filter },
+            {
+                $match: filter
+            },
             {
                 $project: {
                     totalAmount: 1,
@@ -222,7 +269,9 @@ async function getAllInvoices({
                                     }
                                 }
                             },
-                            { $ifNull: ["$totalDiscount", 0] }
+                            {
+                                $ifNull: ["$totalDiscount", 0]
+                            }
                         ]
                     }
                 }
@@ -230,15 +279,18 @@ async function getAllInvoices({
             {
                 $group: {
                     _id: null,
-                    totalSales: { $sum: "$totalAmount" },
-                    totalProfit: { $sum: "$profit" }
+                    totalSales: {
+                        $sum: "$totalAmount"
+                    },
+                    totalProfit: {
+                        $sum: "$profit"
+                    }
                 }
             }
         ]);
 
         const totalSales = globalResult[0]?.totalSales || 0;
         const totalProfit = globalResult[0]?.totalProfit || 0;
-
 
         return {
             invoices,

@@ -39,6 +39,7 @@ async function getAllInvoices(req, res) {
         const startDate = req.query.startDate;
         const endDate = req.query.endDate;
         const branchId = req.query.branchId;
+        const sku = req.query.sku;
 
         const result = await invoiceService.getAllInvoices({
             page,
@@ -46,6 +47,7 @@ async function getAllInvoices(req, res) {
             startDate,
             endDate,
             branchId,
+            sku,
         });
 
         return res.status(200).json({
