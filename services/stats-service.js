@@ -325,8 +325,18 @@ async function getMonthlyProfitTrend() {
 }
 
 
-async function getTopSellingProductsByBrand(brandId) { 
-    const products = await Product.find({ "brand.id": brandId }).select("_id name totalQuantity");
+async function getTopSellingProductsByBrand(brandId) {
+
+    let products;
+
+    if (brandId) {
+        products = await Product.find({ "brand.id": brandId })
+            .select("_id name totalQuantity");
+    } 
+    else {
+        products = await Product.find()
+            .select("_id name totalQuantity");
+    }
 
     const productIds = products.map(p => p._id);
 
@@ -334,7 +344,11 @@ async function getTopSellingProductsByBrand(brandId) {
 
     const soldData = await Invoice.aggregate([
         { $unwind: "$items" },
-        { $match: { "items.productId": { $in: productIds } } },
+        {
+            $match: {
+                "items.productId": { $in: productIds }
+            }
+        },
         {
             $group: {
                 _id: "$items.productId",
@@ -343,24 +357,24 @@ async function getTopSellingProductsByBrand(brandId) {
         }
     ]);
 
-    const topProducts = products.map(p => {
-        const soldItem = soldData.find(s => s._id.toString() === p._id.toString());
-        const soldQuantity = soldItem ? soldItem.soldQuantity : 0;
+    const result = products.map(p => {
+        const soldItem = soldData.find(
+            s => s._id.toString() === p._id.toString()
+        );
 
-        const remainingQuantity = p.totalQuantity;
+        const soldQuantity = soldItem ? soldItem.soldQuantity : 0;
 
         return {
             name: p.name,
             soldQuantity,
-            remainingQuantity
+            remainingQuantity: p.totalQuantity
         };
     });
 
-    topProducts.sort((a, b) => b.soldQuantity - a.soldQuantity);
+    result.sort((a, b) => b.soldQuantity - a.soldQuantity);
 
-    return topProducts.slice(0, 5);
+    return result.slice(0, 5);
 }
-
 
 async function calculateBranchSales(startDate, endDate) { 
     try {
