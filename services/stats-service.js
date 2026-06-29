@@ -376,11 +376,15 @@ async function getTopSellingProductsByBrand(brandId) {
     return result.slice(0, 5);
 }
 
-async function calculateBranchSales(startDate, endDate) { 
+async function calculateBranchSales(startDate, endDate) {
     try {
         const matchFilter = {};
+
         if (startDate && endDate) {
-            matchFilter.createdAt = { $gte: new Date(startDate), $lte: new Date(endDate) };
+            matchFilter.createdAt = {
+                $gte: new Date(startDate),
+                $lte: new Date(endDate)
+            };
         }
 
         const sales = await Branch.aggregate([
@@ -389,8 +393,50 @@ async function calculateBranchSales(startDate, endDate) {
                     from: "invoices",
                     let: { branchId: "$_id" },
                     pipeline: [
-                        { $match: { $expr: { $eq: ["$branchId", "$$branchId"] }, ...matchFilter } },
-                        { $group: { _id: null, totalSales: { $sum: "$totalAmount" } } }
+                        {
+                            $match: {
+                                $expr: {
+                                    $eq: ["$branchId", "$$branchId"]
+                                },
+                                ...matchFilter
+                            }
+                        },
+                        {
+                            $project: {
+                                invoiceProfit: {
+                                    $subtract: [
+                                        {
+                                            $sum: {
+                                                $map: {
+                                                    input: "$items",
+                                                    as: "item",
+                                                    in: {
+                                                        $multiply: [
+                                                            {
+                                                                $subtract: [
+                                                                    "$$item.unitPrice",
+                                                                    "$$item.unitBuyingCost"
+                                                                ]
+                                                            },
+                                                            "$$item.quantity"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "$totalDiscount"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            $group: {
+                                _id: null,
+                                totalSales: {
+                                    $sum: "$invoiceProfit"
+                                }
+                            }
+                        }
                     ],
                     as: "salesData"
                 }
@@ -399,7 +445,17 @@ async function calculateBranchSales(startDate, endDate) {
                 $project: {
                     branchId: "$_id",
                     branchName: "$name",
-                    totalSales: { $ifNull: [{ $arrayElemAt: ["$salesData.totalSales", 0] }, 0] }
+                    totalSales: {
+                        $ifNull: [
+                            {
+                                $arrayElemAt: [
+                                    "$salesData.totalSales",
+                                    0
+                                ]
+                            },
+                            0
+                        ]
+                    }
                 }
             }
         ]);
