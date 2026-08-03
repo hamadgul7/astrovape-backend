@@ -11,17 +11,17 @@ const products = [];
 
 for (let i = 1; i <= 1000; i++) {
     const name = `Vape Product ${i}`;
-    const sku = `VAPE-PROD-${i.toString().padStart(4, "0")}`;
+    const primarySku = `VAPE-PROD-${i.toString().padStart(4, "0")}`;
     const brandId = brands[Math.floor(Math.random() * brands.length)];
 
-    const sellingCost = Math.floor(Math.random() * (10000 - 2000 + 1)) + 2000; 
-    const buyingCost = sellingCost - (Math.floor(Math.random() * 800) + 200);   
+    const sellingCost = Math.floor(Math.random() * (10000 - 2000 + 1)) + 2000;
+    const buyingCost = sellingCost - (Math.floor(Math.random() * 800) + 200);
 
-    const totalQuantity = Math.floor(Math.random() * (50 - 30 + 1)) + 30; 
+    const totalQuantity = Math.floor(Math.random() * (50 - 30 + 1)) + 30;
 
     products.push({
         name,
-        sku,
+        skus: [primarySku],
         brandId,
         buyingCost,
         sellingCost,

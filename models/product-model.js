@@ -8,12 +8,21 @@ const productSchema = new mongoose.Schema(
             trim: true
         },
 
-        sku: {
-            type: String,
+        skus: {
+            type: [
+                {
+                    type: String,
+                    trim: true,
+                    uppercase: true
+                }
+            ],
             required: true,
-            unique: true,
-            trim: true,
-            uppercase: true
+            validate: {
+                validator: function (value) {
+                    return Array.isArray(value) && value.length > 0;
+                },
+                message: "At least one SKU is required"
+            }
         },
 
         brand: {
@@ -44,5 +53,8 @@ const productSchema = new mongoose.Schema(
         timestamps: true
     }
 );
+
+// Each SKU value must be unique across all products
+productSchema.index({ skus: 1 }, { unique: true });
 
 module.exports = mongoose.model("Product", productSchema);

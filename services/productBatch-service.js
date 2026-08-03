@@ -57,7 +57,7 @@ async function getProductAllBatches({
         const escapedSku = escapeRegex(sku);
 
         const products = await Product.find({
-            sku: { $regex: escapedSku, $options: "i" }
+            skus: { $regex: escapedSku, $options: "i" }
         }).select("_id");
 
         const productIds = products.map(p => p._id);
@@ -217,7 +217,7 @@ async function searchProductBatchBySku({ pageNo, limit, search }) {
     if (search) {
         const escapedSearch = escapeRegex(search);
 
-        productFilter.sku = {
+        productFilter.skus = {
             $regex: escapedSearch,
             $options: "i"
         };

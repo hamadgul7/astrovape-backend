@@ -1,12 +1,11 @@
 const Product = require("../models/product-model");
 const ProductBatch = require("../models/productBatch-model");
 const Brand = require("../models/brand-model");
+const { normalizeSkus, assertSkusAreUnique } = require("../utils/sku");
 
 async function addProduct(data) {
-    const existingSKU = await Product.findOne({ sku: data.sku });
-    if (existingSKU) {
-        throw new Error("SKU already exists. Please use a unique SKU.");
-    }
+    const skus = normalizeSkus(data);
+    await assertSkusAreUnique(Product, skus);
 
     const brand = await Brand.findById(data.brandId);
     if (!brand) {
@@ -17,7 +16,7 @@ async function addProduct(data) {
 
     const product = await Product.create({
         name: data.name,
-        sku: data.sku, 
+        skus,
         brand: brandObj,
         buyingCost: data.buyingCost,
         sellingCost: data.sellingCost,
@@ -27,7 +26,6 @@ async function addProduct(data) {
     const productBatch = await ProductBatch.create({
         productId: product._id,
         name: "B-01",
-        sku: data.sku, 
         brand: brandObj,
         buyingCost: data.buyingCost,
         sellingCost: data.sellingCost,
@@ -72,11 +70,12 @@ async function getProductById(id) {
 
 
 async function updateProduct(id, data) {
-    if (data.sku) {
-        const existingSKU = await Product.findOne({ sku: data.sku, _id: { $ne: id } });
-        if (existingSKU) {
-            throw new Error(`SKU already exists. Please use a unique SKU.`);
-        }
+    const hasSkusPayload = data.skus !== undefined || data.sku !== undefined;
+
+    if (hasSkusPayload) {
+        const skus = normalizeSkus(data);
+        await assertSkusAreUnique(Product, skus, id);
+        data.skus = skus;
     }
 
     if (data.brandId) {
@@ -92,7 +91,7 @@ async function updateProduct(id, data) {
 
     const updateData = {};
     if (data.name !== undefined) updateData.name = data.name;
-    if (data.sku !== undefined) updateData.sku = data.sku;
+    if (data.skus !== undefined) updateData.skus = data.skus;
     if (data.buyingCost !== undefined) updateData.buyingCost = data.buyingCost;
     if (data.sellingCost !== undefined) updateData.sellingCost = data.sellingCost;
     if (data.brand !== undefined) updateData.brand = data.brand;
@@ -138,7 +137,7 @@ async function searchProducts({ pageNo, limit, search }) {
         const escapedSearch = escapeRegex(search);
         filter.name = {
             $regex: escapedSearch,
-            $options: "i" 
+            $options: "i"
         };
     }
 
@@ -165,22 +164,34 @@ async function addBulkProducts(productsData) {
     const createdProducts = [];
     const createdBatches = [];
 
+    // Collect all SKUs in this bulk request to catch duplicates within the payload
+    const seenInPayload = new Set();
+
     for (const data of productsData) {
-        const existingSKU = await Product.findOne({ sku: data.sku });
-        if (existingSKU) {
-            throw new Error(`SKU "${data.sku}" already exists. Please use a unique SKU.`);
+        const skus = normalizeSkus(data);
+        if (skus.length === 0) {
+            throw new Error("At least one SKU is required for each product");
         }
+
+        for (const sku of skus) {
+            if (seenInPayload.has(sku)) {
+                throw new Error(`Duplicate SKU "${sku}" found in bulk payload`);
+            }
+            seenInPayload.add(sku);
+        }
+
+        await assertSkusAreUnique(Product, skus);
 
         const brand = await Brand.findById(data.brandId);
         if (!brand) {
-            throw new Error(`Brand not found for SKU "${data.sku}"`);
+            throw new Error(`Brand not found for SKU(s) "${skus.join(", ")}"`);
         }
 
         const brandObj = { id: brand._id, name: brand.name };
 
         const product = await Product.create({
             name: data.name,
-            sku: data.sku,
+            skus,
             brand: brandObj,
             buyingCost: data.buyingCost,
             sellingCost: data.sellingCost,
@@ -190,7 +201,6 @@ async function addBulkProducts(productsData) {
         const productBatch = await ProductBatch.create({
             productId: product._id,
             name: data.name,
-            sku: data.sku,
             brand: brandObj,
             buyingCost: data.buyingCost,
             sellingCost: data.sellingCost,
@@ -213,7 +223,8 @@ async function searchProductsBySku({ pageNo, limit, search }) {
 
     if (search) {
         const escapedSearch = escapeRegex(search);
-        filter.sku = {               
+        // Match if any SKU in the array matches the regex
+        filter.skus = {
             $regex: escapedSearch,
             $options: "i"
         };
@@ -245,19 +256,33 @@ async function searchProductsBySkuOrName({ pageNo, limit, search }) {
     let filter = {};
 
     if (search) {
-        const skuMatchFilter = { sku: search };
+        // Priority: 1) exact SKU → 2) brand name → 3) product name
+        const normalizedSearch = String(search).trim().toUpperCase();
+        const skuMatchFilter = { skus: normalizedSearch };
 
         const skuMatchCount = await Product.countDocuments(skuMatchFilter);
 
         if (skuMatchCount > 0) {
             filter = skuMatchFilter;
         } else {
-            const escapedSearch = escapeRegex(search);
-
-            filter.name = {
-                $regex: escapedSearch,
-                $options: "i"
+            const escapedSearch = escapeRegex(String(search).trim());
+            const brandMatchFilter = {
+                "brand.name": {
+                    $regex: escapedSearch,
+                    $options: "i"
+                }
             };
+
+            const brandMatchCount = await Product.countDocuments(brandMatchFilter);
+
+            if (brandMatchCount > 0) {
+                filter = brandMatchFilter;
+            } else {
+                filter.name = {
+                    $regex: escapedSearch,
+                    $options: "i"
+                };
+            }
         }
     }
 
@@ -278,61 +303,6 @@ async function searchProductsBySkuOrName({ pageNo, limit, search }) {
         }
     };
 }
-
-async function searchProductBatchBySku({ pageNo, limit, search }) {
-
-    const pageNumber = parseInt(pageNo) || 1;
-    const pageLimit = parseInt(limit) || 10;
-    const skip = (pageNumber - 1) * pageLimit;
-
-    let productFilter = {};
-
-    // Search product by SKU
-    if (search) {
-        const escapedSearch = escapeRegex(search);
-
-        productFilter.sku = {
-            $regex: escapedSearch,
-            $options: "i"
-        };
-    }
-
-    // Find matching products
-    const products = await Product.find(productFilter).select("_id");
-
-    // Extract product IDs
-    const productIds = products.map(product => product._id);
-
-    // Batch filter
-    let batchFilter = {};
-
-    if (productIds.length > 0) {
-        batchFilter.productId = { $in: productIds };
-    } else {
-        batchFilter.productId = null;
-    }
-
-    // Total batches count
-    const totalItems = await ProductBatch.countDocuments(batchFilter);
-
-    // Fetch batches
-    const batches = await ProductBatch.find(batchFilter)
-        .sort({ createdAt: -1 })
-        .skip(skip)
-        .limit(pageLimit);
-
-    return {
-        batches,
-        meta: {
-            totalItems,
-            totalPages: Math.ceil(totalItems / pageLimit),
-            currentPage: pageNumber,
-            pageSize: pageLimit
-        }
-    };
-}
-
-
 
 module.exports = {
     addProduct,

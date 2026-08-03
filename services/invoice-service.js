@@ -166,7 +166,8 @@ async function getAllInvoices({
         // SKU FILTER
         // =========================
         if (sku) {
-            const product = await Product.findOne({ sku }).select("_id");
+            const normalizedSku = String(sku).trim().toUpperCase();
+            const product = await Product.findOne({ skus: normalizedSku }).select("_id");
 
             if (!product) {
                 return {
@@ -203,7 +204,7 @@ async function getAllInvoices({
             .sort({ createdAt: -1 })
             .skip(skip)
             .limit(limit)
-            .populate("items.productId", "name sku brand")
+            .populate("items.productId", "name skus brand")
             .populate("branchId", "name")
             .lean();
 
@@ -323,7 +324,7 @@ async function getAllInvoices({
 
 async function getSingleInvoiceById(id) {
     const invoice = await Invoice.findById(id)
-        .populate("items.productId", "name sku brand")
+        .populate("items.productId", "name skus brand")
         .populate("branchId", "name")
         .lean();
 
@@ -391,7 +392,7 @@ async function updateInvoice(id, data) {
                 paymentMethod: data.paymentMethod,
             },
             { returnDocument: 'after', runValidators: true, session }
-        ).populate("items.productId", "name sku brand");
+        ).populate("items.productId", "name skus brand");
 
         await session.commitTransaction();
         session.endSession();
@@ -458,7 +459,7 @@ async function getInvoicesByDate(date) {
         },
     })
         .sort({ createdAt: -1 })
-        .populate("items.productId", "name sku brand")
+        .populate("items.productId", "name skus brand")
         .populate("branchId", "name")
         .lean();
 
