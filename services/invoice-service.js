@@ -346,40 +346,85 @@ async function updateInvoice(id, data) {
             throw new Error("Invoice not found");
         }
 
-        const updatedItems = [];
+        if (!Array.isArray(data.items) || data.items.length === 0) {
+            throw new Error("Invoice must have at least one item");
+        }
 
-        for (let i = 0; i < data.items.length; i++) {
-            const newItem = data.items[i];
-            const oldItem = existingInvoice.items[i];
+        const toProductKey = (productId) => String(productId);
 
-            const product = await Product.findById(newItem.productId).session(session);
+        const oldQtyByProduct = new Map();
+        const oldBuyingCostByProduct = new Map();
 
-            if (!product) {
+        for (const item of existingInvoice.items) {
+            const key = toProductKey(item.productId);
+            oldQtyByProduct.set(key, (oldQtyByProduct.get(key) || 0) + item.quantity);
+
+            if (!oldBuyingCostByProduct.has(key)) {
+                oldBuyingCostByProduct.set(key, item.unitBuyingCost);
+            }
+        }
+
+        const newQtyByProduct = new Map();
+
+        for (const item of data.items) {
+            if (!item.productId) {
                 throw new Error("Product not found");
             }
 
-            const difference = newItem.quantity - oldItem.quantity;
+            const key = toProductKey(item.productId);
+            newQtyByProduct.set(key, (newQtyByProduct.get(key) || 0) + item.quantity);
+        }
+
+        const allProductIds = new Set([
+            ...oldQtyByProduct.keys(),
+            ...newQtyByProduct.keys(),
+        ]);
+
+        const productsById = new Map();
+
+        for (const productId of allProductIds) {
+            const product = await Product.findById(productId).session(session);
+
+            if (!product) {
+                throw new Error(`Product not found: ${productId}`);
+            }
+
+            productsById.set(productId, product);
+        }
+
+        for (const productId of allProductIds) {
+            const product = productsById.get(productId);
+            const oldQty = oldQtyByProduct.get(productId) || 0;
+            const newQty = newQtyByProduct.get(productId) || 0;
+            const difference = newQty - oldQty;
 
             if (difference > 0) {
                 if (product.totalQuantity < difference) {
                     throw new Error(`Insufficient stock for product: ${product.name}`);
                 }
                 product.totalQuantity -= difference;
-            }
-
-            if (difference < 0) {
+            } else if (difference < 0) {
                 product.totalQuantity += Math.abs(difference);
             }
 
-            await product.save({ session });
-
-            updatedItems.push({
-                productId: newItem.productId,
-                quantity: newItem.quantity,
-                unitPrice: newItem.unitPrice,
-                unitBuyingCost: product.buyingCost
-            });
+            if (difference !== 0) {
+                await product.save({ session });
+            }
         }
+
+        const updatedItems = data.items.map((item) => {
+            const key = toProductKey(item.productId);
+            const product = productsById.get(key);
+
+            return {
+                productId: item.productId,
+                quantity: item.quantity,
+                unitPrice: item.unitPrice,
+                unitBuyingCost: oldBuyingCostByProduct.has(key)
+                    ? oldBuyingCostByProduct.get(key)
+                    : product.buyingCost,
+            };
+        });
 
         const invoice = await Invoice.findByIdAndUpdate(
             id,
