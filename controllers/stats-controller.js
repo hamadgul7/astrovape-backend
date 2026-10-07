@@ -115,10 +115,43 @@ async function getBranchSales(req, res) {
 }
 
 
+async function getProductSales(req, res) {
+    try {
+        const { barcode, name, startDate, endDate } = req.query;
+
+        if (!barcode && !name) {
+            return res.status(400).json({
+                success: false,
+                message: "Either barcode or name is required"
+            });
+        }
+
+        const data = await statsService.getProductSales({
+            barcode,
+            name,
+            startDate,
+            endDate
+        });
+
+        return res.status(200).json({
+            success: true,
+            data
+        });
+    } catch (error) {
+        console.error("Error fetching product sales:", error);
+        return res.status(500).json({
+            success: false,
+            message: error.message || "Server Error"
+        });
+    }
+}
+
+
 module.exports = {
     getToplineStats,
     getProfit,
     getMonthlyProfitTrend,
     getTopSellingProductsByBrand,
-    getBranchSales
+    getBranchSales,
+    getProductSales
 };

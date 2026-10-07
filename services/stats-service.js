@@ -467,10 +467,133 @@ async function calculateBranchSales(startDate, endDate) {
     }
 }
 
+async function getProductSales({ barcode, name, startDate, endDate } = {}) {
+    if (!barcode && !name) {
+        throw new Error("Either barcode or name is required");
+    }
+
+    const productQuery = barcode
+        ? { sku: String(barcode).trim().toUpperCase() }
+        : { name: { $regex: String(name).trim(), $options: "i" } };
+
+    const products = await Product.find(productQuery).lean();
+
+    if (!products.length) {
+        return [];
+    }
+
+    const productIds = products.map((p) => p._id);
+
+    const dateMatch = {};
+    if (startDate) {
+        dateMatch.$gte = new Date(startDate);
+    }
+    if (endDate) {
+        const end = new Date(endDate);
+        end.setHours(23, 59, 59, 999);
+        dateMatch.$lte = end;
+    }
+
+    const pipeline = [];
+
+    if (Object.keys(dateMatch).length) {
+        pipeline.push({ $match: { createdAt: dateMatch } });
+    }
+
+    pipeline.push(
+        { $unwind: "$items" },
+        {
+            $match: {
+                "items.productId": { $in: productIds }
+            }
+        },
+        {
+            $lookup: {
+                from: "branches",
+                localField: "branchId",
+                foreignField: "_id",
+                as: "branch"
+            }
+        },
+        {
+            $unwind: {
+                path: "$branch",
+                preserveNullAndEmptyArrays: true
+            }
+        },
+        {
+            $group: {
+                _id: {
+                    productId: "$items.productId",
+                    branchId: "$branchId"
+                },
+                branchName: { $first: "$branch.name" },
+                totalUnitsSold: { $sum: "$items.quantity" },
+                totalSales: {
+                    $sum: {
+                        $multiply: ["$items.unitPrice", "$items.quantity"]
+                    }
+                },
+                totalProfit: {
+                    $sum: {
+                        $multiply: [
+                            {
+                                $subtract: [
+                                    "$items.unitPrice",
+                                    "$items.unitBuyingCost"
+                                ]
+                            },
+                            "$items.quantity"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            $group: {
+                _id: "$_id.productId",
+                totalUnitsSold: { $sum: "$totalUnitsSold" },
+                totalSales: { $sum: "$totalSales" },
+                totalProfit: { $sum: "$totalProfit" },
+                branchSales: {
+                    $push: {
+                        branchId: "$_id.branchId",
+                        branchName: "$branchName",
+                        totalUnitsSold: "$totalUnitsSold",
+                        totalSales: "$totalSales",
+                        totalProfit: "$totalProfit"
+                    }
+                }
+            }
+        }
+    );
+
+    const salesAgg = await Invoice.aggregate(pipeline);
+
+    const salesByProduct = new Map(
+        salesAgg.map((row) => [row._id.toString(), row])
+    );
+
+    return products.map((product) => {
+        const sales = salesByProduct.get(product._id.toString());
+
+        return {
+            ...product,
+            barcode: product.sku,
+            totalUnitsSold: sales ? sales.totalUnitsSold : 0,
+            totalSales: sales ? sales.totalSales : 0,
+            totalProfit: sales ? sales.totalProfit : 0,
+            createdAt: product.createdAt,
+            branchSales: sales ? sales.branchSales : []
+        };
+    });
+}
+
 module.exports = {
     getToplineStats,
     getProfitByPeriod,
     getMonthlyProfitTrend,
     getTopSellingProductsByBrand,
-    calculateBranchSales
+    calculateBranchSales,
+    getProductSales
 };
