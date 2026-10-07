@@ -467,10 +467,159 @@ async function calculateBranchSales(startDate, endDate) {
     }
 }
 
+function escapeRegex(str) {
+    return String(str).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function buildDateMatch(startDate, endDate) {
+    if (!startDate && !endDate) return {};
+
+    const createdAt = {};
+
+    if (startDate) {
+        createdAt.$gte = new Date(startDate);
+    }
+
+    if (endDate) {
+        const end = new Date(endDate);
+        if (!String(endDate).includes("T")) {
+            end.setHours(23, 59, 59, 999);
+        }
+        createdAt.$lte = end;
+    }
+
+    return { createdAt };
+}
+
+async function getProductSales({ startDate, endDate, barcode, name }) {
+    if (!barcode && !name) {
+        throw new Error("Provide a barcode or product name to search");
+    }
+
+    let productFilter = {};
+
+    if (barcode) {
+        const normalizedBarcode = String(barcode).trim().toUpperCase();
+        productFilter.skus = normalizedBarcode;
+    } else {
+        productFilter.name = {
+            $regex: escapeRegex(String(name).trim()),
+            $options: "i"
+        };
+    }
+
+    const products = await Product.find(productFilter).sort({ createdAt: -1 });
+
+    if (!products.length) {
+        return [];
+    }
+
+    const productIds = products.map((p) => p._id);
+    const dateMatch = buildDateMatch(startDate, endDate);
+
+    const salesData = await Invoice.aggregate([
+        ...(Object.keys(dateMatch).length ? [{ $match: dateMatch }] : []),
+        { $unwind: "$items" },
+        {
+            $match: {
+                "items.productId": { $in: productIds }
+            }
+        },
+        {
+            $group: {
+                _id: {
+                    productId: "$items.productId",
+                    branchId: "$branchId"
+                },
+                unitsSold: { $sum: "$items.quantity" },
+                totalSales: {
+                    $sum: {
+                        $multiply: ["$items.unitPrice", "$items.quantity"]
+                    }
+                },
+                totalProfit: {
+                    $sum: {
+                        $multiply: [
+                            {
+                                $subtract: [
+                                    "$items.unitPrice",
+                                    "$items.unitBuyingCost"
+                                ]
+                            },
+                            "$items.quantity"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            $lookup: {
+                from: "branches",
+                localField: "_id.branchId",
+                foreignField: "_id",
+                as: "branch"
+            }
+        },
+        {
+            $project: {
+                productId: "$_id.productId",
+                branchId: "$_id.branchId",
+                branchName: {
+                    $ifNull: [{ $arrayElemAt: ["$branch.name", 0] }, "Unknown"]
+                },
+                unitsSold: 1,
+                totalSales: 1,
+                totalProfit: 1
+            }
+        }
+    ]);
+
+    return products.map((product) => {
+        const productSales = salesData.filter(
+            (s) => s.productId.toString() === product._id.toString()
+        );
+
+        const branchSales = productSales.map((s) => ({
+            branchId: s.branchId,
+            branchName: s.branchName,
+            unitsSold: s.unitsSold,
+            totalSales: s.totalSales,
+            totalProfit: s.totalProfit
+        }));
+
+        const totalUnitsSold = branchSales.reduce((sum, b) => sum + b.unitsSold, 0);
+        const totalSales = branchSales.reduce((sum, b) => sum + b.totalSales, 0);
+        const totalProfit = branchSales.reduce((sum, b) => sum + b.totalProfit, 0);
+
+        return {
+            product: {
+                _id: product._id,
+                name: product.name,
+                barcode: product.skus,
+                skus: product.skus,
+                brand: product.brand,
+                buyingCost: product.buyingCost,
+                sellingCost: product.sellingCost,
+                totalQuantity: product.totalQuantity,
+                createdAt: product.createdAt,
+                updatedAt: product.updatedAt
+            },
+            name: product.name,
+            barcode: product.skus,
+            totalUnitsSold,
+            totalSales,
+            totalProfit,
+            createdAt: product.createdAt,
+            branchSales
+        };
+    });
+}
+
 module.exports = {
     getToplineStats,
     getProfitByPeriod,
     getMonthlyProfitTrend,
     getTopSellingProductsByBrand,
-    calculateBranchSales
+    calculateBranchSales,
+    getProductSales
 };

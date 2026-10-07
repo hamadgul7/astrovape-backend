@@ -9,5 +9,6 @@ router.get("/getMonthlyProfitTrend", verifyToken, statsController.getMonthlyProf
 router.get("/getTopSellingProductsByBrand", verifyToken, statsController.getTopSellingProductsByBrand);
 router.get("/getTopSellingProductsByBrand/:id", verifyToken, statsController.getTopSellingProductsByBrand);
 router.get("/getBranchSales", verifyToken, statsController.getBranchSales);
+router.get("/getProductSales", verifyToken, statsController.getProductSales);
 
 module.exports = router;

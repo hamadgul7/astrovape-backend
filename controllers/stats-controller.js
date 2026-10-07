@@ -115,10 +115,49 @@ async function getBranchSales(req, res) {
 }
 
 
+async function getProductSales(req, res) {
+    try {
+        const { startDate, endDate, barcode, name } = req.query;
+
+        const data = await statsService.getProductSales({
+            startDate,
+            endDate,
+            barcode,
+            name
+        });
+
+        if (!data.length) {
+            return res.status(404).json({
+                success: false,
+                message: "No product found for the given filters"
+            });
+        }
+
+        return res.status(200).json({
+            success: true,
+            message: "Product sales retrieved successfully",
+            filters: {
+                startDate: startDate || null,
+                endDate: endDate || null,
+                barcode: barcode || null,
+                name: name || null
+            },
+            data
+        });
+    } catch (error) {
+        return res.status(400).json({
+            success: false,
+            message: error.message
+        });
+    }
+}
+
+
 module.exports = {
     getToplineStats,
     getProfit,
     getMonthlyProfitTrend,
     getTopSellingProductsByBrand,
-    getBranchSales
+    getBranchSales,
+    getProductSales
 };
