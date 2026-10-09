@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node init && nodemon server.js"
   },
   "author": "Hamad Gul",
   "license": "ISC",
